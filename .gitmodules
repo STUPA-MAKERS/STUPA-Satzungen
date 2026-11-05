@@ -1,4 +1,3 @@
-[submodule "HSRTReport"]
-	path = src/HSRTReport
-	url = https://github.com/frederikbeimgraben/HSRTReport.git
-	branch = main
+[submodule "src/hsrtreport"]
+	path = src/hsrtreport
+	url = https://github.com/frederikbeimgraben/hsrtreport-typst.git

@@ -1,86 +1,29 @@
 {
   "languages": {
-    "LaTeX": {
+    "Typst": {
       "tab_size": 2,
       "hard_tabs": false,
       "soft_wrap": "editor_width",
-      "show_whitespaces": "selection",
-      "use_autoclose": true,
       "enable_language_server": true
     }
   },
 
-  "file_scan_exclusions": [
-    "Build/",
-    "*.aux",
-    "*.log",
-    "*.out",
-    "*.toc",
-    "*.lof",
-    "*.lot",
-    "*.lol",
-    "*.bbl",
-    "*.blg",
-    "*.synctex.gz",
-    "*.fdb_latexmk",
-    "*.fls",
-    "*.idx",
-    "*.ind",
-    "*.ilg",
-    "*.glo",
-    "*.gls",
-    "*.glg",
-    "*.nav",
-    "*.snm",
-    "*.vrb",
-    "*.bcf",
-    "*.run.xml"
-  ],
-
-  "show_line_numbers": true,
-  "relative_line_numbers": false,
-  "cursor_blink": true,
-
-  "git": {
-    "git_gutter": "tracked_files",
-    "inline_blame": {
-      "enabled": false
-    }
-  },
-
   "lsp": {
-    "texlab": {
+    "tinymist": {
       "settings": {
-        "texlab": {
-          "build": {
-            "executable": "/bin/echo",
-            "args": ["Skipping auto-build - use 'make' in terminal instead"],
-            "onSave": false,
-            "forwardSearchAfter": false
-          },
-          "chktex": {
-            "onEdit": false,
-            "onOpenAndSave": false
-          },
-          "diagnostics": {
-            "allowedPatterns": []
-          },
-          "formatterLineLength": 120,
-          "latexFormatter": "none",
-          "experimental": {
-            "followPackageLinks": true,
-            "mathEnvironments": ["align", "align*", "equation", "equation*"],
-            "verbatimEnvironments": ["verbatim", "lstlisting", "minted"]
-          }
-        }
+        "rootPath": "src",
+        "fontPaths": ["src/hsrtreport/src/assets/fonts"],
+        "outputPath": "$root/../build/$name",
+        "exportPdf": "onSave"
       }
     }
   },
 
+  "file_scan_exclusions": ["build/"],
+
   "task_aliases": {
     "build": "make",
-    "clean": "make clean",
-    "full": "make full",
-    "view": "make view"
+    "watch": "make watch",
+    "clean": "make clean"
   }
 }

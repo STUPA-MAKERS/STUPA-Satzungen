@@ -8,18 +8,17 @@ on:
   workflow_dispatch:
     inputs:
       tag_name:
-        description: "Tag name for the release (e.g., v1.0.0)"
+        description: "Tag name for the release (e.g. v1.0.0)"
         required: true
-        type: string
-      release_name:
-        description: "Name for the release"
-        required: false
         type: string
       is_prerelease:
         description: "Mark as pre-release"
         required: false
         type: boolean
         default: false
+
+env:
+  TYPST_VERSION: "0.15.1"
 
 jobs:
   build-and-release:
@@ -35,228 +34,34 @@ jobs:
           fetch-depth: 0
           submodules: recursive
 
-      - name: Install Tectonic
-        run: |
-          # Download and install Tectonic
-          curl --proto '=https' --tlsv1.2 -fsSL https://drop-sh.fullyjustified.net | sh
-          echo "$HOME/.cargo/bin" >> $GITHUB_PATH
-
-      - name: Install system dependencies
-        run: |
-          sudo apt-get update -y
-          sudo apt-get install -y \
-            git \
-            make \
-            fonts-texgyre \
-            fonts-lmodern \
-            fontconfig \
-            zip
-
-      - name: Install custom fonts
-        run: |
-          echo "Installing custom fonts..."
-          mkdir -p ~/.local/share/fonts
-
-          # Copy all font files from the repository
-          if [ -d "HSRTReport/Assets/Fonts" ]; then
-            find HSRTReport/Assets/Fonts -type f \( -name "*.ttf" -o -name "*.otf" \) -exec cp {} ~/.local/share/fonts/ \;
-            echo "Fonts copied to ~/.local/share/fonts/"
-
-            # Update font cache
-            fc-cache -fv
-            echo "Font cache updated"
-
-            # Verify fonts are installed
-            echo "Installed custom fonts:"
-            fc-list | grep -E "(Blender|DIN)" || echo "Warning: Custom fonts may not be properly installed"
-          else
-            echo "Warning: Font directory not found"
-          fi
-
-      - name: Cache Tectonic files
-        uses: actions/cache@v4
+      - name: Install Typst
+        uses: ./.github/actions/install-typst
         with:
-          path: ~/.cache/Tectonic
-          key: ${{ runner.os }}-tectonic-${{ hashFiles('**/*.tex') }}
-          restore-keys: |
-            ${{ runner.os }}-tectonic-
+          version: ${{ env.TYPST_VERSION }}
 
-      - name: Determine release version
+      - name: Determine version
         id: version
         run: |
-          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             TAG="${{ github.event.inputs.tag_name }}"
-            RELEASE_NAME="${{ github.event.inputs.release_name }}"
           else
             TAG="${GITHUB_REF#refs/tags/}"
-            RELEASE_NAME=""
           fi
+          echo "TAG=$TAG" >> "$GITHUB_OUTPUT"
 
-          # Extract version from tag
-          VERSION=${TAG#v}
-          VERSION=${VERSION#release-}
+      - name: Build document
+        run: make compile
 
-          # Set release name if not provided
-          if [ -z "$RELEASE_NAME" ]; then
-            RELEASE_NAME="Release ${VERSION}"
-          fi
+      - name: Name the PDF after the tag
+        run: cp build/Organisationssatzung.pdf "Organisationssatzung_${{ steps.version.outputs.TAG }}.pdf"
 
-          echo "TAG=${TAG}" >> "$GITHUB_OUTPUT"
-          echo "VERSION=${VERSION}" >> "$GITHUB_OUTPUT"
-          echo "RELEASE_NAME=${RELEASE_NAME}" >> "$GITHUB_OUTPUT"
-
-          # Determine if pre-release based on tag format or input
-          if [ "${{ github.event.inputs.is_prerelease }}" == "true" ]; then
-            echo "IS_PRERELEASE=true" >> "$GITHUB_OUTPUT"
-          elif echo "$TAG" | grep -qE "(alpha|beta|rc|pre)"; then
-            echo "IS_PRERELEASE=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "IS_PRERELEASE=false" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: Build document with Tectonic
-        run: |
-          echo "Building document for release ${VERSION}..."
-
-          # Build with Tectonic
-          tectonic -X build
-
-          # Copy to Output directory with versioned name
-          cp build/Main/Main.pdf "HSRT-Report_v${{ steps.version.outputs.VERSION }}.pdf"
-
-      - name: Verify build
-        run: |
-          if [ ! -f "HSRT-Report_v${{ steps.version.outputs.VERSION }}.pdf" ]; then
-            echo "::error::PDF was not created - build failed"
-            exit 1
-          fi
-
-          echo "PDF created successfully:"
-          ls -lh "HSRT-Report_v${{ steps.version.outputs.VERSION }}.pdf"
-
-      - name: Create source archive
-        run: |
-          # Create a clean source archive without build artifacts
-          ARCHIVE_NAME="HSRT-Report_v${{ steps.version.outputs.VERSION }}_source"
-
-          # Create temporary directory for archive
-          mkdir -p /tmp/${ARCHIVE_NAME}
-
-          # Copy source files (excluding build artifacts)
-          rsync -av \
-            --exclude='.git' \
-            --exclude='build' \
-            ./ /tmp/${ARCHIVE_NAME}/
-
-          # Create zip archive
-          cd /tmp
-          zip -r "${ARCHIVE_NAME}.zip" "${ARCHIVE_NAME}"
-          mv "${ARCHIVE_NAME}.zip" "$GITHUB_WORKSPACE/"
-
-          echo "Source archive created:"
-          ls -lh "$GITHUB_WORKSPACE/${ARCHIVE_NAME}.zip"
-
-      - name: Generate changelog
-        id: changelog
-        run: |
-          # Get the previous tag
-          PREV_TAG=$(git describe --tags --abbrev=0 HEAD^ 2>/dev/null || echo "")
-
-          if [ -z "$PREV_TAG" ]; then
-            echo "This is the first release" > changelog.md
-          else
-            echo "## Changes since ${PREV_TAG}" > changelog.md
-            echo "" >> changelog.md
-
-            # Get commit list
-            git log --pretty=format:"- %s (%an)" ${PREV_TAG}..HEAD >> changelog.md
-          fi
-
-          # Add build information
-          cat << EOF >> changelog.md
-
-          ## Build Information
-
-          - **Build Date:** $(date +'%Y-%m-%d %H:%M:%S UTC')
-          - **Build System:** Tectonic
-          - **TeX Format:** XeLaTeX
-          - **Bibliography:** BibTeX
-          - **Commit:** \`$(git rev-parse --short HEAD)\`
-
-          ## Files
-
-          - \`HSRT-Report_v${{ steps.version.outputs.VERSION }}.pdf\` - The compiled document
-          - \`HSRT-Report_v${{ steps.version.outputs.VERSION }}_source.zip\` - Complete source code
-
-          ## Installation
-
-          To build from source:
-          1. Install [Tectonic](https://tectonic-typesetting.github.io/)
-          2. Extract the source archive
-          3. Run \`tectonic -X build\`
-          EOF
-
-      - name: Create GitHub Release
+      - name: Create the release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.version.outputs.TAG }}
-          name: ${{ steps.version.outputs.RELEASE_NAME }}
-          body_path: changelog.md
-          files: |
-            HSRT-Report_v${{ steps.version.outputs.VERSION }}.pdf
-            HSRT-Report_v${{ steps.version.outputs.VERSION }}_source.zip
-          draft: false
-          prerelease: ${{ steps.version.outputs.IS_PRERELEASE }}
-          make_latest: true
+          name: "Organisationssatzung ${{ steps.version.outputs.TAG }}"
+          files: Organisationssatzung_${{ steps.version.outputs.TAG }}.pdf
+          prerelease: ${{ github.event.inputs.is_prerelease == 'true' }}
+          generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Upload release artifacts
-        uses: actions/upload-artifact@v5
-        with:
-          name: release-${{ steps.version.outputs.VERSION }}
-          path: |
-            HSRT-Report_v${{ steps.version.outputs.VERSION }}.pdf
-            HSRT-Report_v${{ steps.version.outputs.VERSION }}_source.zip
-          retention-days: 90
-          if-no-files-found: error
-
-      - name: Post release summary
-        run: |
-          cat >> $GITHUB_STEP_SUMMARY << EOF
-          # 🎉 Release Created Successfully!
-
-          ## 📦 Release Information
-
-          | Property | Value |
-          |----------|-------|
-          | **Version** | ${{ steps.version.outputs.VERSION }} |
-          | **Tag** | \`${{ steps.version.outputs.TAG }}\` |
-          | **Release Name** | ${{ steps.version.outputs.RELEASE_NAME }} |
-          | **Pre-release** | ${{ steps.version.outputs.IS_PRERELEASE }} |
-          | **PDF Size** | $(du -h Output/HSRT-Report_v${{ steps.version.outputs.VERSION }}.pdf | cut -f1) |
-          | **Source Size** | $(du -h Output/HSRT-Report_v${{ steps.version.outputs.VERSION }}_source.zip | cut -f1) |
-
-          ## 📄 Files
-
-          - ✅ HSRT-Report_v${{ steps.version.outputs.VERSION }}.pdf
-          - ✅ HSRT-Report_v${{ steps.version.outputs.VERSION }}_source.zip
-
-          ## 🔧 Build System
-
-          Built with **Tectonic** using XeLaTeX format and BibTeX backend.
-
-          ## 🔗 Links
-
-          - [Release Page](https://github.com/${{ github.repository }}/releases/tag/${{ steps.version.outputs.TAG }})
-          - [Download PDF](https://github.com/${{ github.repository }}/releases/download/${{ steps.version.outputs.TAG }}/HSRT-Report_v${{ steps.version.outputs.VERSION }}.pdf)
-          - [Download Source](https://github.com/${{ github.repository }}/releases/download/${{ steps.version.outputs.TAG }}/HSRT-Report_v${{ steps.version.outputs.VERSION }}_source.zip)
-
-          EOF
-
-      - name: Notify on failure
-        if: failure()
-        run: |
-          echo "::error::Release creation failed!"
-          echo "Check the logs for more information."
-          exit 1

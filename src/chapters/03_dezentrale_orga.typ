@@ -1,0 +1,30 @@
+#import "../satzung.typ": *
+
+#pagebreak(weak: true)
+= Dezentrale Organisation
+
+=== Fachschaft und Fachschaftsvertretung <fachschaft>
+Die Studierenden einer Fakultät bilden eine Fachschaft. In der Fachschaft wird eine Fachschaftsvertretung #hl[nach @fachschaft-zusammensetzung] gebildet. Die Fachschaftsvertretung #hl[repräsentiert die Fachschaft und] nimmt die fakultätsbezogenen Studienangelegenheiten und Aufgaben im Sinne des § 65 Absatz 2 LHG auf Fakultätsebene wahr. #hl[Sie kann Anträge an das Studierendenparlament stellen.]
+
+=== #hl[Satzung der Fachschaft] <fachschaft-satzung>
++ #hl[Die Fachschaftsvertretung kann mit der Mehrheit ihrer Mitglieder eine Satzung der Fachschaft beschließen, um die Organisation der Fachschaft zu regeln. Die Satzung wird mit der Bestätigung durch das Studierendenparlament nach Maßgabe von @allg-beschlussfassung gültig. Sie darf der Organisationssatzung der Studierendenschaft nicht widersprechen; im Fall eines Widerspruchs gilt die Organisationssatzung.]
++ #hl[Die Satzung der Fachschaft darf einzelnen Studierenden oder Gruppen von Studierenden der jeweiligen Fakultät keinen Vorteil gegenüber der Gesamtheit der Studierenden selbiger Fakultät verschaffen, sofern sich dieser mit annehmbarem Aufwand verhindern lässt. Dies betrifft insbesondere die Wahl zur Fachschaftsvertretung.]
+
+=== #hl[Finanzen der Fachschaft] <fachschaft-finanzen>
++ #hl[Falls das STUPA den jeweiligen Fachschaften ein Budget für das Haushaltsjahr zur Verfügung stellt, dürfen die Fachschaftsvertretungen über das der Fachschaft zugeteilte Budget verfügen. Dies muss jedoch in Absprache mit den studentischen Mitgliedern des jeweiligen Fakultätsrates, soweit diese nicht selbst die Fachschaftsvertretung bilden, der:dem Haushaltsbeauftragten der Studierendenschaft, sowie der:dem Finanzreferent:in des AStA erfolgen.]
++ #hl[Bei unsachgemäßem Umgang mit dem Budget muss der AStA oder das STUPA die zur Verfügungstellung des Budgets überprüfen und kann der jeweiligen Fachschaftsvertretung die Berechtigung zur eigenständigen Verfügung über das Budget entziehen. In diesem Fall ist die Entscheidung des STUPA oder AStA gegenüber der Fachschaftsvertretung schriftlich zu begründen.]
+
+=== Zusammensetzung der Fachschaftsvertretung <fachschaft-zusammensetzung>
++ #hl[Hat die Fachschaft keine Satzung beschlossen, die eine Fachschaftsvertretung nach Absatz 2 bildet, sind die studentischen Mitglieder des jeweiligen Fakultätsrates die Fachschaftsvertretung.]
++ #hl[Die Satzung der Fachschaft kann eine von den studentischen Mitgliedern des Fakultätsrates getrennte Fachschaftsvertretung bilden. Diese besteht aus mindestens drei Vorstandsmitgliedern, die in der Fachschaftssitzung nach @fachschaft-wahlen gewählt werden. Die genaue Anzahl regelt die Satzung der Fachschaft.]
++ #hl[Die Amtszeit der Vorstandsmitglieder nach Absatz 2 beträgt ein Semester. Sie endet mit dem Amtsantritt der Vorstandsmitglieder, die in der ersten Fachschaftssitzung des folgenden Semesters gewählt werden. Eine Wiederwahl ist möglich.]
++ #hl[Die Mitglieder der Fachschaftsvertretung bilden gemeinsam ihren Vorstand. Der Vorstand führt die laufenden Geschäfte der Fachschaft, bereitet die Beschlüsse der Fachschaftsvertretung vor und führt sie aus. Die Verteilung der Aufgaben innerhalb des Vorstandes regelt die Satzung der Fachschaft oder die Geschäftsordnung der Fachschaftsvertretung.]
+
+=== #hl[Fachschaftssitzung] <fachschaft-wahlen>
++ #hl[Die Vorstandsmitglieder einer Fachschaftsvertretung nach @fachschaft-zusammensetzung Absatz 2 werden in der ersten Fachschaftssitzung jedes Semesters gewählt. Die Fachschaftssitzung ist eine Sitzung, zu der alle Studierenden der Fakultät eingeladen sind. Wählen können alle anwesenden Studierenden der Fakultät; wählbar sind alle Studierenden der Fakultät.]
++ #hl[Die Fachschaftssitzung wird vom Vorstand der Fachschaftsvertretung einberufen und geleitet. Besteht noch kein Vorstand nach @fachschaft-zusammensetzung Absatz 2, berufen die studentischen Mitglieder des Fakultätsrates sie ein. Alle Studierenden der Fakultät sind mindestens sieben Tage vorher in geeigneter Weise einzuladen, insbesondere über die E-Mail-Verteiler der Fakultät. Die Wahl ist in der Einladung als Tagesordnungspunkt anzukündigen.]
++ #hl[Für die Wahl gilt @allg-wahlen Absatz 3 und 4 entsprechend.]
++ #hl[Das Wahlergebnis ist dem AStA innerhalb von zwei Wochen mitzuteilen und hochschulöffentlich bekannt zu machen.]
+
+=== Konstituierende Sitzung <fachschaft-konstituierende-sitzung>
+Die erste Fachschaftsvertretungssitzung der jeweiligen Amtsperiode wird von dem mit den höchsten Stimmzahlen gewählten Mitglied der Fachschaftsvertretung unverzüglich nach Beginn der Amtszeit einberufen. Dieses Mitglied leitet die Sitzung.
