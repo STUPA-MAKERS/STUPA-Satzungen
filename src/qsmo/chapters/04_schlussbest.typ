@@ -9,7 +9,7 @@
 + Mit QSM finanzierte Anschaffungen und Angebote sollen als solche gekennzeichnet werden.
 
 === Änderung der Ordnung <qsm-aenderung>
-Diese Ordnung kann mit der Mehrheit der Mitglieder des STUPA geändert werden. Die Änderung bedarf der Genehmigung des Präsidiums der Hochschule.
+Für den Beschluss und die Änderung dieser Ordnung gilt § 9 Abs. 6 der Organisationssatzung. Die Änderung bedarf der Genehmigung des Präsidiums der Hochschule.
 
 === Inkrafttreten <qsm-inkrafttreten>
 + Diese Ordnung tritt nach der Genehmigung durch das Präsidium der Hochschule am Tag nach ihrer Bekanntmachung in Kraft.

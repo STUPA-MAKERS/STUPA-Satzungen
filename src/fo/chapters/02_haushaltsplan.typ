@@ -13,7 +13,7 @@
 === Haushaltsjahr <fo-haushaltsjahr>
 
 
-Das #removed[erste] Haushaltsjahr #removed[begann am 1. Dezember 2013 und endete am 28. Februar 2015. Alle nachfolgenden Haushaltsjahre beginnen] #hl[beginnt] am 1. März mit dem Anfang des Sommersemesters und #removed[enden] #hl[endet] am #removed[28. Februar] #hl[letzten Tag des Februars] mit dem Ende des Wintersemesters des folgenden Kalenderjahres.
+Das #removed[erste] Haushaltsjahr #removed[begann am 1. Dezember 2013 und endete am 28. Februar 2015. Alle nachfolgenden Haushaltsjahre beginnen] #hl[beginnt] am 1. März mit dem Anfang des Sommersemesters und #removed[enden] #hl[endet] am #removed[28. Februar] #hl[letzten Tag des Februars des folgenden Kalenderjahres] mit dem Ende des #removed[Wintersemesters des folgenden Kalenderjahres.] #hl[Wintersemesters.]
 
 === Veranschlagung der Einnahmen, Ausgaben und Stellen <fo-veranschlagung>
 + Der Haushaltsplan besteht aus Einnahme- und Ausgabetiteln mit jeweils fester Zweckbestimmung. Die Einnahmen sind nach dem Entstehungsgrund, die Ausgaben nach Zwecken getrennt den Titeln zuzuordnen und soweit erforderlich, zu erläutern. Die Zuordnung ist so vorzunehmen, dass aus dem Haushaltsplan die Erfüllung der Aufgaben der Studierendenschaft erkennbar ist. Im Haushaltsplan sind mindestens gesondert darzustellen:

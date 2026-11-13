@@ -13,7 +13,11 @@ Das #removed[StuPa] #hl[STUPA] entscheidet über die grundsätzlichen Angelegenh
 + Beratung und Beschlussfassung über alle Satzungen und Ordnungen der #removed[Studierendenschaft.] #hl[Studierendenschaft,]
 + Einsetzen von #removed[Referaten und Arbeitskreisen] #hl[Arbeitskreisen,]
 + Beschlussfassung über Beschwerden von Studierenden, die vorher von der Fachschaft oder dem AStA zurückgewiesen wurden oder direkt bei dem #removed[StuPa] #hl[STUPA] eingelegt werden,
-+ Beschlussfassung über den Zusammenschluss mit #removed[Studierendenschaft] #hl[Studierendenschaften] anderer Hochschulen zu einem Verband.
++ Beschlussfassung über den Zusammenschluss mit #removed[Studierendenschaft] #hl[Studierendenschaften] anderer Hochschulen zu einem #removed[Verband.] #hl[Verband,]
++ #hl[Festsetzung der Höhe des Studierendenschaftsbeitrags,]
++ #hl[Beschlussfassung über den Vorschlag der Studierendenschaft zur Vergabe der Qualitätssicherungsmittel,]
++ #hl[Festsetzung von Aufwandsentschädigungen,]
++ #hl[Wahl der Mitglieder der Schlichtungskommission.]
 
 === Zusammensetzung des #removed[Studierendenparlaments] #hl[Studierendenparlamentes] <stupa-zusammensetzung>
 Das Studierendenparlament setzt sich aus insgesamt #removed[19] #hl[bis zu 21] stimmberechtigten Mitgliedern der Studierendenschaft im Sinne von @allg-rechtsstellung zusammen. Fünf Mitglieder werden direkt gewählt. Die studentischen Fakultätsräte jeder Fakultät wählen #hl[und entsenden] aus ihrer Mitte zwei weitere #removed[Mitglieder] #hl[Mitglieder, sowie zwei benannte Vertretungen] nach Maßgabe von @allg-wahlen Abs. #removed[2, also insgesamt zehn.] #hl[2.] Hinzu treten die vier studentischen Senatsmitglieder als Mitglieder kraft #removed[Amtes.Doppelfunktionen sind nicht zulässig.] #hl[ihres Amtes. Darüber hinaus gilt:]
@@ -110,4 +114,6 @@ Das Studierendenparlament setzt sich aus insgesamt #removed[19] #hl[bis zu 21] s
   + #hl[durch Abwahl durch das STUPA entsprechend Absatz 5,]
   + #hl[durch Exmatrikulation,]
   + #hl[durch Rücktritt aus wichtigem Grund, der der:dem Vorsitzenden gegenüber schriftlich oder in Textform zu erklären ist,]
-  + #hl[durch Tod.]
+  + #hl[durch Tod,]
+  + #hl[mit Ablauf der Amtszeit, vorbehaltlich @allg-wahlen Absatz 5,]
+  + #hl[als Vorsitzende:r mit dem Ausscheiden aus dem Studierendenparlament nach @stupa-vorsitzender Absatz 1.]

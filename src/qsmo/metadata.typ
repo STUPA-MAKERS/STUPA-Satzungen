@@ -42,7 +42,7 @@
     des Qualitätssicherungsgesetzes (QualSiG) vom 5.~Mai 2015 (GBl. S. 313),
     zuletzt geändert durch Artikel 4 des Gesetzes vom 11. Dezember 2025
     (GBl. 2025 Nr. 139), hat das Studierendenparlament der Hochschule
-    Reutlingen am #last-changed die nachfolgende Ordnung beschlossen.
+    Reutlingen am #last-changed die nachfolgende Ordnung als Satzung beschlossen.
 
     Die Hochschule Reutlingen hat die Ordnung durch Beschluss des Präsidiums
     am #accepted-university genehmigt.
