@@ -41,8 +41,11 @@
 
   [
     Auf Grund von § 65a Abs. 1 Satz 1, 2. Halbsatz und Abs. 3 Satz 2 des
-    Landeshochschulgesetzes (LHG) vom 1. Januar 2005 (GBl. S. 1), in der
-    Fassung vom 8. April 2014 (GBl. S. 99 ff.), sowie der §§ 29 ff. der
+    Landeshochschulgesetzes (LHG) #removed[vom 1. Januar 2005 (GBl. S. 1), in
+    der Fassung vom 8. April 2014 (GBl. S. 99 ff.),] #hl[in der Fassung vom
+    1.~April 2014 (GBl. S. 99), zuletzt geändert durch Artikel 5 des Gesetzes
+    vom 11. Dezember 2025 (GBl. 2025 Nr. 139),] sowie der
+    §§ #removed[29] #hl[30] ff. der
     Organisationssatzung der Studierendenschaft der Hochschule Reutlingen
     (OrgS) vom #orgs-date, hat das Studierendenparlament der
     Studierendenschaft der Hochschule Reutlingen am #last-changed die

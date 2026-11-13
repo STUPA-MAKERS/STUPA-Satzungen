@@ -7,7 +7,7 @@
 + Die Verfasste Studierendenschaft unterhält personenunabhängige Konten. Der laufende Zahlungsverkehr ist darüber abzuwickeln. Daneben ist die Unterhaltung von weiteren personenunabhängigen Anlagekonten zulässig.
 + Nur der Vorsitzende, der Finanzreferent sowie der Haushaltsbeauftragte sind für die Konten der Studierendenschaft zeichnungsberechtigt.
 + Der Zahlungsverkehr ist möglichst bargeldlos durchzuführen.
-+ Rechnungen sind vom Besteller mit einem Richtigkeitsvermerk (bspw. „Die Richtigkeit der Lieferung wird bescheinigt“) zu versehen und unverzüglich an den Haushaltsbeauftragten oder den Finanzreferenten zur Feststellung der sachlichen und rechnerischen Richtigstellung weiterzuleiten.
++ Rechnungen sind vom Besteller mit einem Richtigkeitsvermerk (bspw. „Die Richtigkeit der Lieferung wird bescheinigt“) zu versehen und unverzüglich an den Haushaltsbeauftragten oder den Finanzreferenten zur Feststellung der sachlichen und rechnerischen #removed[Richtigstellung] #hl[Richtigkeit] weiterzuleiten.
 + Für jede Einnahme oder Ausgabe ist ein Nachweis zu erstellen. Hierbei ist das Vier-Augen-Prinzip zu beachten.
 + Der Haushaltsbeauftragte führt in begründeten Ausnahmefällen eine Barkasse und ist bei Notwendigkeit berechtigt ggf. zusätzliche zeitlich befristete Kassen einzurichten. Das Bargeld in der Barkasse darf nicht den Betrag überschreiten, der an den nächsten fünf Tagen für die voraussichtlich zu leistenden Auszahlungen oder als Wechselgeld erforderlich ist, maximal jedoch 1.000 €.
 + Zahlungsmittel, Überweisungsaufträge und Scheckhefte sowie Sparbücher sind vom Finanzreferenten oder vom Haushaltsbeauftragten unter Verschluss zu halten.
