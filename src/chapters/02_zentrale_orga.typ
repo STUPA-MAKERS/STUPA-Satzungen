@@ -16,14 +16,14 @@ Das #removed[StuPa] #hl[STUPA] entscheidet über die grundsätzlichen Angelegenh
 + Beschlussfassung über den Zusammenschluss mit #removed[Studierendenschaft] #hl[Studierendenschaften] anderer Hochschulen zu einem Verband.
 
 === Zusammensetzung des #removed[Studierendenparlaments] #hl[Studierendenparlamentes] <stupa-zusammensetzung>
-Das Studierendenparlament setzt sich aus insgesamt #removed[19] #hl[bis zu 21] stimmberechtigten Mitgliedern der Studierendenschaft im Sinne von @allg-rechtsstellung zusammen. Fünf Mitglieder werden direkt gewählt. Die studentischen Fakultätsräte jeder Fakultät wählen #hl[und entsenden] aus ihrer Mitte zwei weitere #removed[Mitglieder] #hl[Mitglieder, sowie zwei benannte Vertretungen] nach Maßgabe von @allg-wahlen Abs. #removed[2, also insgesamt zehn.] #hl[2.] Hinzu treten die vier studentischen Senatsmitglieder als Mitglieder kraft #removed[Amtes.Doppelfunktionen sind] #hl[ihres Amtes. Darüber hinaus gilt:]
+Das Studierendenparlament setzt sich aus insgesamt #removed[19] #hl[bis zu 21] stimmberechtigten Mitgliedern der Studierendenschaft im Sinne von @allg-rechtsstellung zusammen. Fünf Mitglieder werden direkt gewählt. Die studentischen Fakultätsräte jeder Fakultät wählen #hl[und entsenden] aus ihrer Mitte zwei weitere #removed[Mitglieder] #hl[Mitglieder, sowie zwei benannte Vertretungen] nach Maßgabe von @allg-wahlen Abs. #removed[2, also insgesamt zehn.] #hl[2.] Hinzu treten die vier studentischen Senatsmitglieder als Mitglieder kraft #removed[Amtes.Doppelfunktionen sind nicht zulässig.] #hl[ihres Amtes. Darüber hinaus gilt:]
 
-+ #hl[Wird ein Mitglied doppelt in das Studierendenparlament gewählt, so rückt die Person mit der nächsthöheren Stimmenzahl in der jeweiligen Wahl nach. Bei gleicher Stimmenzahl entscheidet das Los. Ist dies] nicht #removed[zulässig.] #hl[möglich, so bleibt der Sitz unbelegt.]
-+ Jedes Mitglied hat eine Stimme. #removed[Vorsitzender des Studierendenparlamentes und des Allgemeinen Studierendenausschusses Der] #hl[@allg-beschlussfassung Absatz 1 bleibt davon unberührt.]
++ #hl[Wird ein Mitglied doppelt in das Studierendenparlament gewählt, so rückt die Person mit der nächsthöheren Stimmenzahl in der jeweiligen Wahl nach. Bei gleicher Stimmenzahl entscheidet das Los. Ist dies nicht möglich, so bleibt der Sitz unbelegt.]
++ Jedes Mitglied hat eine Stimme. #removed[Vorsitzender des Studierendenparlamentes und des Allgemeinen Studierendenausschusses Der Vorsitzende des Studierendenparlaments] #hl[@allg-beschlussfassung Absatz 1 bleibt davon unberührt.]
 + #hl[Ein entsandtes Mitglied eines Fakultätsrates kann seine Stimme abweichend von @allg-beschlussfassung Absatz 1 auch auf eine der benannten Vertretungen desselben Fakultätsrates übertragen. Diese Übertragung bedarf keiner Mitteilung an die:den Vorsitzende:n.]
 
 === #hl[Vorsitzende:r der Studierendenschaft] <stupa-vorsitzender>
-+ #hl[Die:Der] Vorsitzende #removed[des Studierendenparlaments] #hl[der Studierendenschaft (Vorsitzende:r)] wird mit einfacher Mehrheit der Mitglieder des #removed[Studierendenparlaments] #hl[Studierendenparlamentes] aus der Mitte des #removed[StuPa] #hl[STUPA] gewählt. #removed[Er ist] #hl[Sie:Er führt] zugleich #removed[Vorsitzender] #hl[den Vorsitz des Studierendenparlamentes und] des Allgemeinen Studierendenausschusses. #removed[Der] #hl[Scheidet die:der Vorsitzende aus dem Studierendenparlament aus, endet ihr:sein Amt als Vorsitzende:r. Bis zur Neuwahl in der nächsten ordentlichen Sitzung wird sie:er nach Absatz 4 vertreten.]
++ #hl[Die:Der Vorsitzende der Studierendenschaft (Vorsitzende:r)] wird mit einfacher Mehrheit der Mitglieder des #removed[Studierendenparlaments] #hl[Studierendenparlamentes] aus der Mitte des #removed[StuPa] #hl[STUPA] gewählt. #removed[Er ist] #hl[Sie:Er führt] zugleich #removed[Vorsitzender des Allgemeinen Studierendenausschusses. Der] #hl[den Vorsitz des Studierendenparlamentes und des Allgemeinen Studierendenausschusses. Scheidet die:der Vorsitzende aus dem Studierendenparlament aus, endet ihr:sein Amt als Vorsitzende:r. Bis zur Neuwahl in der nächsten ordentlichen Sitzung wird sie:er nach Absatz 4 vertreten.]
 + #hl[Die:Der] Vorsitzende vertritt die Studierendenschaft nach innen und nach #removed[außen Der] #hl[außen.]
 + #hl[Die:Der] Vorsitzende ist für die Vor- und Nachbereitung sowie die ordnungsgemäße Durchführung der Sitzungen des #removed[AStAs] #hl[AStA] sowie des #removed[StuPas] #hl[STUPA] verantwortlich.
 + #removed[Der] #hl[Die:Der] Vorsitzende wird #removed[vom Finanzreferenten] #hl[von der:dem Finanzreferent:in] des AStA vertreten, wenn #removed[er] #hl[sie:er] verhindert ist oder sich zeitweilig ablösen lassen muss. Entsprechend vorherigem Satz vertritt #removed[der Schriftführer den Finanzreferenten. Der] #hl[die:der Schriftführer:in die:den Finanzreferent:in.]
@@ -66,10 +66,10 @@ Das Studierendenparlament setzt sich aus insgesamt #removed[19] #hl[bis zu 21] s
 
 + #hl[Mitglieder der Arbeitskreisleitung müssen Mitglieder der Studierendenschaft im Sinne von @allg-rechtsstellung sein.]
 
-+ Als #removed[ständiger Ausschuss wird] #hl[ständige Arbeitskreise werden eingerichtet]
++ Als #removed[ständiger Ausschuss wird der Haushaltsausschuss eingerichtet.] #hl[ständige Arbeitskreise werden eingerichtet]
   #[
     #set enum(numbering: "1.", full: false)
-    + der #removed[Haushaltsausschuss eingerichtet.] #hl[Arbeitskreis Finanzen, dessen Vorsitz kraft ihres:seines Amtes die:der Finanzreferent:in übernimmt. Aufgabe ist es, die Finanzen der Studierendenschaft, sowie deren technische Grundlagen zu verwalten.]
+    + #hl[der Arbeitskreis Finanzen, dessen Vorsitz kraft ihres:seines Amtes die:der Finanzreferent:in übernimmt. Aufgabe ist es, die Finanzen der Studierendenschaft, sowie deren technische Grundlagen zu verwalten.]
     + #hl[der Arbeitskreis Landesweite Zusammenarbeit, dessen Vorsitz kraft ihres:seines Amtes die:der Vorsitzende der Studierendenschaft übernimmt. Aufgabe ist die Zusammenarbeit mit anderen Studierendenschaften gemäß #link("https://www.landesrecht-bw.de/bsbw/document/jlr-HSchulGBWV26P65")[LHG §65 Abs. (2)].]
   ]
 
@@ -92,7 +92,7 @@ Das Studierendenparlament setzt sich aus insgesamt #removed[19] #hl[bis zu 21] s
     + #removed[einem Schriftführer, der] #hl[einer:einem Schriftführer:in, die:der] zugleich 2. #removed[Stellvertreter des] #hl[Stellvertreter:in der:des] Vorsitzenden ist,
     + zwei #removed[weiteren Referenten (sog. Referatsleiter).] #hl[Beisitzenden.]
   ]
-  Die nähere Aufgaben- und Zuständigkeitsverteilung kann der #removed[ASTA] #hl[AStA] nach Amtsantritt in seiner Geschäftsordnung #removed[(GO)] regeln, sonst gilt die #removed[allg. GO] #hl[allgemeine Geschäftsordnung] des STUPA entsprechend. #removed[(3) Referatsleiter können sich in ihrer Tätigkeit von freiwilligen Studierenden unterstützen lassen und dazu auch einen Arbeitskreis berufen. Sie berichten dem Studierendenparlament darüber.]
+  Die nähere Aufgaben- und Zuständigkeitsverteilung kann der #removed[ASTA] #hl[AStA] nach Amtsantritt in seiner Geschäftsordnung #removed[(GO)] regeln, sonst gilt die #removed[allg. GO des STUPA entsprechend. (3) Referatsleiter können sich in ihrer Tätigkeit von freiwilligen Studierenden unterstützen lassen und dazu auch einen Arbeitskreis berufen. Sie berichten dem Studierendenparlament darüber.] #hl[allgemeine Geschäftsordnung des STUPA entsprechend.]
 
 === Aufgaben des AStA <asta-aufgaben>
 + Der AStA führt die laufenden Geschäfte der Studierendenschaft.
