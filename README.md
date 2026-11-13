@@ -2,12 +2,14 @@
 
 [![Build](https://github.com/frederikbeimgraben/OSatzungSTUPA/actions/workflows/continuous-release.yml/badge.svg)](https://github.com/frederikbeimgraben/OSatzungSTUPA/actions/workflows/continuous-release.yml)
 
-The Organisationssatzung (organization statute) of the student body of
-Reutlingen University, written in Typst. The layout comes from the
+The Organisationssatzung (organization statute) and the QSM-Ordnung of the
+student body of Reutlingen University, written in Typst. The QSM-Ordnung
+rules how the student body makes its proposal for the
+Qualitätssicherungsmittel. The layout comes from the
 [hsrtreport-typst](https://github.com/frederikbeimgraben/hsrtreport-typst)
 template.
 
-The latest PDF is in the release
+The latest PDFs are in the release
 [Latest Development Build](../../releases/tag/latest).
 
 ## Build
@@ -16,7 +18,7 @@ You need Typst 0.15 or later and GNU make.
 
 ```sh
 git clone --recurse-submodules <repository>
-make            # write build/Organisationssatzung.pdf
+make            # write build/Organisationssatzung.pdf and build/QSM-Ordnung.pdf
 make watch      # compile again after each change
 make clean      # remove build/
 ```
@@ -28,10 +30,12 @@ The fonts come with the template, so you do not install fonts.
 
 | Path | Content |
 | --- | --- |
-| `src/main.typ` | Main file |
+| `src/main.typ` | Main file of the Organisationssatzung |
 | `src/metadata.typ` | Dates, title page data and title page text |
-| `src/satzung.typ` | Layout of the statute: headings, § numbers, running head, table of contents |
+| `src/satzung.typ` | Layout of both documents: headings, § numbers, running head, table of contents |
 | `src/chapters/` | One file for each Abschnitt |
+| `src/qsmo.typ` | Main file of the QSM-Ordnung |
+| `src/qsmo/` | Metadata and one file for each Abschnitt of the QSM-Ordnung |
 | `src/hsrtreport/` | The template (git submodule) |
 
 ## Write the statute

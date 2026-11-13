@@ -43,11 +43,13 @@ jobs:
           echo "COMMIT_MSG=$(git log -1 --pretty=%B | head -1)" >> "$GITHUB_OUTPUT"
           echo "AUTHOR=$(git log -1 --pretty=%an)" >> "$GITHUB_OUTPUT"
 
-      - name: Build document
+      - name: Build documents
         run: make compile
 
-      - name: Name the PDF for the release
-        run: cp build/Organisationssatzung.pdf Report_Latest.pdf
+      - name: Name the PDFs for the release
+        run: |
+          cp build/Organisationssatzung.pdf Report_Latest.pdf
+          cp build/QSM-Ordnung.pdf QSM-Ordnung_Latest.pdf
 
       - name: Generate release notes
         run: |
@@ -69,14 +71,17 @@ jobs:
           - **Template:** [hsrtreport-typst](https://github.com/frederikbeimgraben/hsrtreport-typst)
 
           ### 📦 Download Files
-          - `Report_Latest.pdf` - the latest compiled document
+          - `Report_Latest.pdf` - the latest Organisationssatzung
+          - `QSM-Ordnung_Latest.pdf` - the latest QSM-Ordnung
           EOF
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v5
         with:
           name: build-${{ steps.build_info.outputs.SHORT_SHA }}
-          path: Report_Latest.pdf
+          path: |
+            Report_Latest.pdf
+            QSM-Ordnung_Latest.pdf
           retention-days: 30
           if-no-files-found: error
 
@@ -87,7 +92,9 @@ jobs:
           tag_name: latest
           name: "🔄 Latest Development Build"
           body_path: release_notes.md
-          files: Report_Latest.pdf
+          files: |
+            Report_Latest.pdf
+            QSM-Ordnung_Latest.pdf
           make_latest: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
