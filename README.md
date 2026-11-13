@@ -95,14 +95,14 @@ Jede Datei `metadata.typ` enthält zwei Daten:
 | `last-changed` | `beschluss` | Beschluss des STUPA |
 | `accepted-university` | `genehmigung` | Genehmigung durch das Präsidium |
 
+Die Arbeitskreisordnung und die Geschäftsordnung sind keine Satzungen. Das
+Präsidium genehmigt sie nicht. Ihre Dateien `metadata.typ` enthalten deshalb
+nur `last-changed`.
+
 Solange der Wert ein Platzhalter mit `XX` ist, hat das PDF an jeder Stelle ein
 Formularfeld. Alle Felder mit dem gleichen Schlüssel haben den gleichen
 Inhalt. Fülle im PDF-Programm ein Feld aus. Das Programm füllt alle anderen
 Stellen.
-
-Die Geschäftsordnung ist keine Satzung. Das Präsidium genehmigt sie nicht.
-Sie hat deshalb nur das Datum `last-changed` und eine Unterschriftenseite ohne
-den Block für die Genehmigung.
 
 Die Schlüssel sind in allen Satzungen gleich. Ein Skript kann damit alle PDFs
 in einem Schritt füllen.

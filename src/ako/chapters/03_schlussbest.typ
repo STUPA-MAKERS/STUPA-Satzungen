@@ -9,10 +9,10 @@
 + Gehören die Aufgaben eines solchen Arbeitskreises zu einem ständigen Arbeitskreis, kann das STUPA ihn als Projektgruppe nach @ako-projektgruppen in diesen überführen.
 
 === Änderung der Ordnung <ako-aenderung>
-Für den Beschluss und die Änderung dieser Ordnung gilt § 9 Abs. 6 OrgS. Die Änderung bedarf der Genehmigung des Präsidiums der Hochschule.
+Für den Beschluss und die Änderung dieser Ordnung gilt § 9 Abs. 6 OrgS entsprechend.
 
 === Inkrafttreten <ako-inkrafttreten>
-Diese Ordnung tritt nach der Genehmigung durch das Präsidium der Hochschule am Tag nach ihrer Bekanntmachung in Kraft, frühestens jedoch zusammen mit der Neufassung der Organisationssatzung, auf der sie beruht.
+Diese Ordnung tritt am Tag nach ihrer Bekanntgabe nach § 9 Abs. 2 OrgS in Kraft, frühestens jedoch zusammen mit der Neufassung der Organisationssatzung, auf der sie beruht.
 
 === Salvatorische Klausel <ako-salvatorische-klausel>
 Sollten einzelne Bestimmungen dieser Ordnung unwirksam oder undurchführbar sein oder nach Inkrafttreten unwirksam oder undurchführbar werden, bleibt davon die Wirksamkeit der Ordnung im Übrigen unberührt.
