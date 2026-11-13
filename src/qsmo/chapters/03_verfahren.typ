@@ -22,8 +22,7 @@
   + den Zeitraum der Maßnahme,
   + die Einrichtung der Hochschule, die die Mittel bewirtschaftet (bewirtschaftende Einrichtung),
   + eine Ansprechperson in der bewirtschaftenden Einrichtung,
-  + die Angabe, ob und in welcher Höhe sich die Hochschule oder Dritte an den Kosten beteiligen,
-  + die Zusage der bewirtschaftenden Einrichtung nach @qsm-durchfuehrung Absatz 1.
+  + die Angabe, ob und in welcher Höhe sich die Hochschule oder Dritte an den Kosten beteiligen.
 + Ist ein Antrag unvollständig, fordert das Finanzreferat die fehlenden Angaben mit einer angemessenen Frist nach. Gehen sie nicht rechtzeitig ein, wird der Antrag nicht behandelt.
 
 === Fristen <qsm-fristen>
