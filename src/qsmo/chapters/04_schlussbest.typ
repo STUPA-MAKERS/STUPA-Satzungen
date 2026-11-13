@@ -9,10 +9,10 @@
 + Mit QSM finanzierte Anschaffungen und Angebote sollen als solche gekennzeichnet werden.
 
 === Änderung der Ordnung <qsm-aenderung>
-Diese Ordnung kann mit der Mehrheit der Mitglieder des STUPA geändert werden.
+Diese Ordnung kann mit der Mehrheit der Mitglieder des STUPA geändert werden. Die Änderung bedarf der Genehmigung des Präsidiums der Hochschule.
 
 === Inkrafttreten <qsm-inkrafttreten>
-+ Diese Ordnung tritt am Tag nach ihrer Bekanntmachung in Kraft.
++ Diese Ordnung tritt nach der Genehmigung durch das Präsidium der Hochschule am Tag nach ihrer Bekanntmachung in Kraft.
 + Sie gilt erstmals für den Vorschlag für das Haushaltsjahr 2027.
 
 === Salvatorische Klausel <qsm-salvatorische-klausel>

@@ -5,8 +5,9 @@
 #let last-changed = "XX.XX.20XX"
 #let last-changed-short = "Entwurf vom 13.11.2026"
 
-// The Ordnung is an internal rule of the Studierendenschaft. It needs no
-// approval by the Präsidium.
+// Date of the approval by the Präsidium. Keep the placeholder until the
+// Präsidium approves this version.
+#let accepted-university = "XX.XX.20XX"
 
 #let title = [QSM-Ordnung der \ Studierendenschaft der Hochschule Reutlingen (QSMO)]
 #let short-title = [QSM-Ordnung der Studierendenschaft]
@@ -17,6 +18,7 @@
   stroke: none,
   inset: (x: 0pt, y: 0.7pt),
   [*Vom STUPA beschlossen am*], [#last-changed],
+  [*Vom Präsidium genehmigt am*], [#accepted-university],
 )
 
 // The text of the title page. The template prints its first heading, see
@@ -39,7 +41,10 @@
     des Qualitätssicherungsgesetzes (QualSiG) vom 5.~Mai 2015 (GBl. S. 313),
     zuletzt geändert durch Artikel 4 des Gesetzes vom 11. Dezember 2025
     (GBl. 2025 Nr. 139), hat das Studierendenparlament der Hochschule
-    Reutlingen am #last-changed die nachfolgende Ordnung als interne Ordnung der Studierendenschaft beschlossen.
+    Reutlingen am #last-changed die nachfolgende Ordnung beschlossen.
+
+    Die Hochschule Reutlingen hat die Ordnung durch Beschluss des Präsidiums
+    am #accepted-university genehmigt.
   ]
 
   title-heading[Zweck der Ordnung]
