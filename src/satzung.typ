@@ -210,7 +210,7 @@
   pagebreak(weak: true)
   heading(level: 1, numbering: none, neu[Ausfertigung und Genehmigung])
   unterschrift(
-    [*Ausgefertigt* aufgrund des Beschlusses des Studierendenparlamentes vom #beschlossen-am.],
+    [*Ausgefertigt* nach Beschluss des Studierendenparlamentes vom #beschlossen-am.],
     [Die:Der Vorsitzende der Studierendenschaft der Hochschule Reutlingen],
   )
   unterschrift(
