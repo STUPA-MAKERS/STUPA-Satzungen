@@ -2,13 +2,14 @@
 
 [![Build](https://github.com/STUPA-MAKERS/STUPA-Satzungen/actions/workflows/continuous-release.yml/badge.svg)](https://github.com/STUPA-MAKERS/STUPA-Satzungen/actions/workflows/continuous-release.yml)
 
-Die Satzungen der Studierendenschaft der Hochschule Reutlingen in Typst:
+Die Satzungen und Ordnungen der Studierendenschaft der Hochschule Reutlingen in Typst:
 
 - Organisationssatzung
 - Finanzordnung
 - Beitragssatzung
 - QSM-Ordnung
 - Arbeitskreisordnung
+- Geschäftsordnung des Studierendenparlamentes
 
 Die aktuellen PDFs stehen im Release
 [Aktueller Stand](../../releases/tag/latest).
@@ -40,6 +41,7 @@ Wenn das Submodul fehlt, lädt `make` es.
 | `src/bs.typ`, `src/bs/` | Beitragssatzung |
 | `src/qsmo.typ`, `src/qsmo/` | QSM-Ordnung |
 | `src/ako.typ`, `src/ako/` | Arbeitskreisordnung |
+| `src/go.typ`, `src/go/` | Geschäftsordnung des Studierendenparlamentes |
 | `src/satzung.typ` | Layout für alle Satzungen |
 | `src/hsrtreport/` | Vorlage (Submodul) |
 | `baseline/` | Vorfassung jeder Satzung als Text |
@@ -93,8 +95,9 @@ Jede Datei `metadata.typ` enthält zwei Daten:
 | `last-changed` | `beschluss` | Beschluss des STUPA |
 | `accepted-university` | `genehmigung` | Genehmigung durch das Präsidium |
 
-Die Arbeitskreisordnung ist keine Satzung. Das Präsidium genehmigt sie nicht.
-Ihre Datei `metadata.typ` enthält deshalb nur `last-changed`.
+Die Arbeitskreisordnung und die Geschäftsordnung sind keine Satzungen. Das
+Präsidium genehmigt sie nicht. Ihre Dateien `metadata.typ` enthalten deshalb
+nur `last-changed`.
 
 Solange der Wert ein Platzhalter mit `XX` ist, hat das PDF an jeder Stelle ein
 Formularfeld. Alle Felder mit dem gleichen Schlüssel haben den gleichen

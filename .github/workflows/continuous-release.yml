@@ -54,7 +54,7 @@ jobs:
 
       - name: PDFs für das Release benennen
         run: |
-          for name in Organisationssatzung QSM-Ordnung Finanzordnung Beitragssatzung Arbeitskreisordnung; do
+          for name in Organisationssatzung QSM-Ordnung Finanzordnung Beitragssatzung Arbeitskreisordnung Geschaeftsordnung; do
             cp "build/$name.pdf" "${name}_Latest.pdf"
             cp "build/${name}_Aenderungen.pdf" "${name}_Aenderungen_Latest.pdf"
           done
@@ -71,6 +71,7 @@ jobs:
           | `Beitragssatzung_Latest.pdf` | Beitragssatzung |
           | `QSM-Ordnung_Latest.pdf` | QSM-Ordnung |
           | `Arbeitskreisordnung_Latest.pdf` | Arbeitskreisordnung |
+          | `Geschaeftsordnung_Latest.pdf` | Geschäftsordnung des STUPA |
 
           Die Dateien `<Name>_Aenderungen_Latest.pdf` zeigen die Änderungen
           zur Vorfassung. Neuer Text ist gelb. Gestrichener Text ist gelb und
@@ -92,6 +93,8 @@ jobs:
             Beitragssatzung_Aenderungen_Latest.pdf
             Arbeitskreisordnung_Latest.pdf
             Arbeitskreisordnung_Aenderungen_Latest.pdf
+            Geschaeftsordnung_Latest.pdf
+            Geschaeftsordnung_Aenderungen_Latest.pdf
           retention-days: 30
           if-no-files-found: error
 
@@ -123,6 +126,8 @@ jobs:
             Beitragssatzung_Aenderungen_Latest.pdf
             Arbeitskreisordnung_Latest.pdf
             Arbeitskreisordnung_Aenderungen_Latest.pdf
+            Geschaeftsordnung_Latest.pdf
+            Geschaeftsordnung_Aenderungen_Latest.pdf
           make_latest: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
