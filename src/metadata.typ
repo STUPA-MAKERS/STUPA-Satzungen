@@ -1,19 +1,21 @@
-// Document metadata: dates, title page fields and the title page text.
+// Daten der Organisationssatzung: Datumsangaben, Felder und Text der
+// Titelseite.
 
-#import "satzung.typ": hl
+#import "satzung.typ": hl, datum
 
-// Date of the STUPA decision on this version.
-#let last-changed = "5. November 2026"
-#let last-changed-short = "5.11.2026"
+// Datum des STUPA-Beschlusses zu dieser Fassung.
+#let last-changed = datum("beschluss", "5. November 2026")
+#let last-changed-short = datum("beschluss", "5.11.2026", kurz: true)
 
-// Date of the approval by the Präsidium. Keep the placeholder until the
-// Präsidium approves this version.
-#let accepted-university = "XX.XX.20XX"
+// Datum der Genehmigung durch das Präsidium. Lass den Platzhalter stehen,
+// bis das Präsidium diese Fassung genehmigt.
+#let accepted-university = datum("genehmigung", "XX.XX.20XX")
 
 #let title = [Organisationssatzung der \ Studierendenschaft der Hochschule Reutlingen]
 
-// The data table of the title page. The labels are too wide for the label
-// column of the template table, so the title page text carries its own table.
+// Datentabelle der Titelseite. Die Bezeichnungen sind zu breit für die
+// Tabelle der Vorlage. Deshalb enthält der Text der Titelseite eine eigene
+// Tabelle.
 #let data = table(
   columns: (auto, 1fr),
   column-gutter: 12pt,
@@ -25,11 +27,11 @@
   [*Vom Präsidium genehmigt am*], [#accepted-university],
 )
 
-// The text of the title page. The template prints its first heading, see
+// Text der Titelseite. Die Vorlage setzt die erste Überschrift, siehe
 // main.typ.
 #let first-heading = "Rechtsgrundlage"
 #let front-text = {
-  // The title page of the template sets no space between paragraphs.
+  // Die Titelseite der Vorlage setzt keinen Abstand zwischen Absätzen.
   set par(spacing: 0.8em)
   let title-heading(body) = block(
     above: 2em,

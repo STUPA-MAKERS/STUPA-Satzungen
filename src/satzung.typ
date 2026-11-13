@@ -1,16 +1,16 @@
-// Layout rules of the statute on top of the HSRTReport template.
+// Layout der Satzungen. Es baut auf der Vorlage HSRTReport auf.
 //
-// Structure:
-//   =   Abschnitt        numbered "I.", "II.", ... with a rule below
-//   ==  Unterabschnitt   prints "Erster Unterabschnitt: <title>", the table
-//                        of contents shows only the title
-//   === Paragraph        numbered "§ 1", "§ 2", ... through the whole statute
+// Gliederung:
+//   =   Abschnitt        Nummer "I.", "II.", ... mit einer Linie darunter
+//   ==  Unterabschnitt   zeigt "Erster Unterabschnitt: <Titel>". Das
+//                        Inhaltsverzeichnis zeigt nur den Titel.
+//   === Paragraph        Nummer "§ 1", "§ 2", ... durch die ganze Satzung
 
 #import "hsrtreport/src/lib.typ": *
 
-// Highlights the text that changed from the previous version. The clean
-// version is the default, `typst compile --input changes=true` shows the
-// changes. `tools/aenderungen.py` sets the marks in the chapters.
+// Markiert Text, der gegenüber der Vorfassung neu ist. Der Standard ist die
+// saubere Fassung. `typst compile --input changes=true` zeigt die Änderungen.
+// `tools/aenderungen.py` setzt die Markierungen in den Kapiteln.
 #let show-changes = sys.inputs.at("changes", default: "false") == "true"
 #let hl(body) = if show-changes {
   highlight(fill: hsrt-yellow.lighten(40%), body)
@@ -18,10 +18,42 @@
   body
 }
 
-// Marks text that this version deletes. The version with changes shows it
-// struck through, the clean version leaves it out.
+// Enthält Text, den diese Fassung streicht. Die Änderungsfassung zeigt ihn
+// durchgestrichen. Die saubere Fassung lässt ihn weg.
 #let removed(body) = if show-changes {
   highlight(fill: hsrt-yellow.lighten(40%), strike(body))
+}
+
+// Ein Datum für Beschluss oder Genehmigung. Solange `wert` ein Platzhalter mit
+// "XX" ist, steht an der Stelle ein Formularfeld. Alle Felder mit dem gleichen
+// `key` haben im PDF den gleichen Inhalt. `tools/felder.py` schreibt die
+// Felder in das PDF. Die Stellen dafür liest `typst eval` über das Label
+// `<datumsfeld>`. `kurz: true` macht ein schmales Feld für die Fußzeile.
+#let datum(key, wert, kurz: false) = if "XX" not in wert {
+  wert
+} else {
+  context {
+    let breite = measure(if kurz [30.09.2026] else [30. September 2026]).width
+    let groesse = text.size
+    box(
+      width: breite,
+      height: 1.3 * groesse,
+      baseline: 0.35 * groesse,
+      fill: luma(235),
+      context {
+        let stelle = here().position()
+        [#metadata((
+          key: key,
+          page: stelle.page,
+          x: stelle.x.pt(),
+          y: stelle.y.pt(),
+          width: breite.pt(),
+          height: 1.3 * groesse.pt(),
+          size: groesse.pt(),
+        )) <datumsfeld>]
+      },
+    )
+  }
 }
 
 #let _ordinals = ("Erster", "Zweiter", "Dritter", "Vierter", "Fünfter", "Sechster")
@@ -37,12 +69,13 @@
   }
 }
 
-// The § count before a location.
+// Die Zahl der Paragraphen vor einer Stelle.
 #let _paragraphs-before(location) = query(
   heading.where(level: 3).before(location, inclusive: false),
 ).len()
 
-// The last heading of a level that starts on or before the current page.
+// Die letzte Überschrift einer Ebene, die auf oder vor der aktuellen Seite
+// beginnt.
 #let _open-heading(level) = {
   let page-number = here().page()
   let found = query(heading.where(level: level))
@@ -50,12 +83,12 @@
   if found.len() > 0 { found.last() }
 }
 
-// The running head: the title on the left, the open Abschnitt and
-// Unterabschnitt on the right.
+// Kopfzeile: links der Titel, rechts der aktuelle Abschnitt und
+// Unterabschnitt.
 #let _header(title) = context {
   let chapter = _open-heading(1)
   let section = _open-heading(2)
-  // An Unterabschnitt counts only inside the Abschnitt that is open.
+  // Ein Unterabschnitt zählt nur im aktuellen Abschnitt.
   if section != none and chapter != none {
     let s = section.location().position()
     let c = chapter.location().position()
@@ -75,8 +108,8 @@
   ))
 }
 
-// The table of contents. It has the style of the template, but shows no
-// prefix for an Unterabschnitt and keeps it at the indent of a paragraph.
+// Inhaltsverzeichnis im Stil der Vorlage. Ein Unterabschnitt hat kein Präfix
+// und steht auf dem Einzug eines Paragraphen.
 #let satzung-toc() = {
   heading(level: 1, numbering: none, outlined: false)[Inhaltsverzeichnis]
   v(18.94pt)
@@ -99,9 +132,9 @@
 #let satzung(title: none, footer-text: none, body) = {
   set heading(numbering: _numbering, supplement: none)
 
-  // The § count runs through the whole statute. An Abschnitt or an
-  // Unterabschnitt resets the deeper heading levels, so the count is put
-  // back after each of them.
+  // Die Paragraphen zählen durch die ganze Satzung. Ein Abschnitt oder ein
+  // Unterabschnitt setzt die tieferen Ebenen zurück. Deshalb stellt die
+  // Regel den Zähler danach wieder her.
   show heading.where(level: 1): it => {
     it
     block(above: -0.6em, below: 0pt, sticky: true, line(length: 100%, stroke: 0.5mm))
@@ -118,7 +151,7 @@
     }
   }
 
-  // Absätze are numbered "(1)", the items below them "a)".
+  // Absätze haben die Nummer "(1)", die Punkte darunter "a)".
   set enum(full: true, numbering: (..n) => {
     let n = n.pos()
     if n.len() == 1 { numbering("(1)", n.at(0)) } else { numbering("a)", n.last()) }
@@ -133,7 +166,7 @@
     ),
   )
 
-  // The title page is page 1, as in the LaTeX version.
+  // Die Titelseite ist Seite 1, wie in der LaTeX-Fassung.
   counter(page).update(2)
   satzung-toc()
   pagebreak(weak: true)
@@ -141,7 +174,40 @@
   body
 }
 
-// A list with the items "a)", "b)", ...
+// Liste mit den Punkten "a)", "b)", ...
 #let alpha-list(..items) = enum(numbering: "a)", ..items)
-// A list with the items "1.", "2.", ...
+// Liste mit den Punkten "1.", "2.", ...
 #let num-list(..items) = enum(numbering: "1.", ..items)
+
+// Unterschriftenseite für alle Satzungen. Sie gehört nicht zum nummerierten
+// Text. Sie hat zwei Blöcke: Ausfertigung durch den Vorsitz und Genehmigung
+// durch das Präsidium. `genehmigt-am` ist das Datum der Genehmigung.
+// `markiert: true` zeigt die Seite in der Änderungsfassung als neu.
+#let unterschriftenseite(genehmigt-am, markiert: false) = {
+  let neu(body) = if markiert { hl(body) } else { body }
+  // Ein Block: die Bedeutung der Unterschrift, die Zeilen für Ort, Datum und
+  // Unterschrift und die Funktion der Person.
+  let unterschrift(bedeutung, funktion) = block(breakable: false, above: 2.5cm, {
+    neu(bedeutung)
+    v(2.5cm)
+    grid(
+      columns: (5cm, 1fr),
+      column-gutter: 1.5cm,
+      row-gutter: 0.4em,
+      line(length: 100%, stroke: 0.5pt), line(length: 100%, stroke: 0.5pt),
+      text(size: sizes.small)[Ort, Datum], text(size: sizes.small)[Unterschrift],
+      [], strong(neu(funktion)),
+    )
+  })
+
+  pagebreak(weak: true)
+  text(font: heading-font, size: sizes.LARGE, weight: "bold", neu[Ausfertigung und Genehmigung])
+  unterschrift(
+    [*Ausgefertigt.*],
+    [Die:Der Vorsitzende der Studierendenschaft der Hochschule Reutlingen],
+  )
+  unterschrift(
+    [*Genehmigt* durch Beschluss des Präsidiums vom #genehmigt-am.],
+    [Die:Der Kanzler:in der Hochschule Reutlingen],
+  )
+}

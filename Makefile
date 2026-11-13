@@ -1,21 +1,27 @@
-# Build the statutes of the Studierendenschaft with Typst.
+# Baut die Satzungen der Studierendenschaft mit Typst.
 #
-# Every statute is built twice: a clean version and a version that shows the
-# changes from the previous version (`<Name>_Aenderungen.pdf`).
+# Jede Satzung entsteht zweimal: als saubere Fassung und als Fassung mit den
+# Änderungen zur Vorfassung (`<Name>_Aenderungen.pdf`). `tools/felder.py`
+# schreibt danach die Formularfelder für die Datumsangaben in jedes PDF.
 
 TYPST       ?= typst
 PYTHON      ?= python3
+SHELL        = bash
+.SHELLFLAGS  = -e -o pipefail -c
 ROOT         = src
 FONTS        = $(ROOT)/hsrtreport/src/assets/fonts
 BUILD_DIR    = build
 TYPST_FLAGS  = --root $(ROOT) --font-path $(FONTS)
 
-# <source file under src/>:<name of the PDF>
+# Gibt die Stellen der Datumsfelder als JSON aus.
+FIELDS       = query(<datumsfeld>).map(it => it.value)
+
+# <Quelldatei unter src/>:<Name des PDFs>
 DOCUMENTS    = main:Organisationssatzung fo:Finanzordnung bs:Beitragssatzung qsmo:QSM-Ordnung
 
 .DEFAULT_GOAL := compile
 
-# The template is a git submodule. Fetch it if it is missing.
+# Die Vorlage ist ein Submodul. Lade sie, wenn sie fehlt.
 $(FONTS):
 	git submodule update --init --recursive
 
@@ -26,21 +32,26 @@ compile: $(FONTS)
 		source=$(ROOT)/$${document%%:*}.typ; pdf=$(BUILD_DIR)/$${document##*:}; \
 		echo "$$source -> $$pdf.pdf, $${pdf}_Aenderungen.pdf"; \
 		$(TYPST) compile $(TYPST_FLAGS) $$source $$pdf.pdf; \
+		$(TYPST) eval $(TYPST_FLAGS) '$(FIELDS)' --in $$source \
+			| $(PYTHON) tools/felder.py $$pdf.pdf; \
 		$(TYPST) compile $(TYPST_FLAGS) --input changes=true $$source $${pdf}_Aenderungen.pdf; \
+		$(TYPST) eval $(TYPST_FLAGS) --input changes=true '$(FIELDS)' --in $$source \
+			| $(PYTHON) tools/felder.py $${pdf}_Aenderungen.pdf; \
 	done
 
-# Live preview of the Organisationssatzung with the changes shown.
+# Baut die Organisationssatzung mit Änderungen nach jeder Änderung neu.
 .PHONY: watch
 watch: $(FONTS)
 	@mkdir -p $(BUILD_DIR)
 	$(TYPST) watch $(TYPST_FLAGS) --input changes=true $(ROOT)/main.typ $(BUILD_DIR)/Organisationssatzung_Aenderungen.pdf
 
-# Set the change marks again from the previous versions in baseline/.
+# Setzt die Änderungsmarkierungen neu. Grundlage sind die Vorfassungen in
+# baseline/.
 .PHONY: marks
 marks:
 	$(PYTHON) tools/aenderungen.py
 
-# Fail if the change marks do not match the previous versions.
+# Bricht ab, wenn die Änderungsmarkierungen nicht aktuell sind.
 .PHONY: check
 check:
 	$(PYTHON) tools/aenderungen.py --check

@@ -1,3 +1,3 @@
-// Shared imports of the QSM-Ordnung.
+// Gemeinsame Importe der QSM-Ordnung.
 
 #import "../satzung.typ": *

@@ -1,17 +1,18 @@
-// Document metadata of the Beitragssatzung: dates, title page fields and the
-// title page text.
+// Daten der Beitragssatzung: Datumsangaben, Felder und Text der Titelseite.
 
-// Date of the STUPA decision on this version. The text is the one of the
-// version of 3 December 2018; the STUPA decides on it again and the
-// Präsidium approves it again together with the other statutes.
-#let last-changed = "XX.XX.20XX"
-#let last-changed-short = "XX.XX.20XX"
+#import "../satzung.typ": datum
 
-// Date of the approval by the Präsidium. Keep the placeholder until the
-// Präsidium approves this version.
-#let accepted-university = "XX.XX.20XX"
+// Datum des STUPA-Beschlusses zu dieser Fassung. Der Text ist der Text der
+// Fassung vom 3. Dezember 2018. Das STUPA beschließt ihn neu. Das Präsidium
+// genehmigt ihn neu, zusammen mit den anderen Satzungen.
+#let last-changed = datum("beschluss", "XX.XX.20XX")
+#let last-changed-short = datum("beschluss", "XX.XX.20XX", kurz: true)
 
-// Date of the version of the Organisationssatzung that this Satzung cites.
+// Datum der Genehmigung durch das Präsidium. Lass den Platzhalter stehen,
+// bis das Präsidium diese Fassung genehmigt.
+#let accepted-university = datum("genehmigung", "XX.XX.20XX")
+
+// Datum der Fassung der Organisationssatzung, die diese Satzung zitiert.
 #let orgs-date = "XX.XX.20XX"
 
 #let title = [Beitragssatzung der \ Studierendenschaft der Hochschule Reutlingen]
@@ -27,11 +28,11 @@
   [*Vom Präsidium genehmigt am*], [#accepted-university],
 )
 
-// The text of the title page. The template prints its first heading, see
+// Text der Titelseite. Die Vorlage setzt die erste Überschrift, siehe
 // bs.typ.
 #let first-heading = "Rechtsgrundlage"
 #let front-text = {
-  // The title page of the template sets no space between paragraphs.
+  // Die Titelseite der Vorlage setzt keinen Abstand zwischen Absätzen.
   set par(spacing: 0.8em)
   let title-heading(body) = block(
     above: 2em,

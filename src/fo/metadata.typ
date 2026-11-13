@@ -1,17 +1,16 @@
-// Document metadata of the Finanzordnung: dates, title page fields and the
-// title page text.
+// Daten der Finanzordnung: Datumsangaben, Felder und Text der Titelseite.
 
-#import "common.typ": hl, removed
+#import "common.typ": hl, removed, datum
 
-// Date of the STUPA decision on this version.
-#let last-changed = "XX. Monat 20XX"
-#let last-changed-short = "XX. Monat 20XX"
+// Datum des STUPA-Beschlusses zu dieser Fassung.
+#let last-changed = datum("beschluss", "XX. Monat 20XX")
+#let last-changed-short = datum("beschluss", "XX. Monat 20XX", kurz: true)
 
-// Date of the approval by the Präsidium. Keep the placeholder until the
-// Präsidium approves this version.
-#let accepted-university = "XX. Monat 20XX"
+// Datum der Genehmigung durch das Präsidium. Lass den Platzhalter stehen,
+// bis das Präsidium diese Fassung genehmigt.
+#let accepted-university = datum("genehmigung", "XX. Monat 20XX")
 
-// Date of the version of the Organisationssatzung that this Ordnung cites.
+// Datum der Fassung der Organisationssatzung, die diese Ordnung zitiert.
 #let orgs-date = "XX. Monat 20XX"
 
 #let title = [Finanzordnung der \ Studierendenschaft der Hochschule Reutlingen]
@@ -27,11 +26,11 @@
   [*Vom Präsidium genehmigt am*], [#accepted-university],
 )
 
-// The text of the title page. The template prints its first heading, see
+// Text der Titelseite. Die Vorlage setzt die erste Überschrift, siehe
 // fo.typ.
 #let first-heading = "Rechtsgrundlage"
 #let front-text = {
-  // The title page of the template sets no space between paragraphs.
+  // Die Titelseite der Vorlage setzt keinen Abstand zwischen Absätzen.
   set par(spacing: 0.8em)
   let title-heading(body) = block(
     above: 2em,

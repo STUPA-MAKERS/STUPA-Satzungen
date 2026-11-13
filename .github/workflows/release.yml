@@ -1,4 +1,4 @@
-name: Create Release
+name: Release erstellen
 
 on:
   push:
@@ -8,11 +8,11 @@ on:
   workflow_dispatch:
     inputs:
       tag_name:
-        description: "Tag name for the release (e.g. v1.0.0)"
+        description: "Tag des Release, zum Beispiel v1.0.0"
         required: true
         type: string
       is_prerelease:
-        description: "Mark as pre-release"
+        description: "Als Vorabversion markieren"
         required: false
         type: boolean
         default: false
@@ -28,18 +28,18 @@ jobs:
       contents: write
 
     steps:
-      - name: Checkout repository
+      - name: Repository auschecken
         uses: actions/checkout@v5
         with:
           fetch-depth: 0
           submodules: recursive
 
-      - name: Install Typst
+      - name: Typst installieren
         uses: ./.github/actions/install-typst
         with:
           version: ${{ env.TYPST_VERSION }}
 
-      - name: Determine version
+      - name: Tag bestimmen
         id: version
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
@@ -49,20 +49,23 @@ jobs:
           fi
           echo "TAG=$TAG" >> "$GITHUB_OUTPUT"
 
-      - name: Check the change marks
+      - name: pypdf installieren
+        run: pip install pypdf
+
+      - name: Änderungsmarkierungen prüfen
         run: make check
 
-      - name: Build documents
+      - name: PDFs bauen
         run: make compile
 
-      - name: Name the PDFs after the tag
+      - name: PDFs nach dem Tag benennen
         run: |
           for name in Organisationssatzung QSM-Ordnung Finanzordnung Beitragssatzung; do
             cp "build/$name.pdf" "${name}_${{ steps.version.outputs.TAG }}.pdf"
             cp "build/${name}_Aenderungen.pdf" "${name}_Aenderungen_${{ steps.version.outputs.TAG }}.pdf"
           done
 
-      - name: Create the release
+      - name: Release erstellen
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.version.outputs.TAG }}

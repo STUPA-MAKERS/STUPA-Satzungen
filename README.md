@@ -1,96 +1,118 @@
-# Organisationssatzung STUPA
+# STUPA-Satzungen
 
 [![Build](https://github.com/STUPA-MAKERS/STUPA-Satzungen/actions/workflows/continuous-release.yml/badge.svg)](https://github.com/STUPA-MAKERS/STUPA-Satzungen/actions/workflows/continuous-release.yml)
 
-The statutes of the student body of Reutlingen University, written in Typst:
+Die Satzungen der Studierendenschaft der Hochschule Reutlingen in Typst:
 
-- the Organisationssatzung (organization statute),
-- the Finanzordnung (budget and accounting rules),
-- the Beitragssatzung (student body fee),
-- the QSM-Ordnung (how the student body makes its proposal for the
-  Qualitätssicherungsmittel).
+- Organisationssatzung
+- Finanzordnung
+- Beitragssatzung
+- QSM-Ordnung
 
-The layout comes from the
-[hsrtreport-typst](https://github.com/frederikbeimgraben/hsrtreport-typst)
-template.
+Die aktuellen PDFs stehen im Release
+[Aktueller Stand](../../releases/tag/latest).
 
-The latest PDFs are in the release
-[Latest Development Build](../../releases/tag/latest).
+## Bauen
 
-## Build
-
-You need Typst 0.15 or later and GNU make.
+Voraussetzungen: Typst ab 0.15, GNU make, Python 3 mit `pypdf`
+(`pip install pypdf`).
 
 ```sh
-git clone --recurse-submodules <repository>
-make            # write two PDFs for each statute into build/
-make watch      # compile the Organisationssatzung again after each change
-make marks      # set the change marks again (needs Python 3)
-make check      # fail if the change marks are out of date
-make clean      # remove build/
+git clone --recurse-submodules <Repository>
+make            # baut alle PDFs nach build/
+make watch      # baut die Organisationssatzung nach jeder Änderung neu
+make marks      # setzt die Änderungsmarkierungen neu
+make check      # prüft die Änderungsmarkierungen
+make clean      # löscht build/
 ```
 
-If you cloned without `--recurse-submodules`, `make` fetches the template.
-The fonts come with the template, so you do not install fonts.
+Das Layout und die Schriften kommen aus dem Submodul
+[hsrtreport-typst](https://github.com/frederikbeimgraben/hsrtreport-typst).
+Wenn das Submodul fehlt, lädt `make` es.
 
-## Files
+## Dateien
 
-| Path | Content |
+| Pfad | Inhalt |
 | --- | --- |
-| `src/main.typ` | Main file of the Organisationssatzung |
-| `src/metadata.typ` | Dates, title page data and title page text |
-| `src/satzung.typ` | Layout of all documents: headings, § numbers, running head, table of contents |
-| `src/chapters/` | One file for each Abschnitt |
-| `src/qsmo.typ` | Main file of the QSM-Ordnung |
-| `src/qsmo/` | Metadata and one file for each Abschnitt of the QSM-Ordnung |
-| `src/fo.typ` | Main file of the Finanzordnung |
-| `src/fo/` | Metadata and one file for each Abschnitt of the Finanzordnung |
-| `src/bs.typ` | Main file of the Beitragssatzung |
-| `src/bs/` | Metadata and the text of the Beitragssatzung |
-| `src/hsrtreport/` | The template (git submodule) |
-| `baseline/` | The previous version of each statute as plain text |
-| `tools/aenderungen.py` | Sets the change marks from the baseline |
+| `src/main.typ`, `src/metadata.typ`, `src/chapters/` | Organisationssatzung |
+| `src/fo.typ`, `src/fo/` | Finanzordnung |
+| `src/bs.typ`, `src/bs/` | Beitragssatzung |
+| `src/qsmo.typ`, `src/qsmo/` | QSM-Ordnung |
+| `src/satzung.typ` | Layout für alle Satzungen |
+| `src/hsrtreport/` | Vorlage (Submodul) |
+| `baseline/` | Vorfassung jeder Satzung als Text |
+| `tools/aenderungen.py` | Setzt die Änderungsmarkierungen |
+| `tools/felder.py` | Schreibt die Datumsfelder in die PDFs |
 
-## Write the statute
+Jede Satzung hat eine Hauptdatei, eine Datei `metadata.typ` für Titelseite und
+Daten und eine Datei je Abschnitt.
 
-- `=` starts an Abschnitt (I., II., ...).
-- `==` starts an Unterabschnitt. The document adds "Erster Unterabschnitt:" and
-  so on.
-- `===` starts a paragraph. The § numbers continue through the full statute.
-- `+` makes an Absatz (1), (2), ... Inside an Absatz, `+` makes the items a),
-  b), ...
-- Write `@label` to refer to a paragraph. The reference shows "§ 10".
+## Text schreiben
 
-## Changes from the previous version
+| Schreibweise | Ergebnis |
+| --- | --- |
+| `= Titel` | Abschnitt (I., II., ...) |
+| `== Titel` | Unterabschnitt ("Erster Unterabschnitt: Titel") |
+| `=== Titel <name>` | Paragraph. Die Nummern laufen durch die ganze Satzung. |
+| `+ Text` | Absatz (1), (2), ... Eingerückt: Buchstabe a), b), ... |
+| `@name` | Verweis auf einen Paragraphen ("§ 10") |
 
-`make` writes each statute twice:
+## Änderungen anzeigen
 
-- `build/<Name>.pdf` is the clean version.
-- `build/<Name>_Aenderungen.pdf` shows the changes from the previous version.
-  New text is highlighted, deleted text is highlighted and struck through.
-  The footer says "Änderungsfassung".
+`make` baut jede Satzung zweimal:
 
-In the source, `#hl[...]` marks new text and `#removed[...]` holds deleted
-text. Do not write these marks in the chapters by hand. `make marks` runs
-`tools/aenderungen.py`, which compares the chapters word by word with the
-previous version in `baseline/<Name>.txt` and sets the marks. Edit the text,
-run `make marks`, and commit the result. The workflows run `make check`.
+- `build/<Name>.pdf` ist die saubere Fassung.
+- `build/<Name>_Aenderungen.pdf` zeigt die Änderungen zur Vorfassung. Neuer
+  Text ist gelb. Gestrichener Text ist gelb und durchgestrichen.
 
-A statute without a file in `baseline/` is new and has no marks (the
-QSM-Ordnung). The marks on a title page and a signature page are set by hand.
+Die Markierungen im Quelltext sind `#hl[...]` für neuen Text und
+`#removed[...]` für gestrichenen Text. Setze sie in den Kapiteln nicht von
+Hand.
 
-When a version is in force, make it the new baseline:
+1. Ändere den Text.
+2. Starte `make marks`. Das Skript vergleicht den Text mit
+   `baseline/<Name>.txt` und setzt die Markierungen.
+3. Committe das Ergebnis.
 
-```sh
-python3 tools/aenderungen.py --baseline Organisationssatzung > baseline/Organisationssatzung.txt
-make marks
-```
+Die Workflows starten `make check`. Der Build bricht ab, wenn die
+Markierungen nicht aktuell sind.
 
-Before the Präsidium approves the version, the title page shows `XX.XX.20XX`.
-After the approval, write the date into `accepted-university` in
-`src/metadata.typ`.
+Ausnahmen:
 
-## License
+- Eine Satzung ohne Datei in `baseline/` ist neu. Sie hat keine Markierungen.
+- Auf Titelseiten und Unterschriftenseiten setzt du die Markierungen von Hand.
 
-The text is licensed under CC BY-SA 4.0, see [LICENSE](LICENSE). The fonts
-and logos in the template belong to their owners.
+## Datumsfelder
+
+Jede Datei `metadata.typ` enthält zwei Daten:
+
+| Variable | Schlüssel | Bedeutung |
+| --- | --- | --- |
+| `last-changed` | `beschluss` | Beschluss des STUPA |
+| `accepted-university` | `genehmigung` | Genehmigung durch das Präsidium |
+
+Solange der Wert ein Platzhalter mit `XX` ist, hat das PDF an jeder Stelle ein
+Formularfeld. Alle Felder mit dem gleichen Schlüssel haben den gleichen
+Inhalt. Fülle im PDF-Programm ein Feld aus. Das Programm füllt alle anderen
+Stellen.
+
+Die Schlüssel sind in allen Satzungen gleich. Ein Skript kann damit alle PDFs
+in einem Schritt füllen.
+
+## Neue Fassung in Kraft
+
+1. Trage beide Daten in der Datei `metadata.typ` der Satzung ein. Die PDFs
+   zeigen dann festen Text statt der Felder.
+2. Schreibe den Text als neue Vorfassung und setze die Markierungen neu:
+
+   ```sh
+   python3 tools/aenderungen.py --baseline Organisationssatzung > baseline/Organisationssatzung.txt
+   make marks
+   ```
+
+3. Setze ein Tag `v*.*.*`. Der Workflow erstellt ein Release mit allen PDFs.
+
+## Lizenz
+
+Der Text steht unter CC BY-SA 4.0, siehe [LICENSE](LICENSE). Schriften und
+Logos der Vorlage gehören ihren Inhabern.

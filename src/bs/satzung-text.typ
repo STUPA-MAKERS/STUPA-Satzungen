@@ -1,6 +1,6 @@
 #import "../satzung.typ": *
 
-// The Beitragssatzung has no Abschnitte, only paragraphs.
+// Die Beitragssatzung hat keine Abschnitte, nur Paragraphen.
 
 === Beitragszweck <bs-beitragszweck>
 Die Verfasste Studierendenschaft (Studierendenschaft) der Hochschule Reutlingen nimmt als eine rechtsfähige Körperschaft des öffentlichen Rechts und Gliedkörperschaft der Hochschule Reutlingen unbeschadet der Zuständigkeiten der Hochschule und des Studierendenwerks Tübingen Hohenheim Aufgaben nach § 65 Abs. 2 LHG wahr. Um ihre gesetzlichen Aufgaben erfüllen zu können, erhebt die Studierendenschaft gemäß § 65a Abs. 5 Sätze 2 bis 5 LHG unter Berücksichtigung sozialer Belange von ihren Mitgliedern Beiträge nach Maßgabe dieser Beitragssatzung.

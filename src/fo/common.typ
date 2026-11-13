@@ -1,8 +1,8 @@
-// Shared imports of the Finanzordnung.
+// Gemeinsame Importe der Finanzordnung.
 
 #import "../satzung.typ": *
 
-// A list with the items "1.", "2.", ... inside an Absatz.
+// Liste mit den Punkten "1.", "2.", ... in einem Absatz.
 #let nummern(body) = {
   set enum(numbering: "1.", full: false)
   body
