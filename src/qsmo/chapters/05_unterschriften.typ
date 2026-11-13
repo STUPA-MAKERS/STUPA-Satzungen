@@ -1,5 +1,4 @@
 #import "../common.typ": *
-#import "../metadata.typ": accepted-university
 
 // Signature page. It is not part of the numbered text.
 #pagebreak(weak: true)
@@ -19,14 +18,9 @@
   )
 })
 
-#text(font: heading-font, size: sizes.LARGE, weight: "bold", [Ausfertigung und Genehmigung])
+#text(font: heading-font, size: sizes.LARGE, weight: "bold", [Ausfertigung])
 
 #signature-block(
   [*Ausgefertigt.*],
   [Die:Der Vorsitzende der Studierendenschaft der Hochschule Reutlingen],
-)
-
-#signature-block(
-  [*Genehmigt* durch Beschluss des Präsidiums vom #accepted-university.],
-  [Die:Der Kanzler:in der Hochschule Reutlingen],
 )
