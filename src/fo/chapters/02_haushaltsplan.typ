@@ -4,7 +4,7 @@
 = Haushaltsplan
 
 === Grundsätze <fo-grundsaetze>
-+ Der Haushaltsplan und etwaige Nachträge werden unter Berücksichtigung des zur Erfüllung der Aufgaben notwendigen Bedarfs federführend durch den Finanzreferenten und gem. § 65b Abs. 2 LHG i.V.m. § 9 LHO dem Haushaltsbeauftragten entworfen und vom Studierendenparlament durch Beschluss festgestellt. Er bildet die Grundlage der Verwaltung aller Einnahmen, Ausgaben und Verpflichtungsermächtigungen für die Buchführung und Rechnungslegung.
++ Der Haushaltsplan und etwaige Nachträge werden unter Berücksichtigung des zur Erfüllung der Aufgaben notwendigen Bedarfs federführend durch #removed[den Finanzreferenten] #hl[die:den Finanzreferent:in] und gem. § 65b Abs. 2 LHG i.V.m. § 9 LHO #hl[die:den Haushaltsbeauftragte:n entworfen, vom AStA] dem #removed[Haushaltsbeauftragten entworfen] #hl[Studierendenparlament vorgelegt] und vom Studierendenparlament durch Beschluss festgestellt. Er bildet die Grundlage der Verwaltung aller Einnahmen, Ausgaben und Verpflichtungsermächtigungen für die Buchführung und Rechnungslegung.
 + Einnahmen und Ausgaben sind getrennt voneinander in voller Höhe zu veranschlagen.
 + Für den gleichen Einzelzweck dürfen Mittel nicht an verschiedenen Stellen des Haushaltsplans veranschlagt werden.
 + Der Haushaltsplan hat in Einnahmen und Ausgaben ausgeglichen zu sein.
@@ -33,8 +33,9 @@ Das #removed[erste] Haushaltsjahr #removed[begann am 1. Dezember 2013 und endete
     + Übersicht über das Vermögen und die Schulden.
   ]
 
-=== Gegenseitig deckungsfähige Titel <fo-deckungsfaehig>
-Die einzelnen Titel des Haushaltsplans sind gegenseitig deckungsfähig, solange im Haushaltsplan nichts Abweichendes vermerkt ist.
+=== #removed[Gegenseitig deckungsfähige Titel] #hl[Deckungsfähigkeit] <fo-deckungsfaehig>
++ Die #removed[einzelnen Titel des Haushaltsplans] #hl[Ausgabetitel für sachliche Verwaltungsausgaben] sind gegenseitig deckungsfähig, solange im Haushaltsplan nichts Abweichendes vermerkt ist.
++ #hl[Im Übrigen sind Titel nur deckungsfähig, soweit der Haushaltsplan dies nach @fo-veranschlagung Abs. 1 erklärt. Personalausgaben sind ohne eine solche Erklärung weder zugunsten noch zulasten anderer Titel deckungsfähig.]
 
 === Bedeutung des Haushaltsplans gegenüber Dritten <fo-dritte>
 Durch den Haushaltsplan werden Ansprüche oder Verbindlichkeiten Dritter weder begründet noch aufgehoben.

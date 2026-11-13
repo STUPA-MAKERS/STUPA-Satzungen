@@ -1,10 +1,9 @@
 // Daten der Beitragssatzung: Datumsangaben, Felder und Text der Titelseite.
 
-#import "../satzung.typ": datum
+#import "../satzung.typ": datum, hl, removed, show-changes
 
-// Datum des STUPA-Beschlusses zu dieser Fassung. Der Text ist der Text der
-// Fassung vom 3. Dezember 2018. Das STUPA beschließt ihn neu. Das Präsidium
-// genehmigt ihn neu, zusammen mit den anderen Satzungen.
+// Datum des STUPA-Beschlusses zu dieser Fassung. Das Präsidium genehmigt sie
+// zusammen mit den anderen Satzungen.
 #let last-changed = datum("beschluss", "XX.XX.20XX")
 #let last-changed-short = datum("beschluss", "XX.XX.20XX", kurz: true)
 
@@ -53,14 +52,19 @@
     Landeshochschulgesetzes genehmigt.
   ]
 
-  title-heading[Präambel]
-  [
-    Im Folgenden wird aus Gründen der besseren Lesbarkeit ausschließlich die
-    männliche Form verwendet. Es können alle Amts-, Status- und
-    Funktionsbezeichnungen, die in dieser Satzung in der männlichen
-    Sprachform verwendet werden, in der entsprechenden weiblichen Sprachform
-    geführt werden.
-  ]
+  // Die Vorfassung hatte hier eine Präambel zur männlichen Sprachform.
+  // Die Satzung verwendet keine männlichen Bezeichnungen. Die Präambel
+  // entfällt.
+  if show-changes {
+    title-heading[#removed[Präambel]]
+    removed[
+      Im Folgenden wird aus Gründen der besseren Lesbarkeit ausschließlich die
+      männliche Form verwendet. Es können alle Amts-, Status- und
+      Funktionsbezeichnungen, die in dieser Satzung in der männlichen
+      Sprachform verwendet werden, in der entsprechenden weiblichen Sprachform
+      geführt werden.
+    ]
+  }
 
   place(bottom + left, data)
 }

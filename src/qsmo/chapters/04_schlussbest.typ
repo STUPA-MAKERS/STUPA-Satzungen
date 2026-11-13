@@ -13,7 +13,7 @@ Diese Ordnung kann mit der Mehrheit der Mitglieder des STUPA geändert werden. D
 
 === Inkrafttreten <qsm-inkrafttreten>
 + Diese Ordnung tritt nach der Genehmigung durch das Präsidium der Hochschule am Tag nach ihrer Bekanntmachung in Kraft.
-+ Sie gilt erstmals für den Vorschlag für das Haushaltsjahr 2027.
++ Sie gilt erstmals für den Vorschlag für das Vergabejahr 2027.
 
 === Salvatorische Klausel <qsm-salvatorische-klausel>
 Sollten einzelne Bestimmungen dieser Ordnung unwirksam oder undurchführbar sein oder nach Inkrafttreten unwirksam oder undurchführbar werden, bleibt davon die Wirksamkeit der Ordnung im Übrigen unberührt.

@@ -1,6 +1,6 @@
 // Daten der Finanzordnung: Datumsangaben, Felder und Text der Titelseite.
 
-#import "common.typ": hl, removed, datum
+#import "common.typ": hl, removed, datum, show-changes
 
 // Datum des STUPA-Beschlusses zu dieser Fassung.
 #let last-changed = datum("beschluss", "XX. Monat 20XX")
@@ -22,7 +22,7 @@
   stroke: none,
   inset: (x: 0pt, y: 0.7pt),
   [*Vorangegangene Fassung vom*], [#"12. Dezember 2018"],
-  [*Vom STUPA angenommen am*], [#last-changed],
+  [*Vom STUPA #removed[angenommen] #hl[beschlossen] am*], [#last-changed],
   [*Vom Präsidium genehmigt am*], [#accepted-university],
 )
 
@@ -39,8 +39,8 @@
   )
 
   [
-    Auf Grund von § 65a Abs. 1 Satz 1, 2. Halbsatz und Abs. 3 Satz 2 des
-    Landeshochschulgesetzes (LHG) #removed[vom 1. Januar 2005 (GBl. S. 1), in
+    Auf Grund von § 65a Abs. 1 Satz 1, 2. Halbsatz und #removed[Abs. 3 Satz 2]
+    #hl[§ 65b Abs. 1] des Landeshochschulgesetzes (LHG) #removed[vom 1. Januar 2005 (GBl. S. 1), in
     der Fassung vom 8. April 2014 (GBl. S. 99 ff.),] #hl[in der Fassung vom
     1.~April 2014 (GBl. S. 99), zuletzt geändert durch Artikel 5 des Gesetzes
     vom 11. Dezember 2025 (GBl. 2025 Nr. 139),] sowie der
@@ -48,21 +48,25 @@
     Organisationssatzung der Studierendenschaft der Hochschule Reutlingen
     (OrgS) vom #orgs-date, hat das Studierendenparlament der
     Studierendenschaft der Hochschule Reutlingen am #last-changed die
-    nachstehende Satzung beschlossen.
+    nachstehende #removed[Satzung] #hl[Finanzordnung als Satzung] beschlossen.
 
     Das Präsidium der Hochschule Reutlingen hat seine Genehmigung gemäß
     § 65b Abs. 6 Satz 3 des Landeshochschulgesetzes (LHG) am
     #accepted-university erteilt.
   ]
 
-  title-heading[Präambel]
-  [
-    Im Folgenden wird aus Gründen der besseren Lesbarkeit ausschließlich die
-    männliche Form verwendet. Es können alle Amts-, Status- und
-    Funktionsbezeichnungen, die in dieser Ordnung in der männlichen
-    Sprachform verwendet werden, in der entsprechenden weiblichen Sprachform
-    geführt werden.
-  ]
+  // Die Vorfassung hatte hier eine Präambel zur männlichen Sprachform.
+  // Diese Fassung gendert mit Doppelpunkt. Die Präambel entfällt.
+  if show-changes {
+    title-heading[#removed[Präambel]]
+    removed[
+      Im Folgenden wird aus Gründen der besseren Lesbarkeit ausschließlich die
+      männliche Form verwendet. Es können alle Amts-, Status- und
+      Funktionsbezeichnungen, die in dieser Ordnung in der männlichen
+      Sprachform verwendet werden, in der entsprechenden weiblichen Sprachform
+      geführt werden.
+    ]
+  }
 
   place(bottom + left, data)
 }
