@@ -26,6 +26,6 @@
 + Voraussetzung für die Pauschale einer Arbeitskreisleitung ist der Bericht des Arbeitskreises an das STUPA nach § 17 Abs. 7 OrgS.
 + Voraussetzung für die Pauschale eines Mitglieds des AStA ist, dass es dem STUPA mindestens einmal im Semester über seine Tätigkeit berichtet.
 + Das STUPA kann eine Pauschale durch Beschluss kürzen oder versagen, wenn die Person die Aufgaben ihres Amtes über längere Zeit nicht wahrgenommen hat. Die Person erhält vorher Gelegenheit zur Stellungnahme.
-+ Die Aufwandsentschädigungen werden monatlich nachträglich ausgezahlt. Grundlage für das Sitzungsgeld sind die Anwesenheitslisten. Für die Anordnung und die Zahlung gilt die Finanzordnung.
++ Die Pauschalen werden monatlich nachträglich ausgezahlt. Das Sitzungsgeld wird zum Ende jedes Semesters ausgezahlt. Grundlage für das Sitzungsgeld sind die Anwesenheitslisten. Für die Anordnung und die Zahlung gilt die Finanzordnung.
 + Auf die Aufwandsentschädigung kann jede Person verzichten. Sie erklärt den Verzicht in Textform gegenüber der:dem Finanzreferent:in.
 + Für steuerliche und sozialrechtliche Folgen der Aufwandsentschädigung sind die Empfänger:innen selbst verantwortlich.
