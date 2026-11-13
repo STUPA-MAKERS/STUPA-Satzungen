@@ -11,7 +11,7 @@
   + die Fachschaftsvertretungen (§ 21 OrgS),
   + jede:r Studierende der Hochschule.
 + Andere Satzungen und Ordnungen der Studierendenschaft können weitere Antragsberechtigte bestimmen.
-+ Anträge sind in Textform über die Antragsplattform oder bei der:dem Vorsitzenden einzureichen. Ein Antrag enthält den Wortlaut des gewünschten Beschlusses und eine Begründung. Ein Antrag mit finanziellen Folgen nennt außerdem die Kosten und ihre Deckung. Für Anträge auf Mittel gelten zusätzlich die Finanzordnung und die QSM-Ordnung.
++ Anträge sind in Textform über STUPA-Workflow oder bei der:dem Vorsitzenden einzureichen. Ein Antrag enthält den Wortlaut des gewünschten Beschlusses und eine Begründung. Ein Antrag mit finanziellen Folgen nennt außerdem die Kosten und ihre Deckung. Für Anträge auf Mittel gelten zusätzlich die Finanzordnung und die QSM-Ordnung.
 + Ein Antrag auf Änderung einer Satzung oder Ordnung stellt den geltenden und den neuen Wortlaut gegenüber.
 + Ein Antrag steht auf der Tagesordnung der nächsten ordentlichen Sitzung, wenn er spätestens zehn Tage vor der Sitzung eingeht. Einen später eingegangenen Antrag behandelt das STUPA in der darauffolgenden ordentlichen Sitzung, soweit es nicht die Dringlichkeit nach @go-tagesordnung Absatz 4 beschließt.
 + Zu einem Antrag mit finanziellen Folgen nimmt die:der Finanzreferent:in vor der Abstimmung Stellung.

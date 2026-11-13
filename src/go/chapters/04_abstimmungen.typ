@@ -9,7 +9,7 @@
 + Ist das STUPA nicht beschlussfähig, fasst es keine Beschlüsse. Die Sitzungsleitung schließt die Sitzung oder setzt sie für Berichte und Beratung fort. Die:Der Vorsitzende beruft die Wiederholungssitzung nach § 8 Abs. 2 OrgS ein.
 
 === Abstimmungen <go-abstimmungen>
-+ Das STUPA stimmt offen durch Handzeichen oder geheim ab. Geheim stimmt es über die Antragsplattform oder mit Stimmzetteln ab.
++ Das STUPA stimmt offen durch Handzeichen oder geheim ab. Geheim stimmt es über STUPA-Workflow oder mit Stimmzetteln ab.
 + Die Sitzungsleitung stellt vor der Abstimmung den Wortlaut des Antrags fest. Sie stellt die Frage so, dass sie sich mit Ja oder Nein beantworten lässt.
 + Liegen mehrere Anträge zum selben Gegenstand vor, stimmt das STUPA zuerst über den weitestgehenden ab. Über Änderungsanträge stimmt es vor dem Hauptantrag ab. Im Zweifel bestimmt die Sitzungsleitung die Reihenfolge.
 + Die Mehrheiten richten sich nach § 9 OrgS. Bei Stimmengleichheit ist ein Antrag abgelehnt. Verlangt diese Geschäftsordnung eine Zweidrittelmehrheit, sind mindestens doppelt so viele Ja-Stimmen wie Nein-Stimmen erforderlich.
@@ -31,7 +31,7 @@
 + In dringenden Fällen kann das STUPA nach § 9 Abs. 7 OrgS außerhalb einer Sitzung im Umlaufverfahren beschließen. Die:Der Vorsitzende leitet das Verfahren ein, wenn die Angelegenheit nicht bis zur nächsten Sitzung warten kann.
 + Ausgeschlossen sind Wahlen und Abwahlen, Beschlüsse nach § 9 Abs. 6 OrgS, Änderungen dieser Geschäftsordnung und die Feststellung nach @go-mandatsverlust.
 + Die:Der Vorsitzende sendet allen Mitgliedern den Antrag mit Begründung in Textform. Sie:Er begründet die Dringlichkeit und setzt eine Frist für die Stimmabgabe von mindestens drei Tagen.
-+ Jedes Mitglied gibt seine Stimme innerhalb der Frist in Textform oder über die Antragsplattform ab. Eine Stimmrechtsübertragung ist ausgeschlossen. Eine abgegebene Stimme lässt sich nicht ändern.
++ Jedes Mitglied gibt seine Stimme innerhalb der Frist in Textform oder über STUPA-Workflow ab. Eine Stimmrechtsübertragung ist ausgeschlossen. Eine abgegebene Stimme lässt sich nicht ändern.
 + Widerspricht ein Mitglied innerhalb der Frist dem Verfahren, endet das Umlaufverfahren. Das STUPA behandelt den Antrag dann in der nächsten Sitzung.
 + Der Antrag ist angenommen, wenn die Mehrheit der Mitglieder zustimmt.
 + Die:Der Vorsitzende teilt den Mitgliedern das Ergebnis unverzüglich mit. Das Protokoll der nächsten Sitzung nimmt den Beschluss und das Ergebnis auf. Der Beschluss wird nach § 9 Abs. 2 OrgS bekannt gemacht.
