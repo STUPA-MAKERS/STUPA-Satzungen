@@ -18,7 +18,7 @@
 
 #show: satzung.with(
   title: metadata.short-title,
-  footer-text: [Stand #metadata.last-changed-short],
+  footer-text: [Fassung vom #metadata.last-changed-short],
 )
 
 #include "fo/chapters/01_allgemeines.typ"
