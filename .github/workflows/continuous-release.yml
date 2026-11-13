@@ -43,13 +43,20 @@ jobs:
           echo "COMMIT_MSG=$(git log -1 --pretty=%B | head -1)" >> "$GITHUB_OUTPUT"
           echo "AUTHOR=$(git log -1 --pretty=%an)" >> "$GITHUB_OUTPUT"
 
+      - name: Check the change marks
+        run: make check
+
       - name: Build documents
         run: make compile
 
       - name: Name the PDFs for the release
         run: |
           cp build/Organisationssatzung.pdf Report_Latest.pdf
-          cp build/QSM-Ordnung.pdf QSM-Ordnung_Latest.pdf
+          cp build/Organisationssatzung_Aenderungen.pdf Report_Aenderungen_Latest.pdf
+          for name in QSM-Ordnung Finanzordnung Beitragssatzung; do
+            cp "build/$name.pdf" "${name}_Latest.pdf"
+            cp "build/${name}_Aenderungen.pdf" "${name}_Aenderungen_Latest.pdf"
+          done
 
       - name: Generate release notes
         run: |
@@ -73,6 +80,12 @@ jobs:
           ### 📦 Download Files
           - `Report_Latest.pdf` - the latest Organisationssatzung
           - `QSM-Ordnung_Latest.pdf` - the latest QSM-Ordnung
+          - `Finanzordnung_Latest.pdf` - the latest Finanzordnung
+          - `Beitragssatzung_Latest.pdf` - the latest Beitragssatzung
+
+          Each statute also comes as `<name>_Aenderungen_Latest.pdf`. This
+          version shows the changes from the previous version: new text is
+          highlighted, deleted text is struck through.
           EOF
 
       - name: Upload build artifact
@@ -82,6 +95,12 @@ jobs:
           path: |
             Report_Latest.pdf
             QSM-Ordnung_Latest.pdf
+            Finanzordnung_Latest.pdf
+            Beitragssatzung_Latest.pdf
+            Report_Aenderungen_Latest.pdf
+            QSM-Ordnung_Aenderungen_Latest.pdf
+            Finanzordnung_Aenderungen_Latest.pdf
+            Beitragssatzung_Aenderungen_Latest.pdf
           retention-days: 30
           if-no-files-found: error
 
@@ -95,6 +114,12 @@ jobs:
           files: |
             Report_Latest.pdf
             QSM-Ordnung_Latest.pdf
+            Finanzordnung_Latest.pdf
+            Beitragssatzung_Latest.pdf
+            Report_Aenderungen_Latest.pdf
+            QSM-Ordnung_Aenderungen_Latest.pdf
+            Finanzordnung_Aenderungen_Latest.pdf
+            Beitragssatzung_Aenderungen_Latest.pdf
           make_latest: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

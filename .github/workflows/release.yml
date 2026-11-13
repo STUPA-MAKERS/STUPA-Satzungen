@@ -49,13 +49,18 @@ jobs:
           fi
           echo "TAG=$TAG" >> "$GITHUB_OUTPUT"
 
+      - name: Check the change marks
+        run: make check
+
       - name: Build documents
         run: make compile
 
       - name: Name the PDFs after the tag
         run: |
-          cp build/Organisationssatzung.pdf "Organisationssatzung_${{ steps.version.outputs.TAG }}.pdf"
-          cp build/QSM-Ordnung.pdf "QSM-Ordnung_${{ steps.version.outputs.TAG }}.pdf"
+          for name in Organisationssatzung QSM-Ordnung Finanzordnung Beitragssatzung; do
+            cp "build/$name.pdf" "${name}_${{ steps.version.outputs.TAG }}.pdf"
+            cp "build/${name}_Aenderungen.pdf" "${name}_Aenderungen_${{ steps.version.outputs.TAG }}.pdf"
+          done
 
       - name: Create the release
         uses: softprops/action-gh-release@v2
@@ -65,6 +70,12 @@ jobs:
           files: |
             Organisationssatzung_${{ steps.version.outputs.TAG }}.pdf
             QSM-Ordnung_${{ steps.version.outputs.TAG }}.pdf
+            Finanzordnung_${{ steps.version.outputs.TAG }}.pdf
+            Beitragssatzung_${{ steps.version.outputs.TAG }}.pdf
+            Organisationssatzung_Aenderungen_${{ steps.version.outputs.TAG }}.pdf
+            QSM-Ordnung_Aenderungen_${{ steps.version.outputs.TAG }}.pdf
+            Finanzordnung_Aenderungen_${{ steps.version.outputs.TAG }}.pdf
+            Beitragssatzung_Aenderungen_${{ steps.version.outputs.TAG }}.pdf
           prerelease: ${{ github.event.inputs.is_prerelease == 'true' }}
           generate_release_notes: true
         env:
