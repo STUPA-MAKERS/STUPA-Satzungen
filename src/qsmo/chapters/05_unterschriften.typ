@@ -1,4 +1,4 @@
 #import "../common.typ": *
-#import "../metadata.typ": accepted-university
+#import "../metadata.typ": accepted-university, last-changed
 
-#unterschriftenseite(accepted-university)
+#unterschriftenseite(last-changed, accepted-university)

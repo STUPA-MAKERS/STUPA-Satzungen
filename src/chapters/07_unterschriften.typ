@@ -1,4 +1,4 @@
 #import "../satzung.typ": *
-#import "../metadata.typ": accepted-university
+#import "../metadata.typ": accepted-university, last-changed
 
-#unterschriftenseite(accepted-university, markiert: true)
+#unterschriftenseite(last-changed, accepted-university, markiert: true)
