@@ -6,7 +6,7 @@
 // Fassung vom 3. Dezember 2018. Das STUPA beschließt ihn neu. Das Präsidium
 // genehmigt ihn neu, zusammen mit den anderen Satzungen.
 #let last-changed = datum("beschluss", "XX.XX.20XX")
-#let last-changed-short = datum("beschluss", "XX.XX.20XX")
+#let last-changed-short = datum("beschluss", "XX.XX.20XX", kurz: true)
 
 // Datum der Genehmigung durch das Präsidium. Lass den Platzhalter stehen,
 // bis das Präsidium diese Fassung genehmigt.

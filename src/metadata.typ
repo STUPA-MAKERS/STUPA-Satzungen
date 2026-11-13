@@ -5,7 +5,7 @@
 
 // Datum des STUPA-Beschlusses zu dieser Fassung.
 #let last-changed = datum("beschluss", "5. November 2026")
-#let last-changed-short = datum("beschluss", "5.11.2026")
+#let last-changed-short = datum("beschluss", "5.11.2026", kurz: true)
 
 // Datum der Genehmigung durch das Präsidium. Lass den Platzhalter stehen,
 // bis das Präsidium diese Fassung genehmigt.

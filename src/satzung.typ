@@ -27,12 +27,13 @@
 // Ein Datum für Beschluss oder Genehmigung. Solange `wert` ein Platzhalter mit
 // "XX" ist, steht an der Stelle ein Formularfeld. Alle Felder mit dem gleichen
 // `key` haben im PDF den gleichen Inhalt. `tools/felder.py` schreibt die
-// Felder in das PDF. Die Stellen dafür liest `typst eval` über das Label `<datumsfeld>`.
-#let datum(key, wert) = if "XX" not in wert {
+// Felder in das PDF. Die Stellen dafür liest `typst eval` über das Label
+// `<datumsfeld>`. `kurz: true` macht ein schmales Feld für die Fußzeile.
+#let datum(key, wert, kurz: false) = if "XX" not in wert {
   wert
 } else {
   context {
-    let breite = measure[30. September 2026].width
+    let breite = measure(if kurz [30.09.2026] else [30. September 2026]).width
     let groesse = text.size
     box(
       width: breite,
@@ -177,3 +178,36 @@
 #let alpha-list(..items) = enum(numbering: "a)", ..items)
 // Liste mit den Punkten "1.", "2.", ...
 #let num-list(..items) = enum(numbering: "1.", ..items)
+
+// Unterschriftenseite für alle Satzungen. Sie gehört nicht zum nummerierten
+// Text. Sie hat zwei Blöcke: Ausfertigung durch den Vorsitz und Genehmigung
+// durch das Präsidium. `genehmigt-am` ist das Datum der Genehmigung.
+// `markiert: true` zeigt die Seite in der Änderungsfassung als neu.
+#let unterschriftenseite(genehmigt-am, markiert: false) = {
+  let neu(body) = if markiert { hl(body) } else { body }
+  // Ein Block: die Bedeutung der Unterschrift, die Zeilen für Ort, Datum und
+  // Unterschrift und die Funktion der Person.
+  let unterschrift(bedeutung, funktion) = block(breakable: false, above: 2.5cm, {
+    neu(bedeutung)
+    v(2.5cm)
+    grid(
+      columns: (5cm, 1fr),
+      column-gutter: 1.5cm,
+      row-gutter: 0.4em,
+      line(length: 100%, stroke: 0.5pt), line(length: 100%, stroke: 0.5pt),
+      text(size: sizes.small)[Ort, Datum], text(size: sizes.small)[Unterschrift],
+      [], strong(neu(funktion)),
+    )
+  })
+
+  pagebreak(weak: true)
+  text(font: heading-font, size: sizes.LARGE, weight: "bold", neu[Ausfertigung und Genehmigung])
+  unterschrift(
+    [*Ausgefertigt.*],
+    [Die:Der Vorsitzende der Studierendenschaft der Hochschule Reutlingen],
+  )
+  unterschrift(
+    [*Genehmigt* durch Beschluss des Präsidiums vom #genehmigt-am.],
+    [Die:Der Kanzler:in der Hochschule Reutlingen],
+  )
+}
