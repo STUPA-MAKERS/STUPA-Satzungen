@@ -1,8 +1,6 @@
 // Document metadata of the QSM-Ordnung: dates, title page fields and the
 // title page text.
 
-#import "common.typ": offen
-
 // Date of the STUPA decision on this version.
 #let last-changed = "XX.XX.20XX"
 #let last-changed-short = "Entwurf vom 13.11.2026"
