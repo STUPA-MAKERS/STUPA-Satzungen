@@ -184,6 +184,21 @@
 // Liste mit den Punkten "1.", "2.", ...
 #let num-list(..items) = enum(numbering: "1.", ..items)
 
+// Ein Block einer Unterschriftenseite: die Bedeutung der Unterschrift, die
+// Zeilen für Ort, Datum und Unterschrift und die Funktion der Person.
+#let _unterschrift(bedeutung, funktion) = block(breakable: false, above: 2.5cm, {
+  bedeutung
+  v(2.5cm)
+  grid(
+    columns: (5cm, 1fr),
+    column-gutter: 1.5cm,
+    row-gutter: 0.4em,
+    line(length: 100%, stroke: 0.5pt), line(length: 100%, stroke: 0.5pt),
+    text(size: sizes.small)[Ort, Datum], text(size: sizes.small)[Unterschrift],
+    [], strong(funktion),
+  )
+})
+
 // Unterschriftenseite für alle Satzungen. Sie ist ein Abschnitt ohne Nummer:
 // Sie steht im Inhaltsverzeichnis und in der Kopfzeile, gehört aber nicht zum
 // nummerierten Text. Sie hat zwei Blöcke: Ausfertigung durch den Vorsitz und
@@ -192,29 +207,27 @@
 // `markiert: true` zeigt die Seite in der Änderungsfassung als neu.
 #let unterschriftenseite(beschlossen-am, genehmigt-am, markiert: false) = {
   let neu(body) = if markiert { hl(body) } else { body }
-  // Ein Block: die Bedeutung der Unterschrift, die Zeilen für Ort, Datum und
-  // Unterschrift und die Funktion der Person.
-  let unterschrift(bedeutung, funktion) = block(breakable: false, above: 2.5cm, {
-    neu(bedeutung)
-    v(2.5cm)
-    grid(
-      columns: (5cm, 1fr),
-      column-gutter: 1.5cm,
-      row-gutter: 0.4em,
-      line(length: 100%, stroke: 0.5pt), line(length: 100%, stroke: 0.5pt),
-      text(size: sizes.small)[Ort, Datum], text(size: sizes.small)[Unterschrift],
-      [], strong(neu(funktion)),
-    )
-  })
 
   pagebreak(weak: true)
   heading(level: 1, numbering: none, neu[Ausfertigung und Genehmigung])
-  unterschrift(
+  _unterschrift(
+    neu[*Ausgefertigt* nach Beschluss des Studierendenparlamentes vom #beschlossen-am.],
+    neu[Die:Der Vorsitzende der Studierendenschaft der Hochschule Reutlingen],
+  )
+  _unterschrift(
+    neu[*Genehmigt* durch Beschluss des Präsidiums vom #genehmigt-am.],
+    neu[Die:Der Kanzler:in der Hochschule Reutlingen],
+  )
+}
+
+// Unterschriftenseite für eine Ordnung, die keine Satzung ist. Das Präsidium
+// genehmigt sie nicht. Die Seite hat deshalb nur den Block für die
+// Ausfertigung durch den Vorsitz.
+#let ausfertigungsseite(beschlossen-am) = {
+  pagebreak(weak: true)
+  heading(level: 1, numbering: none)[Ausfertigung]
+  _unterschrift(
     [*Ausgefertigt* nach Beschluss des Studierendenparlamentes vom #beschlossen-am.],
     [Die:Der Vorsitzende der Studierendenschaft der Hochschule Reutlingen],
-  )
-  unterschrift(
-    [*Genehmigt* durch Beschluss des Präsidiums vom #genehmigt-am.],
-    [Die:Der Kanzler:in der Hochschule Reutlingen],
   )
 }

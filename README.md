@@ -2,13 +2,14 @@
 
 [![Build](https://github.com/STUPA-MAKERS/STUPA-Satzungen/actions/workflows/continuous-release.yml/badge.svg)](https://github.com/STUPA-MAKERS/STUPA-Satzungen/actions/workflows/continuous-release.yml)
 
-Die Satzungen der Studierendenschaft der Hochschule Reutlingen in Typst:
+Die Satzungen und Ordnungen der Studierendenschaft der Hochschule Reutlingen in Typst:
 
 - Organisationssatzung
 - Finanzordnung
 - Beitragssatzung
 - QSM-Ordnung
 - Arbeitskreisordnung
+- Geschäftsordnung des Studierendenparlamentes
 
 Die aktuellen PDFs stehen im Release
 [Aktueller Stand](../../releases/tag/latest).
@@ -40,6 +41,7 @@ Wenn das Submodul fehlt, lädt `make` es.
 | `src/bs.typ`, `src/bs/` | Beitragssatzung |
 | `src/qsmo.typ`, `src/qsmo/` | QSM-Ordnung |
 | `src/ako.typ`, `src/ako/` | Arbeitskreisordnung |
+| `src/go.typ`, `src/go/` | Geschäftsordnung des Studierendenparlamentes |
 | `src/satzung.typ` | Layout für alle Satzungen |
 | `src/hsrtreport/` | Vorlage (Submodul) |
 | `baseline/` | Vorfassung jeder Satzung als Text |
@@ -97,6 +99,10 @@ Solange der Wert ein Platzhalter mit `XX` ist, hat das PDF an jeder Stelle ein
 Formularfeld. Alle Felder mit dem gleichen Schlüssel haben den gleichen
 Inhalt. Fülle im PDF-Programm ein Feld aus. Das Programm füllt alle anderen
 Stellen.
+
+Die Geschäftsordnung ist keine Satzung. Das Präsidium genehmigt sie nicht.
+Sie hat deshalb nur das Datum `last-changed` und eine Unterschriftenseite ohne
+den Block für die Genehmigung.
 
 Die Schlüssel sind in allen Satzungen gleich. Ein Skript kann damit alle PDFs
 in einem Schritt füllen.

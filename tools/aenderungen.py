@@ -64,6 +64,15 @@ DOCUMENTS = {
         "src/ako/chapters/02_arbeitskreise.typ",
         "src/ako/chapters/03_schlussbest.typ",
     ],
+    "Geschaeftsordnung": [
+        "src/go/chapters/01_allgemeines.typ",
+        "src/go/chapters/02_sitzungen.typ",
+        "src/go/chapters/03_beratung.typ",
+        "src/go/chapters/04_abstimmungen.typ",
+        "src/go/chapters/05_protokoll.typ",
+        "src/go/chapters/06_aufwand.typ",
+        "src/go/chapters/07_schlussbest.typ",
+    ],
 }
 
 MARKS = ("#hl[", "#removed[")

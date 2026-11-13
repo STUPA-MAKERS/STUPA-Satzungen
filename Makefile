@@ -17,7 +17,7 @@ TYPST_FLAGS  = --root $(ROOT) --font-path $(FONTS)
 FIELDS       = query(<datumsfeld>).map(it => it.value)
 
 # <Quelldatei unter src/>:<Name des PDFs>
-DOCUMENTS    = main:Organisationssatzung fo:Finanzordnung bs:Beitragssatzung qsmo:QSM-Ordnung ako:Arbeitskreisordnung
+DOCUMENTS    = main:Organisationssatzung fo:Finanzordnung bs:Beitragssatzung qsmo:QSM-Ordnung ako:Arbeitskreisordnung go:Geschaeftsordnung
 
 .DEFAULT_GOAL := compile
 
