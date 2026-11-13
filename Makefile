@@ -1,4 +1,4 @@
-# Build the Organisationssatzung, the QSM-Ordnung and the Finanzordnung with Typst.
+# Build the statutes of the Studierendenschaft with Typst.
 
 TYPST       ?= typst
 ROOT         = src
@@ -10,6 +10,8 @@ QSMO_SOURCE  = $(ROOT)/qsmo.typ
 QSMO_PDF     = $(BUILD_DIR)/QSM-Ordnung.pdf
 FO_SOURCE    = $(ROOT)/fo.typ
 FO_PDF       = $(BUILD_DIR)/Finanzordnung.pdf
+BS_SOURCE    = $(ROOT)/bs.typ
+BS_PDF       = $(BUILD_DIR)/Beitragssatzung.pdf
 TYPST_FLAGS  = --root $(ROOT) --font-path $(FONTS)
 
 .DEFAULT_GOAL := compile
@@ -24,6 +26,7 @@ compile: $(FONTS)
 	$(TYPST) compile $(TYPST_FLAGS) $(SOURCE) $(PDF)
 	$(TYPST) compile $(TYPST_FLAGS) $(QSMO_SOURCE) $(QSMO_PDF)
 	$(TYPST) compile $(TYPST_FLAGS) $(FO_SOURCE) $(FO_PDF)
+	$(TYPST) compile $(TYPST_FLAGS) $(BS_SOURCE) $(BS_PDF)
 
 .PHONY: watch
 watch: $(FONTS)

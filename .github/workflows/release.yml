@@ -56,6 +56,8 @@ jobs:
         run: |
           cp build/Organisationssatzung.pdf "Organisationssatzung_${{ steps.version.outputs.TAG }}.pdf"
           cp build/QSM-Ordnung.pdf "QSM-Ordnung_${{ steps.version.outputs.TAG }}.pdf"
+          cp build/Finanzordnung.pdf "Finanzordnung_${{ steps.version.outputs.TAG }}.pdf"
+          cp build/Beitragssatzung.pdf "Beitragssatzung_${{ steps.version.outputs.TAG }}.pdf"
 
       - name: Create the release
         uses: softprops/action-gh-release@v2
@@ -65,6 +67,8 @@ jobs:
           files: |
             Organisationssatzung_${{ steps.version.outputs.TAG }}.pdf
             QSM-Ordnung_${{ steps.version.outputs.TAG }}.pdf
+            Finanzordnung_${{ steps.version.outputs.TAG }}.pdf
+            Beitragssatzung_${{ steps.version.outputs.TAG }}.pdf
           prerelease: ${{ github.event.inputs.is_prerelease == 'true' }}
           generate_release_notes: true
         env:

@@ -50,6 +50,8 @@ jobs:
         run: |
           cp build/Organisationssatzung.pdf Report_Latest.pdf
           cp build/QSM-Ordnung.pdf QSM-Ordnung_Latest.pdf
+          cp build/Finanzordnung.pdf Finanzordnung_Latest.pdf
+          cp build/Beitragssatzung.pdf Beitragssatzung_Latest.pdf
 
       - name: Generate release notes
         run: |
@@ -73,6 +75,8 @@ jobs:
           ### 📦 Download Files
           - `Report_Latest.pdf` - the latest Organisationssatzung
           - `QSM-Ordnung_Latest.pdf` - the latest QSM-Ordnung
+          - `Finanzordnung_Latest.pdf` - the latest Finanzordnung
+          - `Beitragssatzung_Latest.pdf` - the latest Beitragssatzung
           EOF
 
       - name: Upload build artifact
@@ -82,6 +86,8 @@ jobs:
           path: |
             Report_Latest.pdf
             QSM-Ordnung_Latest.pdf
+            Finanzordnung_Latest.pdf
+            Beitragssatzung_Latest.pdf
           retention-days: 30
           if-no-files-found: error
 
@@ -95,6 +101,8 @@ jobs:
           files: |
             Report_Latest.pdf
             QSM-Ordnung_Latest.pdf
+            Finanzordnung_Latest.pdf
+            Beitragssatzung_Latest.pdf
           make_latest: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
