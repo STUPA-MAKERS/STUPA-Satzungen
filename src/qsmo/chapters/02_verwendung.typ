@@ -31,7 +31,7 @@
 === Vergaberichtlinie <qsm-richtlinie>
 + Das STUPA kann die Verwendungsgrundsätze durch eine Vergaberichtlinie näher bestimmen. Sie kann insbesondere Mindest- und Höchstbeträge, Eigenanteile der Teilnehmenden und einen Anteil der Fakultät festlegen. Der Beschluss über die Vergaberichtlinie und über ihre Änderung bedarf der Mehrheit der Mitglieder des STUPA. Der Tagesordnungspunkt ist in der Einladung anzukündigen.
 + Die Vergaberichtlinie darf dem QualSiG, der VwV und dieser Ordnung nicht widersprechen. Jede Änderung wird als vollständige Fassung mit dem Datum des Beschlusses niedergelegt. Die:Der Vorsitzende der Studierendenschaft fertigt die Fassung aus. Das Finanzreferat verwahrt alle Fassungen.
-+ Das Finanzreferat veröffentlicht die geltende Fassung auf der Website der Studierendenschaft und weist über die Mail-Verteiler der Hochschule auf sie hin. Die Vergaberichtlinie gilt für Anträge, die nach dem Tag der Veröffentlichung eingehen.
++ Das Finanzreferat veröffentlicht die geltende Fassung hochschulöffentlich und weist über die Mail-Verteiler der Hochschule auf sie hin. Die Vergaberichtlinie gilt für Anträge, die nach dem Tag der Veröffentlichung eingehen.
 + Solange die Vergaberichtlinie nichts anderes bestimmt, gilt:
   + Ein Antrag muss mindestens 500 € umfassen.
   + Bei Exkursionen im Pflicht- und Wahlpflichtbereich und bei Exkursionen zur Vertiefung des Lehrinhalts werden höchstens 200 € je teilnehmender Person vorgeschlagen. Jede teilnehmende Person trägt einen Eigenanteil von mindestens 30 €.
