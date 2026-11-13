@@ -12,7 +12,7 @@
 + Der AStA kann dem STUPA eigene Anträge vorlegen, insbesondere für fakultätsübergreifende Maßnahmen, die möglichst vielen Studierenden zugutekommen.
 
 === Antrag <qsm-antrag>
-+ Der Antrag wird über die Antragsplattform der Studierendenschaft beim Finanzreferat gestellt. Ist die Antragsplattform nicht verfügbar, kann der Antrag in Textform beim Finanzreferat gestellt werden.
++ Der Antrag wird über das elektronische System der Studierendenschaft „STUPA-Workflow“ beim Finanzreferat gestellt. Ist „STUPA-Workflow“ nicht verfügbar, kann der Antrag in Textform beim Finanzreferat gestellt werden.
 + Der Antrag muss mindestens enthalten:
   + die antragstellende Person oder Stelle,
   + den beantragten Betrag und eine Aufstellung der Kosten,
