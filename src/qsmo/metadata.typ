@@ -1,12 +1,14 @@
 // Daten der QSM-Ordnung: Datumsangaben, Felder und Text der Titelseite.
 
+#import "../satzung.typ": datum
+
 // Datum des STUPA-Beschlusses zu dieser Fassung.
-#let last-changed = "XX.XX.20XX"
+#let last-changed = datum("beschluss", "XX.XX.20XX")
 #let last-changed-short = "Entwurf vom 13.11.2026"
 
 // Datum der Genehmigung durch das Präsidium. Lass den Platzhalter stehen,
 // bis das Präsidium diese Fassung genehmigt.
-#let accepted-university = "XX.XX.20XX"
+#let accepted-university = datum("genehmigung", "XX.XX.20XX")
 
 #let title = [QSM-Ordnung der \ Studierendenschaft der Hochschule Reutlingen (QSMO)]
 #let short-title = [QSM-Ordnung der Studierendenschaft]

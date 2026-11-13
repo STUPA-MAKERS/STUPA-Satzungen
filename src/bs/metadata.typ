@@ -1,14 +1,16 @@
 // Daten der Beitragssatzung: Datumsangaben, Felder und Text der Titelseite.
 
+#import "../satzung.typ": datum
+
 // Datum des STUPA-Beschlusses zu dieser Fassung. Der Text ist der Text der
 // Fassung vom 3. Dezember 2018. Das STUPA beschließt ihn neu. Das Präsidium
 // genehmigt ihn neu, zusammen mit den anderen Satzungen.
-#let last-changed = "XX.XX.20XX"
-#let last-changed-short = "XX.XX.20XX"
+#let last-changed = datum("beschluss", "XX.XX.20XX")
+#let last-changed-short = datum("beschluss", "XX.XX.20XX")
 
 // Datum der Genehmigung durch das Präsidium. Lass den Platzhalter stehen,
 // bis das Präsidium diese Fassung genehmigt.
-#let accepted-university = "XX.XX.20XX"
+#let accepted-university = datum("genehmigung", "XX.XX.20XX")
 
 // Datum der Fassung der Organisationssatzung, die diese Satzung zitiert.
 #let orgs-date = "XX.XX.20XX"

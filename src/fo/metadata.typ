@@ -1,14 +1,14 @@
 // Daten der Finanzordnung: Datumsangaben, Felder und Text der Titelseite.
 
-#import "common.typ": hl, removed
+#import "common.typ": hl, removed, datum
 
 // Datum des STUPA-Beschlusses zu dieser Fassung.
-#let last-changed = "XX. Monat 20XX"
-#let last-changed-short = "XX. Monat 20XX"
+#let last-changed = datum("beschluss", "XX. Monat 20XX")
+#let last-changed-short = datum("beschluss", "XX. Monat 20XX")
 
 // Datum der Genehmigung durch das Präsidium. Lass den Platzhalter stehen,
 // bis das Präsidium diese Fassung genehmigt.
-#let accepted-university = "XX. Monat 20XX"
+#let accepted-university = datum("genehmigung", "XX. Monat 20XX")
 
 // Datum der Fassung der Organisationssatzung, die diese Ordnung zitiert.
 #let orgs-date = "XX. Monat 20XX"

@@ -14,7 +14,8 @@ Die aktuellen PDFs stehen im Release
 
 ## Bauen
 
-Voraussetzungen: Typst ab 0.15, GNU make, Python 3.
+Voraussetzungen: Typst ab 0.15, GNU make, Python 3 mit `pypdf`
+(`pip install pypdf`).
 
 ```sh
 git clone --recurse-submodules <Repository>
@@ -41,6 +42,7 @@ Wenn das Submodul fehlt, lädt `make` es.
 | `src/hsrtreport/` | Vorlage (Submodul) |
 | `baseline/` | Vorfassung jeder Satzung als Text |
 | `tools/aenderungen.py` | Setzt die Änderungsmarkierungen |
+| `tools/felder.py` | Schreibt die Datumsfelder in die PDFs |
 
 Jede Satzung hat eine Hauptdatei, eine Datei `metadata.typ` für Titelseite und
 Daten und eine Datei je Abschnitt.
@@ -80,11 +82,27 @@ Ausnahmen:
 - Eine Satzung ohne Datei in `baseline/` ist neu. Sie hat keine Markierungen.
 - Auf Titelseiten und Unterschriftenseiten setzt du die Markierungen von Hand.
 
+## Datumsfelder
+
+Jede Datei `metadata.typ` enthält zwei Daten:
+
+| Variable | Schlüssel | Bedeutung |
+| --- | --- | --- |
+| `last-changed` | `beschluss` | Beschluss des STUPA |
+| `accepted-university` | `genehmigung` | Genehmigung durch das Präsidium |
+
+Solange der Wert ein Platzhalter mit `XX` ist, hat das PDF an jeder Stelle ein
+Formularfeld. Alle Felder mit dem gleichen Schlüssel haben den gleichen
+Inhalt. Fülle im PDF-Programm ein Feld aus. Das Programm füllt alle anderen
+Stellen.
+
+Die Schlüssel sind in allen Satzungen gleich. Ein Skript kann damit alle PDFs
+in einem Schritt füllen.
+
 ## Neue Fassung in Kraft
 
-1. Trage das Datum der Genehmigung in `accepted-university` in der Datei
-   `metadata.typ` der Satzung ein. Bis dahin zeigt die Titelseite
-   `XX.XX.20XX`.
+1. Trage beide Daten in der Datei `metadata.typ` der Satzung ein. Die PDFs
+   zeigen dann festen Text statt der Felder.
 2. Schreibe den Text als neue Vorfassung und setze die Markierungen neu:
 
    ```sh

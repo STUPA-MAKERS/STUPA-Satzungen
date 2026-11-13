@@ -1,14 +1,20 @@
 # Baut die Satzungen der Studierendenschaft mit Typst.
 #
 # Jede Satzung entsteht zweimal: als saubere Fassung und als Fassung mit den
-# Änderungen zur Vorfassung (`<Name>_Aenderungen.pdf`).
+# Änderungen zur Vorfassung (`<Name>_Aenderungen.pdf`). `tools/felder.py`
+# schreibt danach die Formularfelder für die Datumsangaben in jedes PDF.
 
 TYPST       ?= typst
 PYTHON      ?= python3
+SHELL        = bash
+.SHELLFLAGS  = -e -o pipefail -c
 ROOT         = src
 FONTS        = $(ROOT)/hsrtreport/src/assets/fonts
 BUILD_DIR    = build
 TYPST_FLAGS  = --root $(ROOT) --font-path $(FONTS)
+
+# Gibt die Stellen der Datumsfelder als JSON aus.
+FIELDS       = query(<datumsfeld>).map(it => it.value)
 
 # <Quelldatei unter src/>:<Name des PDFs>
 DOCUMENTS    = main:Organisationssatzung fo:Finanzordnung bs:Beitragssatzung qsmo:QSM-Ordnung
@@ -26,7 +32,11 @@ compile: $(FONTS)
 		source=$(ROOT)/$${document%%:*}.typ; pdf=$(BUILD_DIR)/$${document##*:}; \
 		echo "$$source -> $$pdf.pdf, $${pdf}_Aenderungen.pdf"; \
 		$(TYPST) compile $(TYPST_FLAGS) $$source $$pdf.pdf; \
+		$(TYPST) eval $(TYPST_FLAGS) '$(FIELDS)' --in $$source \
+			| $(PYTHON) tools/felder.py $$pdf.pdf; \
 		$(TYPST) compile $(TYPST_FLAGS) --input changes=true $$source $${pdf}_Aenderungen.pdf; \
+		$(TYPST) eval $(TYPST_FLAGS) --input changes=true '$(FIELDS)' --in $$source \
+			| $(PYTHON) tools/felder.py $${pdf}_Aenderungen.pdf; \
 	done
 
 # Baut die Organisationssatzung mit Änderungen nach jeder Änderung neu.

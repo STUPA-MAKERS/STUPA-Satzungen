@@ -1,15 +1,15 @@
 // Daten der Organisationssatzung: Datumsangaben, Felder und Text der
 // Titelseite.
 
-#import "satzung.typ": hl
+#import "satzung.typ": hl, datum
 
 // Datum des STUPA-Beschlusses zu dieser Fassung.
-#let last-changed = "5. November 2026"
-#let last-changed-short = "5.11.2026"
+#let last-changed = datum("beschluss", "5. November 2026")
+#let last-changed-short = datum("beschluss", "5.11.2026")
 
 // Datum der Genehmigung durch das Präsidium. Lass den Platzhalter stehen,
 // bis das Präsidium diese Fassung genehmigt.
-#let accepted-university = "XX.XX.20XX"
+#let accepted-university = datum("genehmigung", "XX.XX.20XX")
 
 #let title = [Organisationssatzung der \ Studierendenschaft der Hochschule Reutlingen]
 

@@ -24,6 +24,37 @@
   highlight(fill: hsrt-yellow.lighten(40%), strike(body))
 }
 
+// Ein Datum für Beschluss oder Genehmigung. Solange `wert` ein Platzhalter mit
+// "XX" ist, steht an der Stelle ein Formularfeld. Alle Felder mit dem gleichen
+// `key` haben im PDF den gleichen Inhalt. `tools/felder.py` schreibt die
+// Felder in das PDF. Die Stellen dafür liest `typst eval` über das Label `<datumsfeld>`.
+#let datum(key, wert) = if "XX" not in wert {
+  wert
+} else {
+  context {
+    let breite = measure[30. September 2026].width
+    let groesse = text.size
+    box(
+      width: breite,
+      height: 1.3 * groesse,
+      baseline: 0.35 * groesse,
+      fill: luma(235),
+      context {
+        let stelle = here().position()
+        [#metadata((
+          key: key,
+          page: stelle.page,
+          x: stelle.x.pt(),
+          y: stelle.y.pt(),
+          width: breite.pt(),
+          height: 1.3 * groesse.pt(),
+          size: groesse.pt(),
+        )) <datumsfeld>]
+      },
+    )
+  }
+}
+
 #let _ordinals = ("Erster", "Zweiter", "Dritter", "Vierter", "Fünfter", "Sechster")
 
 #let _numbering(..numbers) = {

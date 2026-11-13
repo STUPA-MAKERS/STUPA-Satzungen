@@ -49,6 +49,9 @@ jobs:
           fi
           echo "TAG=$TAG" >> "$GITHUB_OUTPUT"
 
+      - name: pypdf installieren
+        run: pip install pypdf
+
       - name: Änderungsmarkierungen prüfen
         run: make check
 

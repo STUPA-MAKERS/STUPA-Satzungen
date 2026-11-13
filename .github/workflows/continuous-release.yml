@@ -43,6 +43,9 @@ jobs:
           echo "COMMIT_MSG=$(git log -1 --pretty=%B | head -1)" >> "$GITHUB_OUTPUT"
           echo "AUTHOR=$(git log -1 --pretty=%an)" >> "$GITHUB_OUTPUT"
 
+      - name: pypdf installieren
+        run: pip install pypdf
+
       - name: Änderungsmarkierungen prüfen
         run: make check
 
@@ -51,9 +54,7 @@ jobs:
 
       - name: PDFs für das Release benennen
         run: |
-          cp build/Organisationssatzung.pdf Report_Latest.pdf
-          cp build/Organisationssatzung_Aenderungen.pdf Report_Aenderungen_Latest.pdf
-          for name in QSM-Ordnung Finanzordnung Beitragssatzung; do
+          for name in Organisationssatzung QSM-Ordnung Finanzordnung Beitragssatzung; do
             cp "build/$name.pdf" "${name}_Latest.pdf"
             cp "build/${name}_Aenderungen.pdf" "${name}_Aenderungen_Latest.pdf"
           done
@@ -65,7 +66,7 @@ jobs:
 
           | Datei | Inhalt |
           | --- | --- |
-          | `Report_Latest.pdf` | Organisationssatzung |
+          | `Organisationssatzung_Latest.pdf` | Organisationssatzung |
           | `Finanzordnung_Latest.pdf` | Finanzordnung |
           | `Beitragssatzung_Latest.pdf` | Beitragssatzung |
           | `QSM-Ordnung_Latest.pdf` | QSM-Ordnung |
@@ -80,11 +81,11 @@ jobs:
         with:
           name: build-${{ steps.build_info.outputs.SHORT_SHA }}
           path: |
-            Report_Latest.pdf
+            Organisationssatzung_Latest.pdf
             QSM-Ordnung_Latest.pdf
             Finanzordnung_Latest.pdf
             Beitragssatzung_Latest.pdf
-            Report_Aenderungen_Latest.pdf
+            Organisationssatzung_Aenderungen_Latest.pdf
             QSM-Ordnung_Aenderungen_Latest.pdf
             Finanzordnung_Aenderungen_Latest.pdf
             Beitragssatzung_Aenderungen_Latest.pdf
@@ -109,11 +110,11 @@ jobs:
           name: "Aktueller Stand"
           body_path: release_notes.md
           files: |
-            Report_Latest.pdf
+            Organisationssatzung_Latest.pdf
             QSM-Ordnung_Latest.pdf
             Finanzordnung_Latest.pdf
             Beitragssatzung_Latest.pdf
-            Report_Aenderungen_Latest.pdf
+            Organisationssatzung_Aenderungen_Latest.pdf
             QSM-Ordnung_Aenderungen_Latest.pdf
             Finanzordnung_Aenderungen_Latest.pdf
             Beitragssatzung_Aenderungen_Latest.pdf
