@@ -1,7 +1,7 @@
 #import "../satzung.typ": *
 #import "metadata.typ": accepted-university
 
-// Signature page. It is not part of the numbered text.
+// Unterschriftenseite. Sie gehört nicht zum nummerierten Text.
 #pagebreak(weak: true)
 
 #let signature-block(label, role) = block(breakable: false, above: 2.5cm, {

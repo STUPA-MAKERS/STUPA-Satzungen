@@ -1,4 +1,4 @@
-name: Continuous Build and Latest Release
+name: Build und Release des aktuellen Stands
 
 on:
   push:
@@ -23,18 +23,18 @@ jobs:
       contents: write
 
     steps:
-      - name: Checkout repository
+      - name: Repository auschecken
         uses: actions/checkout@v5
         with:
           fetch-depth: 0
           submodules: recursive
 
-      - name: Install Typst
+      - name: Typst installieren
         uses: ./.github/actions/install-typst
         with:
           version: ${{ env.TYPST_VERSION }}
 
-      - name: Get build information
+      - name: Daten zum Build lesen
         id: build_info
         run: |
           echo "DATE=$(date +'%Y-%m-%d %H:%M:%S UTC')" >> "$GITHUB_OUTPUT"
@@ -43,13 +43,13 @@ jobs:
           echo "COMMIT_MSG=$(git log -1 --pretty=%B | head -1)" >> "$GITHUB_OUTPUT"
           echo "AUTHOR=$(git log -1 --pretty=%an)" >> "$GITHUB_OUTPUT"
 
-      - name: Check the change marks
+      - name: Änderungsmarkierungen prüfen
         run: make check
 
-      - name: Build documents
+      - name: PDFs bauen
         run: make compile
 
-      - name: Name the PDFs for the release
+      - name: PDFs für das Release benennen
         run: |
           cp build/Organisationssatzung.pdf Report_Latest.pdf
           cp build/Organisationssatzung_Aenderungen.pdf Report_Aenderungen_Latest.pdf
@@ -58,37 +58,24 @@ jobs:
             cp "build/${name}_Aenderungen.pdf" "${name}_Aenderungen_Latest.pdf"
           done
 
-      - name: Generate release notes
+      - name: Release-Text schreiben
         run: |
           cat << 'EOF' > release_notes.md
-          ## 🔄 Latest Development Build
+          Stand: ${{ steps.build_info.outputs.DATE }}, Commit [`${{ steps.build_info.outputs.SHORT_SHA }}`](https://github.com/${{ github.repository }}/commit/${{ github.sha }}), Typst ${{ env.TYPST_VERSION }}
 
-          **Build Date:** ${{ steps.build_info.outputs.DATE }}
-          **Commit:** [`${{ steps.build_info.outputs.SHORT_SHA }}`](https://github.com/${{ github.repository }}/commit/${{ github.sha }})
-          **Branch:** `${{ steps.build_info.outputs.BRANCH }}`
-          **Author:** ${{ steps.build_info.outputs.AUTHOR }}
+          | Datei | Inhalt |
+          | --- | --- |
+          | `Report_Latest.pdf` | Organisationssatzung |
+          | `Finanzordnung_Latest.pdf` | Finanzordnung |
+          | `Beitragssatzung_Latest.pdf` | Beitragssatzung |
+          | `QSM-Ordnung_Latest.pdf` | QSM-Ordnung |
 
-          ### 📝 Last Commit Message
-          ```
-          ${{ steps.build_info.outputs.COMMIT_MSG }}
-          ```
-
-          ### 🔧 Build System
-          - **Engine:** Typst ${{ env.TYPST_VERSION }}
-          - **Template:** [hsrtreport-typst](https://github.com/frederikbeimgraben/hsrtreport-typst)
-
-          ### 📦 Download Files
-          - `Report_Latest.pdf` - the latest Organisationssatzung
-          - `QSM-Ordnung_Latest.pdf` - the latest QSM-Ordnung
-          - `Finanzordnung_Latest.pdf` - the latest Finanzordnung
-          - `Beitragssatzung_Latest.pdf` - the latest Beitragssatzung
-
-          Each statute also comes as `<name>_Aenderungen_Latest.pdf`. This
-          version shows the changes from the previous version: new text is
-          highlighted, deleted text is struck through.
+          Die Dateien `<Name>_Aenderungen_Latest.pdf` zeigen die Änderungen
+          zur Vorfassung. Neuer Text ist gelb. Gestrichener Text ist gelb und
+          durchgestrichen.
           EOF
 
-      - name: Upload build artifact
+      - name: PDFs als Artefakt hochladen
         uses: actions/upload-artifact@v5
         with:
           name: build-${{ steps.build_info.outputs.SHORT_SHA }}
@@ -104,12 +91,22 @@ jobs:
           retention-days: 30
           if-no-files-found: error
 
-      - name: Create or update the Latest release
+      # GitHub zeigt das Datum der ersten Veröffentlichung. Deshalb löscht der
+      # Workflow das alte Release mit seinem Tag und erstellt es neu.
+      - name: Altes Release des aktuellen Stands löschen
+        if: github.event_name == 'push'
+        run: gh release delete latest --cleanup-tag --yes || true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+
+      - name: Release des aktuellen Stands erstellen
         if: github.event_name == 'push'
         uses: softprops/action-gh-release@v2
         with:
           tag_name: latest
-          name: "🔄 Latest Development Build"
+          target_commitish: ${{ github.sha }}
+          name: "Aktueller Stand"
           body_path: release_notes.md
           files: |
             Report_Latest.pdf

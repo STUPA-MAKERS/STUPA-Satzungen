@@ -1,7 +1,7 @@
-# Build the statutes of the Studierendenschaft with Typst.
+# Baut die Satzungen der Studierendenschaft mit Typst.
 #
-# Every statute is built twice: a clean version and a version that shows the
-# changes from the previous version (`<Name>_Aenderungen.pdf`).
+# Jede Satzung entsteht zweimal: als saubere Fassung und als Fassung mit den
+# Änderungen zur Vorfassung (`<Name>_Aenderungen.pdf`).
 
 TYPST       ?= typst
 PYTHON      ?= python3
@@ -10,12 +10,12 @@ FONTS        = $(ROOT)/hsrtreport/src/assets/fonts
 BUILD_DIR    = build
 TYPST_FLAGS  = --root $(ROOT) --font-path $(FONTS)
 
-# <source file under src/>:<name of the PDF>
+# <Quelldatei unter src/>:<Name des PDFs>
 DOCUMENTS    = main:Organisationssatzung fo:Finanzordnung bs:Beitragssatzung qsmo:QSM-Ordnung
 
 .DEFAULT_GOAL := compile
 
-# The template is a git submodule. Fetch it if it is missing.
+# Die Vorlage ist ein Submodul. Lade sie, wenn sie fehlt.
 $(FONTS):
 	git submodule update --init --recursive
 
@@ -29,18 +29,19 @@ compile: $(FONTS)
 		$(TYPST) compile $(TYPST_FLAGS) --input changes=true $$source $${pdf}_Aenderungen.pdf; \
 	done
 
-# Live preview of the Organisationssatzung with the changes shown.
+# Baut die Organisationssatzung mit Änderungen nach jeder Änderung neu.
 .PHONY: watch
 watch: $(FONTS)
 	@mkdir -p $(BUILD_DIR)
 	$(TYPST) watch $(TYPST_FLAGS) --input changes=true $(ROOT)/main.typ $(BUILD_DIR)/Organisationssatzung_Aenderungen.pdf
 
-# Set the change marks again from the previous versions in baseline/.
+# Setzt die Änderungsmarkierungen neu. Grundlage sind die Vorfassungen in
+# baseline/.
 .PHONY: marks
 marks:
 	$(PYTHON) tools/aenderungen.py
 
-# Fail if the change marks do not match the previous versions.
+# Bricht ab, wenn die Änderungsmarkierungen nicht aktuell sind.
 .PHONY: check
 check:
 	$(PYTHON) tools/aenderungen.py --check

@@ -1,25 +1,26 @@
 #!/usr/bin/env python3
-"""Write the change marks of the statutes from a comparison with the baseline.
+"""Setzt die Änderungsmarkierungen der Satzungen aus dem Vergleich mit der Vorfassung.
 
-Each statute has a baseline: the text of the previous version, one paragraph
-for each line, in `baseline/<name>.txt`. This tool compares the baseline with
-the Typst sources word by word and writes the marks into the sources:
+Jede Satzung hat eine Vorfassung in `baseline/<Name>.txt`, ein Absatz je
+Zeile. Das Skript vergleicht die Vorfassung Wort für Wort mit den
+Typst-Quellen. Es schreibt die Markierungen in die Quellen:
 
-    #hl[...]        text that is new in this version
-    #removed[...]   text of the previous version that this version deletes
+    #hl[...]        Text, der in dieser Fassung neu ist
+    #removed[...]   Text der Vorfassung, den diese Fassung streicht
 
-Authors do not write these marks. Change the text, then run
+Setze diese Markierungen nicht von Hand. Ändere den Text. Starte dann:
 
-    python3 tools/aenderungen.py            # write the marks again
-    python3 tools/aenderungen.py --check    # fail if the marks are not current
+    python3 tools/aenderungen.py            # setzt die Markierungen neu
+    python3 tools/aenderungen.py --check    # bricht ab, wenn sie nicht aktuell sind
     python3 tools/aenderungen.py --baseline Finanzordnung
-                                            # print the current text as baseline
+                                            # gibt den aktuellen Text als Vorfassung aus
 
-A statute without a baseline file is new. It gets no marks.
+Eine Satzung ohne Vorfassung ist neu. Sie bekommt keine Markierungen.
 
-Baseline format: `= `, `== ` and `=== ` start a heading. A paragraph can start
-with its number and a tab, for example "(1)<TAB>text". The number is shown
-when the paragraph is deleted, it is not compared.
+Format der Vorfassung: `= `, `== ` und `=== ` beginnen eine Überschrift. Ein
+Absatz kann mit seiner Nummer und einem Tabulator beginnen, zum Beispiel
+"(1)<TAB>Text". Das Skript vergleicht die Nummer nicht. Es zeigt sie, wenn der
+ganze Absatz gestrichen ist.
 """
 
 import argparse
@@ -30,8 +31,9 @@ import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
-# The statutes, each with the source files that hold its numbered text, in
-# the order of the document. Title pages and signature pages are not compared.
+# Die Satzungen mit den Quelldateien des nummerierten Textes, in der
+# Reihenfolge des Dokuments. Das Skript vergleicht keine Titelseiten und keine
+# Unterschriftenseiten.
 DOCUMENTS = {
     "Organisationssatzung": [
         "src/chapters/01_allgemeines.typ",
@@ -63,16 +65,16 @@ MARKS = ("#hl[", "#removed[")
 LABEL = r"[\w\-.:]*\w"
 HEADING = re.compile(r"^(=+) (.*?)(\s*<" + LABEL + r">)?\s*$")
 PROSE = re.compile(r"^(\s*(?:[+-] )?)(.*)$")
-# Pieces of a text line that stay in one piece: a link, a footnote and a
-# reference to a paragraph.
+# Teile einer Textzeile, die das Skript nicht trennt: Link, Fußnote und
+# Verweis auf einen Paragraphen.
 ATOM = re.compile(
     r'#link\("[^"]*"\)\[[^\]]*\]|#footnote\[[^\]]*\]|@' + LABEL
 )
 
 
 def strip_marks(text):
-    """Return the text without marks: `#hl[x]` becomes `x`, `#removed[x]`
-    becomes nothing."""
+    """Gibt den Text ohne Markierungen zurück: `#hl[x]` wird `x`,
+    `#removed[x]` entfällt."""
     out = []
     i = 0
     while i < len(text):
@@ -93,7 +95,7 @@ def strip_marks(text):
         if mark == "#hl[":
             out.append(strip_marks(text[start : k - 1]))
         else:
-            # The mark goes with the space that set it apart.
+            # Das Leerzeichen neben der Markierung entfällt mit ihr.
             at_start = not out or out[-1] in " \n"
             if text.startswith(" ", k) and at_start:
                 k += 1
@@ -104,23 +106,23 @@ def strip_marks(text):
 
 
 def norm(word):
-    """The form of a word that the comparison uses."""
+    """Gibt die Form eines Wortes zurück, die der Vergleich benutzt."""
     return word.replace("‐", "-").replace(" ", " ").replace("\\", "")
 
 
 class Token:
-    """One piece of a text line. `keys` are the words that it compares as."""
+    """Ein Teil einer Textzeile. `keys` sind die Wörter für den Vergleich."""
 
     def __init__(self, text, sep, keys):
         self.text, self.sep, self.keys = text, sep, keys
-        self.new = False  # the piece is new in this version
-        self.follows = False  # the piece is marked like the piece before it
-        self.before = []  # deleted text that stood before this piece
-        self.after = []  # deleted text that stood after this piece
+        self.new = False  # der Teil ist in dieser Fassung neu
+        self.follows = False  # der Teil ist markiert wie der Teil davor
+        self.before = []  # gestrichener Text vor diesem Teil
+        self.after = []  # gestrichener Text nach diesem Teil
 
 
 def tokens_of(text, numbers):
-    """Split the text of a source line into tokens."""
+    """Teilt den Text einer Quellzeile in Teile."""
     tokens = []
     pos = 0
     pieces = []
@@ -131,7 +133,7 @@ def tokens_of(text, numbers):
     pieces.append((text[pos:], False))
 
     sep = ""
-    pending = None  # an atom that still takes the characters after it
+    pending = None  # ein Atom, zu dem die folgenden Zeichen noch gehören
     for piece, is_atom in pieces:
         if is_atom:
             if piece.startswith("@"):
@@ -153,7 +155,7 @@ def tokens_of(text, numbers):
                     pending = None
                 sep = "~" if part == "~" else " "
             elif pending and not sep:
-                # Punctuation that follows an atom directly.
+                # Satzzeichen direkt nach einem Atom.
                 pending.text += part
                 if pending.keys:
                     pending.keys[-1] += norm(part)
@@ -167,8 +169,8 @@ def tokens_of(text, numbers):
                 sep = ""
     if pending:
         tokens.append(pending)
-    # "§ 5" compares as one word, so that a changed number shows as
-    # "§ 4" replaced by "§ 5".
+    # "§ 5" zählt als ein Wort. Eine geänderte Nummer erscheint so als
+    # "§ 4" ersetzt durch "§ 5".
     for token, number in zip(tokens, tokens[1:]):
         if token.keys == ["§"] and number.sep and number.keys and number.keys[0][:1].isdigit():
             token.keys = ["§ " + number.keys[0]]
@@ -178,7 +180,7 @@ def tokens_of(text, numbers):
 
 
 class Line:
-    """A source line. `tokens` is None for a line that is not text."""
+    """Eine Quellzeile. `tokens` ist None, wenn die Zeile kein Text ist."""
 
     def __init__(self, raw, numbers):
         self.raw, self.tokens, self.prefix, self.suffix = raw, None, "", ""
@@ -199,7 +201,7 @@ class Line:
 
 
 def paragraph_numbers(texts):
-    """Map each label of a paragraph heading to its § number."""
+    """Ordnet jedem Label einer Paragraphenüberschrift die Nummer zu."""
     numbers = {}
     count = 0
     for text in texts:
@@ -213,8 +215,8 @@ def paragraph_numbers(texts):
 
 
 def read_baseline(path):
-    """Return the words of the baseline, each with its key for the
-    comparison and the text that a deletion shows."""
+    """Gibt die Wörter der Vorfassung zurück. Jedes Wort hat seinen Schlüssel
+    für den Vergleich und den Text, den eine Streichung zeigt."""
     words = []
     for line in path.read_text(encoding="utf-8").splitlines():
         if not line.strip():
@@ -234,8 +236,8 @@ def read_baseline(path):
             else:
                 merged.append(part)
         for i, word in enumerate(merged):
-            # (key, shown text, number of the paragraph, words to its end,
-            # the word is part of a heading)
+            # (Schlüssel, gezeigter Text, Nummer des Absatzes, Wörter bis zum
+            # Ende des Absatzes, das Wort gehört zu einer Überschrift)
             words.append(
                 (norm(word), word, shown if i == 0 else None, len(merged) - i, bool(heading))
             )
@@ -243,13 +245,14 @@ def read_baseline(path):
 
 
 def escape(text):
-    """Escape plain text for Typst markup."""
+    """Maskiert reinen Text für Typst."""
     text = re.sub(r"([\\*_#$@<\[\]`~])", r"\\\1", text)
     return text.replace("//", "/\\/")
 
 
 def mark(texts, baseline):
-    """Return the texts with the marks of a comparison with the baseline."""
+    """Gibt die Texte mit den Markierungen aus dem Vergleich mit der
+    Vorfassung zurück."""
     numbers = paragraph_numbers(texts)
     files = [[Line(raw, numbers) for raw in text.split("\n")] for text in texts]
     tokens = [t for lines in files for line in lines if line.tokens for t in line.tokens]
@@ -274,17 +277,17 @@ def mark(texts, baseline):
         for j in range(j1, j2):
             tokens[owner[j]].new = True
         if i2 > i1:
-            # A paragraph that is deleted as a whole shows its number.
+            # Ein ganz gestrichener Absatz zeigt seine Nummer.
             removed = " ".join(
                 (number if number and i + rest <= i2 else "") + shown
                 for i, (_, shown, number, rest, _) in enumerate(baseline[i1:i2], i1)
             )
             starts_paragraph = baseline[i1][2] is not None
             index = owner[j1] if j1 < len(keys) else len(tokens)
-            # The end of a paragraph stays with its paragraph.
+            # Das Ende eines Absatzes bleibt bei seinem Absatz.
             at_line_start = index == len(tokens) or id(tokens[index]) in first
-            # Deleted text of a paragraph does not go into the heading that
-            # follows it.
+            # Gestrichener Text eines Absatzes kommt nicht in die folgende
+            # Überschrift.
             into_heading = (
                 index < len(tokens) and id(tokens[index]) in headings and not baseline[i1][4]
             )
@@ -334,7 +337,7 @@ def mark(texts, baseline):
 
 
 def export(texts):
-    """Return the texts as a baseline."""
+    """Gibt die Texte als Vorfassung zurück."""
     numbers = paragraph_numbers(texts)
     out = []
     counters = []
@@ -346,7 +349,7 @@ def export(texts):
             words = []
             for token in line.tokens:
                 if token.text.startswith("#footnote"):
-                    # Only the punctuation after the footnote is compared.
+                    # Der Vergleich benutzt nur die Satzzeichen nach der Fußnote.
                     words.extend(token.keys)
                     continue
                 if token.text.startswith(("@", "#link")):
@@ -372,8 +375,8 @@ def export(texts):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    parser.add_argument("--check", action="store_true", help="fail if a source file would change")
-    parser.add_argument("--baseline", metavar="NAME", help="print the current text of a statute as baseline")
+    parser.add_argument("--check", action="store_true", help="bricht ab, wenn sich eine Quelldatei ändern würde")
+    parser.add_argument("--baseline", metavar="NAME", help="gibt den aktuellen Text einer Satzung als Vorfassung aus")
     args = parser.parse_args()
 
     if args.baseline:
@@ -394,7 +397,7 @@ def main():
                 if not args.check:
                     path.write_text(after, encoding="utf-8")
     for path in stale:
-        print(("not current: " if args.check else "updated: ") + str(path))
+        print(("nicht aktuell: " if args.check else "aktualisiert: ") + str(path))
     return 1 if args.check and stale else 0
 
 

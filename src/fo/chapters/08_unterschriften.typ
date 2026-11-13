@@ -1,8 +1,8 @@
 #import "../common.typ": *
 #import "../metadata.typ": last-changed
 
-// Signature block. It is not part of the numbered text and stays on the
-// page of the Schlussbestimmungen, as in the previous version.
+// Unterschriftenblock. Er gehört nicht zum nummerierten Text. Er steht auf
+// der Seite der Schlussbestimmungen, wie in der Vorfassung.
 #block(breakable: false, above: 2.5cm, {
   text(font: heading-font, size: sizes.LARGE, weight: "bold")[Bestätigung durch den Vorsitzenden]
   parbreak()

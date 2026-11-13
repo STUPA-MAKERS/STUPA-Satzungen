@@ -1,3 +1,6 @@
-# Build output
+# Ergebnis des Builds
 build/
 *.pdf
+
+# Python
+__pycache__/

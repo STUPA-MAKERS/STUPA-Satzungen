@@ -1,12 +1,11 @@
-// Document metadata of the QSM-Ordnung: dates, title page fields and the
-// title page text.
+// Daten der QSM-Ordnung: Datumsangaben, Felder und Text der Titelseite.
 
-// Date of the STUPA decision on this version.
+// Datum des STUPA-Beschlusses zu dieser Fassung.
 #let last-changed = "XX.XX.20XX"
 #let last-changed-short = "Entwurf vom 13.11.2026"
 
-// Date of the approval by the Präsidium. Keep the placeholder until the
-// Präsidium approves this version.
+// Datum der Genehmigung durch das Präsidium. Lass den Platzhalter stehen,
+// bis das Präsidium diese Fassung genehmigt.
 #let accepted-university = "XX.XX.20XX"
 
 #let title = [QSM-Ordnung der \ Studierendenschaft der Hochschule Reutlingen (QSMO)]
@@ -21,11 +20,11 @@
   [*Vom Präsidium genehmigt am*], [#accepted-university],
 )
 
-// The text of the title page. The template prints its first heading, see
+// Text der Titelseite. Die Vorlage setzt die erste Überschrift, siehe
 // qsmo.typ.
 #let first-heading = "Rechtsgrundlage"
 #let front-text = {
-  // The title page of the template sets no space between paragraphs.
+  // Die Titelseite der Vorlage setzt keinen Abstand zwischen Absätzen.
   set par(spacing: 0.8em)
   let title-heading(body) = block(
     above: 2em,

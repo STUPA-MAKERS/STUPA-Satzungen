@@ -3,8 +3,8 @@
 #import "satzung.typ": *
 #import "bs/metadata.typ"
 
-// The template prints the heading "Abstract" above the abstract. The title
-// page of the Satzung starts with "Rechtsgrundlage" instead.
+// Die Vorlage setzt über den Abstract die Überschrift "Abstract". Die
+// Titelseite der Satzung beginnt stattdessen mit "Rechtsgrundlage".
 #show "Abstract": metadata.first-heading
 
 #show: hsrtreport.with(

@@ -1,9 +1,9 @@
-name: Install Typst
-description: Install a pinned Typst release into the runner PATH.
+name: Typst installieren
+description: Installiert eine feste Typst-Version in den PATH des Runners.
 
 inputs:
   version:
-    description: Typst version, for example 0.15.1
+    description: Typst-Version, zum Beispiel 0.15.1
     required: true
 
 runs:

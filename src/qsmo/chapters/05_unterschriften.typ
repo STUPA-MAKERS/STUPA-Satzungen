@@ -1,11 +1,11 @@
 #import "../common.typ": *
 #import "../metadata.typ": accepted-university
 
-// Signature page. It is not part of the numbered text.
+// Unterschriftenseite. Sie gehört nicht zum nummerierten Text.
 #pagebreak(weak: true)
 
-// One signature block: what the signature means, then the lines for place,
-// date and signature, and the role of the person who signs.
+// Ein Unterschriftenblock: die Bedeutung der Unterschrift, die Zeilen für
+// Ort, Datum und Unterschrift und die Funktion der Person.
 #let signature-block(label, role) = block(breakable: false, above: 2.5cm, {
   label
   v(2.5cm)
