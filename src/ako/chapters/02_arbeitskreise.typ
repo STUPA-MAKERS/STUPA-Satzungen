@@ -50,6 +50,7 @@
 + Er tauscht sich regelmäßig mit den zuständigen Stellen der Hochschule aus.
 + Er berät die Organe, die Fachschaften und die Arbeitskreise, wie sie ihre Tätigkeit, ihre Beschaffung und ihre Veranstaltungen nachhaltig gestalten.
 + Er führt Projekte, Veranstaltungen und Informationsangebote zu Nachhaltigkeit und Ökologie durch.
++ Er kann mit überregionalen studentischen Netzwerken zusammenarbeiten, die sich mit Nachhaltigkeit befassen. Mittel der Studierendenschaft setzt er dabei nur für die Aufgaben der Studierendenschaft ein. Eine Mitgliedschaft der Studierendenschaft in einem solchen Netzwerk bedarf eines Beschlusses des STUPA.
 
 === Arbeitskreis Diversity <ako-diversity>
 + Der Arbeitskreis fördert die Chancengleichheit und den Abbau von Benachteiligungen in der Studierendenschaft nach § 65 Abs. 2 Nr. 4 LHG und die Integration internationaler Studierender nach § 65 Abs. 2 Nr. 5 LHG.
