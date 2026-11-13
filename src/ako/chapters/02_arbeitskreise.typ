@@ -65,7 +65,6 @@
 + Der Arbeitskreis befasst sich mit dem Studium und dem Leben auf dem Campus, insbesondere mit Lern- und Aufenthaltsflächen, ihrer Ausstattung und ihren Öffnungszeiten.
 + Er sammelt Anregungen der Studierenden und bringt sie bei den zuständigen Stellen der Hochschule ein.
 + Er unterstützt den AStA bei der Verwaltung der Räume, die die Hochschule der Studierendenschaft nach § 65a Abs. 5 S. 1 LHG zur Verfügung stellt.
-+ Er befasst sich mit der Mobilität der Studierenden, insbesondere mit der Erreichbarkeit des Campus.
 
 === Arbeitskreis Studierendenwerk <ako-studierendenwerk>
 + Der Arbeitskreis befasst sich mit den Angelegenheiten des für die Hochschule zuständigen Studierendenwerks, insbesondere mit Wohnheimen, Mensen und Cafeterien, Beratungsangeboten und Kinderbetreuung.
