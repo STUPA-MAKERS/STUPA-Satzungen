@@ -1,4 +1,4 @@
-# Build the Organisationssatzung with Typst.
+# Build the Organisationssatzung and the QSM-Ordnung with Typst.
 
 TYPST       ?= typst
 ROOT         = src
