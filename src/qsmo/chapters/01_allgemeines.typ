@@ -15,5 +15,5 @@
 
 === Verfügbare Mittel <qsm-mittel>
 + Das Finanzreferat erfragt beim Präsidium die Höhe der QSM, die im folgenden Haushaltsjahr voraussichtlich zur Verfügung stehen. Haushaltsjahr ist das Kalenderjahr.
-+ Das Finanzreferat gibt die Höhe der Mittel und die Antragsfristen nach @qsm-fristen bis zum 1. Oktober für das folgende Haushaltsjahr hochschulöffentlich bekannt und teilt sie den Fachschaftsvertretungen und den Fakultäten mit.
++ Das Finanzreferat gibt die Höhe der Mittel zusammen mit der Antragsfrist nach @qsm-fristen bekannt.
 + Ändert sich die Höhe der Mittel im laufenden Haushaltsjahr, berichtet das Finanzreferat dem STUPA in dessen nächster Sitzung.

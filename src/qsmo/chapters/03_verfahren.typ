@@ -25,10 +25,11 @@
 + Ist ein Antrag unvollständig, fordert das Finanzreferat die fehlenden Angaben mit einer angemessenen Frist nach. Gehen sie nicht rechtzeitig ein, wird der Antrag nicht behandelt.
 
 === Fristen <qsm-fristen>
-+ Anträge für das folgende Haushaltsjahr sind bis zum 15. November zu stellen (Haupttermin). Das STUPA beschließt über diese Anträge bis zum 15. Januar des Haushaltsjahres.
-+ Sind nach dem Haupttermin noch Mittel verfügbar, können Anträge für das laufende Haushaltsjahr bis zum 15. Mai gestellt werden (Nachtermin). Das STUPA beschließt über diese Anträge bis zum 15. Juni.
-+ Fällt ein Termin auf einen Samstag, Sonntag oder Feiertag, tritt an seine Stelle der nächste Werktag.
-+ Ein verspäteter Antrag wird zum nächsten Termin behandelt.
++ Der AStA setzt die Antragsfristen fest. Er kann für ein Haushaltsjahr mehrere Antragsfristen festsetzen, solange Mittel verfügbar sind.
++ Der AStA gibt jede Antragsfrist über die Mail-Verteiler der Hochschule bekannt. Die Bekanntgabe erfolgt mindestens vier Wochen vor dem Ende der Frist.
++ Fällt das Ende einer Frist auf einen Samstag, Sonntag oder Feiertag, tritt an seine Stelle der nächste Werktag.
++ Ein verspäteter Antrag wird zur nächsten Antragsfrist behandelt.
++ Das STUPA beschließt über die fristgerecht eingegangenen Anträge in der Regel in der nächsten ordentlichen Sitzung nach dem Ende der Frist.
 
 === Beschluss des Studierendenparlaments <qsm-beschluss>
 + Das Finanzreferat legt dem STUPA die vollständigen Anträge mit dem Ergebnis seiner Prüfung, der Empfehlung nach @qsm-zustaendigkeiten Absatz 3 und einer Übersicht über die verfügbaren Mittel vor.
@@ -38,8 +39,8 @@
 + Das Finanzreferat teilt den Antragstellenden den Beschluss und bei einer Ablehnung oder Kürzung die Gründe mit.
 
 === Nicht ausgeschöpfte Mittel <qsm-restmittel>
-+ Hat das STUPA nach dem Nachtermin das Vorschlagsrecht für das laufende Haushaltsjahr nicht voll ausgeschöpft, oder entstehen bei bewilligten Maßnahmen Ausgabereste, gilt die Verwendung dieser Mittel für Lehr- und Lernmaterialien der Hochschulbibliothek als vorgeschlagen. Studentische Vorschläge für Anschaffungen sind vorzuziehen.
-+ Das STUPA kann bis zum Nachtermin eine andere Verwendung der Mittel nach Absatz 1 beschließen.
++ Hat das STUPA nach der letzten Antragsfrist eines Haushaltsjahres das Vorschlagsrecht für dieses Haushaltsjahr nicht voll ausgeschöpft, oder entstehen bei bewilligten Maßnahmen Ausgabereste, gilt die Verwendung dieser Mittel für Lehr- und Lernmaterialien der Hochschulbibliothek als vorgeschlagen. Studentische Vorschläge für Anschaffungen sind vorzuziehen.
++ Das STUPA kann jederzeit eine andere Verwendung der Mittel nach Absatz 1 beschließen.
 + Die bewirtschaftende Einrichtung meldet Ausgabereste dem Finanzreferat unverzüglich, spätestens bis zum 31. Januar des Folgejahres.
 
 === Gesamtvorschlag und Weiterleitung <qsm-weiterleitung>
