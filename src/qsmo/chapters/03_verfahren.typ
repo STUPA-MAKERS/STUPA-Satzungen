@@ -51,7 +51,7 @@
 + Folgt das Präsidium dem Vorschlag nicht oder nicht vollständig, berichtet die:der Vorsitzende dem STUPA in dessen nächster Sitzung. Das STUPA kann für die betroffenen Mittel einen neuen Vorschlag beschließen; die Fristen nach @qsm-fristen gelten dafür nicht.
 
 === Durchführung und Bericht <qsm-durchfuehrung>
-+ Das STUPA nimmt eine Maßnahme nur in den Vorschlag auf, wenn die bewirtschaftende Einrichtung im Antrag zugesagt hat,
++ Das STUPA nimmt eine Maßnahme nur in den Vorschlag auf, wenn die bewirtschaftende Einrichtung in Textform zugesagt hat,
   + die Maßnahme durchzuführen und die Mittel nur für den vorgeschlagenen Zweck zu verwenden,
   + dem Finanzreferat nach Abschluss der Maßnahme, bei längerfristigen Maßnahmen jährlich, über die Durchführung und die verausgabten Mittel zu berichten,
   + Ausgabereste dem Finanzreferat unverzüglich, spätestens bis zum 31. Januar des Folgejahres, zu melden.
