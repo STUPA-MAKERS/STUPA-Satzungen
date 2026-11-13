@@ -26,7 +26,7 @@
 + Ist ein Antrag unvollständig, fordert das Finanzreferat die fehlenden Angaben mit einer angemessenen Frist nach. Gehen sie nicht rechtzeitig ein, wird der Antrag nicht behandelt.
 
 === Fristen <qsm-fristen>
-+ Der AStA setzt die Antragsfristen fest. Er kann für ein Vergabejahr mehrere Antragsfristen festsetzen, solange Mittel verfügbar sind.
++ Der AStA setzt die Antragsfristen fest. Er kann für ein Vergabejahr mehrere Antragsfristen festsetzen, solange Mittel verfügbar sind. Er bezeichnet die letzte Antragsfrist eines Vergabejahres bei der Festsetzung ausdrücklich als solche.
 + Das Finanzreferat gibt jede Antragsfrist über die Mail-Verteiler der Hochschule bekannt. Die Bekanntgabe erfolgt mindestens vier Wochen vor dem Ende der Frist.
 + Fällt das Ende einer Frist auf einen Samstag, Sonntag oder Feiertag, tritt an seine Stelle der nächste Werktag.
 + Ein verspäteter Antrag wird zur nächsten Antragsfrist behandelt.
@@ -39,7 +39,7 @@
 + Das Finanzreferat teilt den Antragstellenden den Beschluss und bei einer Ablehnung oder Kürzung die Gründe mit.
 
 === Nicht ausgeschöpfte Mittel <qsm-restmittel>
-+ Hat das STUPA nach der letzten Antragsfrist eines Vergabejahres das Vorschlagsrecht für dieses Vergabejahr nicht voll ausgeschöpft, oder entstehen bei bewilligten Maßnahmen Ausgabereste, gilt die Verwendung dieser Mittel für Lehr- und Lernmaterialien der Hochschulbibliothek als vorgeschlagen. Das Finanzreferat stellt den Betrag fest und leitet ihn als Ergänzung des Vorschlags nach @qsm-weiterleitung an das Präsidium weiter. Bei der Auswahl der Anschaffungen sind Vorschläge von Studierenden vorrangig zu berücksichtigen.
++ Hat das STUPA nach der letzten Antragsfrist eines Vergabejahres das Vorschlagsrecht für dieses Vergabejahr nicht voll ausgeschöpft, oder entstehen bei bewilligten Maßnahmen Ausgabereste, gilt die Verwendung dieser Mittel für Lehr- und Lernmaterialien der Hochschulbibliothek als vorgeschlagen. Das Finanzreferat stellt den Betrag fest. Die:Der Vorsitzende der Studierendenschaft leitet ihn als Ergänzung des Vorschlags nach @qsm-weiterleitung an das Präsidium weiter. Bei der Auswahl der Anschaffungen sind Vorschläge von Studierenden vorrangig zu berücksichtigen.
 + Das STUPA kann jederzeit eine andere Verwendung der Mittel nach Absatz 1 beschließen.
 + Ausgabereste werden dem Finanzreferat nach @qsm-durchfuehrung Absatz 1 gemeldet.
 
