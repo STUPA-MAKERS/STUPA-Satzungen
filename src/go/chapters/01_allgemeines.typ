@@ -17,7 +17,7 @@
 === Vorsitz und Sitzungsleitung <go-vorsitz>
 + Die:Der Vorsitzende der Studierendenschaft bereitet die Sitzungen vor, beruft sie ein und leitet sie (§ 14 OrgS). Sie:Er leitet die Sitzungen unparteiisch.
 + Ist die:der Vorsitzende verhindert, gilt die Vertretung nach § 14 Abs. 4 OrgS. Ist auch keine Vertretung anwesend, leitet das lebensälteste anwesende Mitglied die Sitzung.
-+ Die Sitzungsleitung kann die Leitung für einzelne Tagesordnungspunkte an ihre Vertretung oder an ein Mitglied des STUPA abgeben. Sie soll das tun, wenn der Tagesordnungspunkt sie persönlich betrifft.
++ Die:Der Vorsitzende kann die Sitzungsleitung für die ganze Sitzung oder für einzelne Tagesordnungspunkte an ihre:seine Vertretung oder an ein anderes Mitglied des STUPA übergeben. Sie:Er soll das tun, wenn ein Tagesordnungspunkt sie:ihn persönlich betrifft.
 + Die Sitzungsleitung übt in der Sitzung das Hausrecht aus.
 
 === Konstituierende Sitzung <go-konstituierung>
