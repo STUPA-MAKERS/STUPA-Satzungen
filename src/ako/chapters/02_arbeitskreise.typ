@@ -44,6 +44,7 @@
 + Er unterstützt die Fachschaften, die Arbeitskreise und studentische Gruppen bei der Organisation ihrer Veranstaltungen.
 + Er arbeitet mit Anbietern kultureller und sportlicher Angebote zusammen, um diese bei den Studierenden bekannt zu machen und günstige Bedingungen für Studierende zu erreichen.
 + Er betreut die Veranstaltungstechnik und das Veranstaltungsmaterial der Studierendenschaft.
++ Er sorgt in Zusammenarbeit mit dem Arbeitskreis Diversity (@ako-diversity) für Awarenesskonzepte und Awarenessteams bei den Veranstaltungen der Studierendenschaft.
 
 === Arbeitskreis Nachhaltigkeit <ako-nachhaltigkeit>
 + Der Arbeitskreis befasst sich mit Fragen der Nachhaltigkeit und der Ökologie, insbesondere mit dem Beitrag der Hochschule zur nachhaltigen Entwicklung nach § 65 Abs. 3 LHG. Er fördert die Meinungsbildung dazu in der Studierendenschaft.
@@ -58,6 +59,7 @@
 + Er setzt sich für die Belange von Studierenden in besonderen Lebenslagen ein, insbesondere von Studierenden mit Kind, mit Behinderung oder chronischer Erkrankung und von internationalen Studierenden.
 + Er berät die Organe, die Fachschaften und die Arbeitskreise zu Barrierefreiheit und Inklusion bei ihren Angeboten und Veranstaltungen.
 + Er fördert die Vernetzung internationaler Studierender untereinander und mit anderen Studierenden.
++ Er sorgt in Zusammenarbeit mit dem Arbeitskreis Events (@ako-events) für Awarenesskonzepte und Awarenessteams bei den Veranstaltungen der Studierendenschaft.
 
 === Arbeitskreis Campus <ako-campus>
 + Der Arbeitskreis befasst sich mit dem Studium und dem Leben auf dem Campus, insbesondere mit Lern- und Aufenthaltsflächen, ihrer Ausstattung und ihren Öffnungszeiten.
