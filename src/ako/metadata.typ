@@ -6,9 +6,7 @@
 #let last-changed = datum("beschluss", "XX.XX.20XX")
 #let last-changed-short = "Entwurf vom 13.11.2026"
 
-// Datum der Genehmigung durch das Präsidium. Lass den Platzhalter stehen,
-// bis das Präsidium diese Fassung genehmigt.
-#let accepted-university = datum("genehmigung", "XX.XX.20XX")
+// Die Ordnung ist keine Satzung. Das Präsidium genehmigt sie nicht.
 
 #let title = [Arbeitskreisordnung der \ Studierendenschaft der Hochschule Reutlingen (AKO)]
 #let short-title = [Arbeitskreisordnung der Studierendenschaft]
@@ -19,7 +17,6 @@
   stroke: none,
   inset: (x: 0pt, y: 0.7pt),
   [*Vom STUPA beschlossen am*], [#last-changed],
-  [*Vom Präsidium genehmigt am*], [#accepted-university],
 )
 
 // Text der Titelseite. Die Vorlage setzt die erste Überschrift, siehe
@@ -35,16 +32,15 @@
   )
 
   [
-    Auf Grund von § 65a Abs. 1 S. 1 des Gesetzes über die Hochschulen in
-    Baden-Württemberg (Landeshochschulgesetz – LHG) in der Fassung vom
-    1.~April 2014 (GBl. S. 99), zuletzt geändert durch Artikel 5 des Gesetzes
-    vom 11. Dezember 2025 (GBl. 2025 Nr. 139), in Verbindung mit § 17 Abs. 5
-    der Organisationssatzung der Studierendenschaft hat das
-    Studierendenparlament der Hochschule Reutlingen am #last-changed die
-    nachfolgende Ordnung als Satzung beschlossen.
+    Auf Grund von § 17 Abs. 5 der Organisationssatzung der
+    Studierendenschaft der Hochschule Reutlingen hat das
+    Studierendenparlament am #last-changed die nachfolgende Ordnung
+    beschlossen.
 
-    Die Hochschule Reutlingen hat die Ordnung durch Beschluss des Präsidiums
-    am #accepted-university genehmigt.
+    Die Ordnung regelt die innere Organisation des Studierendenparlamentes.
+    Sie ist keine Satzung im Sinne des § 65a Abs. 1 des
+    Landeshochschulgesetzes (LHG) und bedarf deshalb nicht der Genehmigung
+    des Präsidiums nach § 65b Abs. 6 LHG.
   ]
 
   title-heading[Zweck der Ordnung]

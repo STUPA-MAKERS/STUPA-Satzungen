@@ -190,6 +190,8 @@
 // Genehmigung durch das Präsidium. `beschlossen-am` ist das Datum des
 // Beschlusses des STUPA, `genehmigt-am` das Datum der Genehmigung.
 // `markiert: true` zeigt die Seite in der Änderungsfassung als neu.
+// `genehmigt-am: none` lässt den Block für die Genehmigung weg. Das gilt für
+// Ordnungen, die keine Satzung sind.
 #let unterschriftenseite(beschlossen-am, genehmigt-am, markiert: false) = {
   let neu(body) = if markiert { hl(body) } else { body }
   // Ein Block: die Bedeutung der Unterschrift, die Zeilen für Ort, Datum und
@@ -208,13 +210,15 @@
   })
 
   pagebreak(weak: true)
-  heading(level: 1, numbering: none, neu[Ausfertigung und Genehmigung])
+  heading(level: 1, numbering: none, if genehmigt-am == none { neu[Ausfertigung] } else { neu[Ausfertigung und Genehmigung] })
   unterschrift(
     [*Ausgefertigt* nach Beschluss des Studierendenparlamentes vom #beschlossen-am.],
     [Die:Der Vorsitzende der Studierendenschaft der Hochschule Reutlingen],
   )
-  unterschrift(
-    [*Genehmigt* durch Beschluss des Präsidiums vom #genehmigt-am.],
-    [Die:Der Kanzler:in der Hochschule Reutlingen],
-  )
+  if genehmigt-am != none {
+    unterschrift(
+      [*Genehmigt* durch Beschluss des Präsidiums vom #genehmigt-am.],
+      [Die:Der Kanzler:in der Hochschule Reutlingen],
+    )
+  }
 }
