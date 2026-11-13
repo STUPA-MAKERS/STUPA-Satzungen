@@ -7,10 +7,10 @@
 + Die Verfasste Studierendenschaft unterhält personenunabhängige Konten. Der laufende Zahlungsverkehr ist darüber abzuwickeln. Daneben ist die Unterhaltung von weiteren personenunabhängigen Anlagekonten zulässig.
 + Nur #removed[der] #hl[die:der] Vorsitzende, #removed[der Finanzreferent] #hl[die:der Finanzreferent:in] sowie #removed[der] #hl[die:der] Haushaltsbeauftragte sind für die Konten der Studierendenschaft zeichnungsberechtigt.
 + Der Zahlungsverkehr ist möglichst bargeldlos durchzuführen.
-+ Rechnungen sind #removed[vom Besteller] #hl[von der bestellenden Person] mit einem Richtigkeitsvermerk (bspw. „Die Richtigkeit der Lieferung wird bescheinigt“) zu versehen und unverzüglich an #removed[den Haushaltsbeauftragten] #hl[die:den Haushaltsbeauftragte:n] oder #removed[den Finanzreferenten] #hl[die:den Finanzreferent:in] zur Feststellung der sachlichen und rechnerischen #removed[Richtigstellung] #hl[Richtigkeit] weiterzuleiten.
++ Rechnungen sind #removed[vom Besteller] #hl[von der bestellenden Person] mit einem Richtigkeitsvermerk (bspw. „Die Richtigkeit der Lieferung wird bescheinigt“) zu versehen und unverzüglich an #removed[den Haushaltsbeauftragten oder den Finanzreferenten] #hl[die:den Finanzreferent:in] zur Feststellung der sachlichen und rechnerischen #removed[Richtigstellung] #hl[Richtigkeit] weiterzuleiten.
 + Für jede Einnahme oder Ausgabe ist ein Nachweis zu erstellen. Hierbei ist das Vier-Augen-Prinzip zu beachten.
 + #removed[Der] #hl[Die:Der] Haushaltsbeauftragte führt in begründeten Ausnahmefällen eine Barkasse und ist bei Notwendigkeit berechtigt ggf. zusätzliche zeitlich befristete Kassen einzurichten. Das Bargeld in der Barkasse darf nicht den Betrag überschreiten, der an den nächsten fünf Tagen für die voraussichtlich zu leistenden Auszahlungen oder als Wechselgeld erforderlich ist, maximal jedoch 1.000 €.
-+ Zahlungsmittel, Überweisungsaufträge und Scheckhefte sowie Sparbücher sind #removed[vom Finanzreferenten] #hl[von der:dem Finanzreferent:in] oder #removed[vom] #hl[von der:dem] Haushaltsbeauftragten unter Verschluss zu halten.
++ Zahlungsmittel, Überweisungsaufträge und Scheckhefte sowie Sparbücher sind #removed[vom Finanzreferenten oder vom] #hl[von der:dem] Haushaltsbeauftragten unter Verschluss zu halten.
 
 === Buchführung <fo-buchfuehrung>
 + Über alle Zahlungen ist nach der im Haushaltsplan vorgesehenen Ordnung und in zeitlicher Folge gem. den Vorgaben der LHO Buch zu führen. Die Zahlungen sind für das Haushaltsjahr zu buchen, in dem sie eingegangen oder geleistet worden sind.
