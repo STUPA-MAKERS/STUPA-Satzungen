@@ -21,11 +21,11 @@
 + Die Sitzungsleitung übt in der Sitzung das Hausrecht aus.
 
 === Konstituierende Sitzung <go-konstituierung>
-+ Zur ersten Sitzung einer Amtszeit lädt nach § 16 Abs. 1 OrgS das lebensälteste Mitglied bis zum 15. Oktober ein. Es leitet die Sitzung, bis die Wahl der:des Vorsitzenden abgeschlossen ist. Die:Der bisherige Vorsitzende unterstützt die Einladung und die Vorbereitung.
++ Zur ersten Sitzung einer Amtszeit lädt nach § 16 Abs. 1 OrgS die:der bisherige Vorsitzende oder ihre:seine Vertretung bis zum 15. Oktober ein. Sie:Er leitet die Sitzung, bis die Wahl der:des Vorsitzenden abgeschlossen ist. Das lebensälteste Mitglied lädt nur ein und leitet die Sitzung nur, wenn die:der bisherige Vorsitzende und ihre:seine Vertretungen nicht mehr im Amt sind.
 + Die konstituierende Sitzung soll bis zum 31. Oktober stattfinden.
 + Die Tagesordnung der konstituierenden Sitzung enthält mindestens
   + die Feststellung der Mitglieder und der Beschlussfähigkeit,
   + die Wahl der:des Vorsitzenden der Studierendenschaft,
   + die Wahl der übrigen Mitglieder des AStA nach § 20 OrgS,
   + die Festlegung der Sitzungstermine nach @go-termine.
-+ Vor der Wahl der:des Vorsitzenden fasst das STUPA nur Beschlüsse zum Ablauf der Sitzung. Bis zur Wahl ist nach § 9 Abs. 1 OrgS keine Stimmrechtsübertragung möglich.
++ Vor der Wahl der:des Vorsitzenden fasst das STUPA nur Beschlüsse zum Ablauf der Sitzung.
