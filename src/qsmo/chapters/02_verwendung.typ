@@ -24,7 +24,7 @@
 + Das STUPA berücksichtigt Maßnahmen auf zentraler Ebene und Maßnahmen der Fakultäten. Es achtet darauf, dass die Studierenden aller Fakultäten über mehrere Vergabejahre hinweg angemessen von den Mitteln profitieren.
 
 === Längerfristige Maßnahmen <qsm-laengerfristig>
-+ Längerfristig ist eine Maßnahme, die auf mehr als ein Vergabejahr angelegt ist. Als längerfristig gilt auch eine Maßnahme, die im Wesentlichen unverändert im dritten Vergabejahr in Folge vorgeschlagen wird.
++ Längerfristig ist eine Maßnahme, die auf mehr als ein Vergabejahr angelegt ist. Als längerfristig gilt auch eine Maßnahme, die im Wesentlichen unverändert im dritten Vergabejahr in Folge vorgeschlagen wird. Die Verwendung nach @qsm-restmittel ist keine längerfristige Maßnahme.
 + Die Mittel für längerfristige Maßnahmen dürfen zusammen 50 % der QSM eines Vergabejahres nicht überschreiten.
 + Das STUPA kann eine längerfristige Maßnahme für höchstens drei Vergabejahre vorschlagen. Der Vorschlag steht für jedes Vergabejahr unter dem Vorbehalt, dass die Mittel zur Verfügung stehen. Für den jährlichen Bericht gilt @qsm-durchfuehrung.
 
