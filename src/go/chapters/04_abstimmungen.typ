@@ -23,8 +23,8 @@
 + Die Sitzungsleitung leitet die Wahl. Kandidiert sie selbst, gibt sie die Leitung der Wahl an ein Mitglied ab, das nicht kandidiert.
 + Gewählt werden kann nur, wer die Kandidatur erklärt hat. Abwesende können kandidieren, wenn ihre Erklärung der Sitzungsleitung in Textform vorliegt. § 20 Abs. 1 OrgS bleibt unberührt.
 + Die Kandidierenden stellen sich vor und beantworten Fragen. Auf Antrag eines Mitglieds berät das STUPA danach in nicht-öffentlicher Sitzung und in Abwesenheit der Kandidierenden über die Kandidaturen.
-+ Geheime Wahlen finden mit Stimmzetteln oder mit einem elektronischen Verfahren statt, das das Wahlgeheimnis wahrt. Stimmzettel zählen zwei Personen aus, die nicht kandidieren.
-+ Verlangt die Organisationssatzung für eine Wahl keine besondere Mehrheit, ist gewählt, wer die meisten Stimmen erhält. Bei nur einer Kandidatur sind mehr Ja-Stimmen als Nein-Stimmen erforderlich. Bei Stimmengleichheit findet eine Stichwahl statt. Bringt auch sie keine Entscheidung, entscheidet das Los.
++ Wahlen können mit Stimmzetteln oder digital über STUPA-Workflow stattfinden. Das digitale Verfahren muss das Wahlgeheimnis wahren. Stimmzettel zählen zwei Personen aus, die nicht kandidieren.
++ Verlangt die Organisationssatzung für eine Wahl keine besondere Mehrheit, ist gewählt, wer die meisten Stimmen erhält. Bei nur einer Kandidatur sind mehr Ja-Stimmen als Nein-Stimmen erforderlich. Bei Stimmengleichheit entscheidet das Los.
 + Die gewählte Person erklärt, ob sie die Wahl annimmt. Eine abwesende Person erklärt das innerhalb einer Woche in Textform gegenüber der:dem Vorsitzenden. Ohne diese Erklärung gilt die Wahl als nicht angenommen.
 
 === Umlaufverfahren <go-umlauf>
