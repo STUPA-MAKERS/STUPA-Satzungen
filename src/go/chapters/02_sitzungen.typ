@@ -47,7 +47,7 @@
 + Die:Der Vorsitzende kann eine Sitzung insgesamt als Videokonferenz einberufen, wenn sie in der vorlesungsfreien Zeit stattfindet oder wenn eine Sitzung in Präsenz nicht möglich oder nicht zumutbar ist.
 + Die Einladung nennt die Form der Sitzung und die Zugangsdaten. Mitglieder der Hochschule erhalten die Zugangsdaten zum öffentlichen Teil auf Anfrage.
 + Zugeschaltete Mitglieder gelten nach § 8 Abs. 4 OrgS als anwesend, solange sie der Sitzung in Bild und Ton folgen und sich an ihr beteiligen können.
-+ Geheime Wahlen und geheime Abstimmungen finden in einer Hybridsitzung oder Videokonferenz nur statt, wenn das elektronische Verfahren das Stimmgeheimnis wahrt.
++ Geheime Wahlen und geheime Abstimmungen finden in einer Hybridsitzung oder Videokonferenz über ein elektronisches Verfahren statt, das das Stimmgeheimnis wahrt.
 + Stört ein technischer Fehler die Übertragung für mehrere Mitglieder, unterbricht die Sitzungsleitung die Sitzung. Eine Störung im Verantwortungsbereich eines einzelnen Mitglieds berührt die Wirksamkeit der Beschlüsse nicht.
 
 === Anwesenheit und Entschuldigung <go-anwesenheit>

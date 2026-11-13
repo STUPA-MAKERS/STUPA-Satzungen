@@ -48,7 +48,7 @@
   + Schluss der Beratung und sofortige Abstimmung,
   + Unterbrechung der Sitzung,
   + Feststellung der Beschlussfähigkeit,
-  + geheime oder namentliche Abstimmung,
+  + namentliche Abstimmung,
   + getrennte Abstimmung über Teile eines Antrags,
   + erneute Auszählung,
   + Ausschluss oder Wiederherstellung der Hochschulöffentlichkeit,

@@ -9,13 +9,13 @@
 + Ist das STUPA nicht beschlussfähig, fasst es keine Beschlüsse. Die Sitzungsleitung schließt die Sitzung oder setzt sie für Berichte und Beratung fort. Die:Der Vorsitzende beruft die Wiederholungssitzung nach § 8 Abs. 2 OrgS ein.
 
 === Abstimmungen <go-abstimmungen>
-+ Das STUPA stimmt durch Handzeichen oder über die Antragsplattform ab.
++ Das STUPA stimmt offen durch Handzeichen oder geheim ab. Geheim stimmt es über die Antragsplattform oder mit Stimmzetteln ab.
 + Die Sitzungsleitung stellt vor der Abstimmung den Wortlaut des Antrags fest. Sie stellt die Frage so, dass sie sich mit Ja oder Nein beantworten lässt.
 + Liegen mehrere Anträge zum selben Gegenstand vor, stimmt das STUPA zuerst über den weitestgehenden ab. Über Änderungsanträge stimmt es vor dem Hauptantrag ab. Im Zweifel bestimmt die Sitzungsleitung die Reihenfolge.
 + Die Mehrheiten richten sich nach § 9 OrgS. Bei Stimmengleichheit ist ein Antrag abgelehnt. Verlangt diese Geschäftsordnung eine Zweidrittelmehrheit, sind mindestens doppelt so viele Ja-Stimmen wie Nein-Stimmen erforderlich.
 + Wer ein übertragenes Stimmrecht ausübt, zeigt das bei der Stimmabgabe an.
-+ Das STUPA stimmt geheim ab, wenn es das beschließt. In einer geheimen Abstimmung ist die Stimmrechtsübertragung nach § 9 Abs. 1 OrgS ausgeschlossen.
-+ Das STUPA stimmt namentlich ab, wenn es das beschließt. Das Protokoll hält dann fest, wie jedes Mitglied gestimmt hat. Geheime und namentliche Abstimmung schließen einander aus. Über Anträge zur Geschäftsordnung stimmt das STUPA weder geheim noch namentlich ab.
++ Jede Abstimmung kann nach § 9 Abs. 1 OrgS auch geheim stattfinden. Die Sitzungsleitung bestimmt die Art der Abstimmung. Verlangt ein Mitglied die geheime Abstimmung, stimmt das STUPA geheim ab. Übertragene Stimmrechte werden auch in einer geheimen Abstimmung ausgeübt.
++ Das STUPA stimmt namentlich ab, wenn es das beschließt. Das Protokoll hält dann fest, wie jedes Mitglied gestimmt hat. Das Verlangen nach geheimer Abstimmung geht vor. Über Anträge zur Geschäftsordnung stimmt das STUPA nicht namentlich ab.
 + Die Sitzungsleitung stellt das Ergebnis fest und gibt es bekannt. Bestehen begründete Zweifel am Ergebnis, wiederholt das STUPA die Abstimmung sofort.
 
 === Wahlen <go-wahlen>
