@@ -7,7 +7,8 @@
 + Anträge können stellen
   + die Mitglieder der Studierendenschaft,
   + die Fachschaftsvertretungen und die Arbeitskreise,
-  + die Fakultäten und die zentralen Einrichtungen der Hochschule.
+  + die Fakultäten und die zentralen Einrichtungen der Hochschule,
+  + die Professor:innen und die Lehrbeauftragten der Hochschule.
 + Der AStA kann dem STUPA eigene Anträge vorlegen, insbesondere für fakultätsübergreifende Maßnahmen, die möglichst vielen Studierenden zugutekommen.
 
 === Antrag <qsm-antrag>
