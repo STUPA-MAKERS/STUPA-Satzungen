@@ -79,7 +79,7 @@
 #let _open-heading(level) = {
   let page-number = here().page()
   let found = query(heading.where(level: level))
-    .filter(it => it.numbering != none and it.location().page() <= page-number)
+    .filter(it => it.outlined and it.location().page() <= page-number)
   if found.len() > 0 { found.last() }
 }
 
@@ -101,8 +101,13 @@
     if chapter == none {
       [INHALT]
     } else {
-      let number = counter(heading).at(chapter.location()).at(0)
-      upper[#numbering("I.", number) #chapter.body]
+      // Ein Abschnitt ohne Nummer ist die Unterschriftenseite.
+      if chapter.numbering == none {
+        upper(chapter.body)
+      } else {
+        let number = counter(heading).at(chapter.location()).at(0)
+        upper[#numbering("I.", number) #chapter.body]
+      }
       if section != none { linebreak() + section.body }
     },
   ))
@@ -179,11 +184,13 @@
 // Liste mit den Punkten "1.", "2.", ...
 #let num-list(..items) = enum(numbering: "1.", ..items)
 
-// Unterschriftenseite für alle Satzungen. Sie gehört nicht zum nummerierten
-// Text. Sie hat zwei Blöcke: Ausfertigung durch den Vorsitz und Genehmigung
-// durch das Präsidium. `genehmigt-am` ist das Datum der Genehmigung.
+// Unterschriftenseite für alle Satzungen. Sie ist ein Abschnitt ohne Nummer:
+// Sie steht im Inhaltsverzeichnis und in der Kopfzeile, gehört aber nicht zum
+// nummerierten Text. Sie hat zwei Blöcke: Ausfertigung durch den Vorsitz und
+// Genehmigung durch das Präsidium. `beschlossen-am` ist das Datum des
+// Beschlusses des STUPA, `genehmigt-am` das Datum der Genehmigung.
 // `markiert: true` zeigt die Seite in der Änderungsfassung als neu.
-#let unterschriftenseite(genehmigt-am, markiert: false) = {
+#let unterschriftenseite(beschlossen-am, genehmigt-am, markiert: false) = {
   let neu(body) = if markiert { hl(body) } else { body }
   // Ein Block: die Bedeutung der Unterschrift, die Zeilen für Ort, Datum und
   // Unterschrift und die Funktion der Person.
@@ -201,9 +208,9 @@
   })
 
   pagebreak(weak: true)
-  text(font: heading-font, size: sizes.LARGE, weight: "bold", neu[Ausfertigung und Genehmigung])
+  heading(level: 1, numbering: none, neu[Ausfertigung und Genehmigung])
   unterschrift(
-    [*Ausgefertigt.*],
+    [*Ausgefertigt* nach Beschluss des Studierendenparlamentes vom #beschlossen-am.],
     [Die:Der Vorsitzende der Studierendenschaft der Hochschule Reutlingen],
   )
   unterschrift(
