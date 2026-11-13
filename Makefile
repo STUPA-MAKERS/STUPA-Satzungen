@@ -6,6 +6,8 @@ SOURCE       = $(ROOT)/main.typ
 FONTS        = $(ROOT)/hsrtreport/src/assets/fonts
 BUILD_DIR    = build
 PDF          = $(BUILD_DIR)/Organisationssatzung.pdf
+QSMO_SOURCE  = $(ROOT)/qsmo.typ
+QSMO_PDF     = $(BUILD_DIR)/QSM-Ordnung.pdf
 TYPST_FLAGS  = --root $(ROOT) --font-path $(FONTS)
 
 .DEFAULT_GOAL := compile
@@ -18,6 +20,7 @@ $(FONTS):
 compile: $(FONTS)
 	@mkdir -p $(BUILD_DIR)
 	$(TYPST) compile $(TYPST_FLAGS) $(SOURCE) $(PDF)
+	$(TYPST) compile $(TYPST_FLAGS) $(QSMO_SOURCE) $(QSMO_PDF)
 
 .PHONY: watch
 watch: $(FONTS)
