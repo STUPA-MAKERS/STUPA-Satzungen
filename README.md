@@ -93,6 +93,9 @@ Jede Datei `metadata.typ` enthält zwei Daten:
 | `last-changed` | `beschluss` | Beschluss des STUPA |
 | `accepted-university` | `genehmigung` | Genehmigung durch das Präsidium |
 
+Die Arbeitskreisordnung ist keine Satzung. Das Präsidium genehmigt sie nicht.
+Ihre Datei `metadata.typ` enthält deshalb nur `last-changed`.
+
 Solange der Wert ein Platzhalter mit `XX` ist, hat das PDF an jeder Stelle ein
 Formularfeld. Alle Felder mit dem gleichen Schlüssel haben den gleichen
 Inhalt. Fülle im PDF-Programm ein Feld aus. Das Programm füllt alle anderen

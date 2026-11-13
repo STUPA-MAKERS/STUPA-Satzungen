@@ -4,6 +4,7 @@
 
 === Geltungsbereich <ako-geltungsbereich>
 + Diese Ordnung bestimmt nach § 17 Abs. 5 der Organisationssatzung (OrgS) die ständigen Arbeitskreise des Studierendenparlamentes (STUPA) und ihre Aufgaben. Sie regelt außerdem die Aufgaben und Pflichten, die für alle Arbeitskreise gelten.
++ Diese Ordnung ist keine Satzung im Sinne des § 65a Abs. 1 LHG. Sie darf der Organisationssatzung und den übrigen Satzungen der Studierendenschaft nicht widersprechen; im Fall eines Widerspruchs gehen diese vor.
 + Für die Arbeitskreise gilt § 17 OrgS. Die Wahl der Arbeitskreisleitungen richtet sich nach § 10 und § 17 Abs. 2 OrgS. Die Verwaltung der Mittel der Arbeitskreise regelt die Finanzordnung. Aufwandsentschädigungen regelt die Geschäftsordnung des STUPA nach § 34 Abs. 2 OrgS.
 + Andere Satzungen und Ordnungen der Studierendenschaft können den Arbeitskreisen weitere Aufgaben zuweisen.
 + Das STUPA kann nach § 17 Abs. 1 OrgS weitere Arbeitskreise einsetzen. Der Einsetzungsbeschluss bestimmt die Aufgaben des Arbeitskreises. Das STUPA kann den Arbeitskreis befristen. Für diese Arbeitskreise gilt Abschnitt I entsprechend.
