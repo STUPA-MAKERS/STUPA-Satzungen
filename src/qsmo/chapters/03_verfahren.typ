@@ -57,3 +57,4 @@
   + Ausgabereste dem Finanzreferat unverzüglich, spätestens bis zum 31. Januar des Folgejahres, zu melden.
 + Eine wesentliche Änderung der Maßnahme bedarf eines neuen Beschlusses des STUPA.
 + Das Finanzreferat berichtet dem STUPA mindestens einmal im Vergabejahr über den Stand der vorgeschlagenen, bewilligten und verausgabten Mittel.
++ Die Hochschulbibliothek berichtet dem STUPA jährlich über die Verwendung der Mittel, die sie nach dieser Ordnung erhalten hat. Das gilt auch für die Mittel nach @qsm-restmittel.
