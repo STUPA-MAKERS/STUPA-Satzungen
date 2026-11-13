@@ -1,18 +1,17 @@
 # Build the statutes of the Studierendenschaft with Typst.
+#
+# Every statute is built twice: a clean version and a version that shows the
+# changes from the previous version (`<Name>_Aenderungen.pdf`).
 
 TYPST       ?= typst
+PYTHON      ?= python3
 ROOT         = src
-SOURCE       = $(ROOT)/main.typ
 FONTS        = $(ROOT)/hsrtreport/src/assets/fonts
 BUILD_DIR    = build
-PDF          = $(BUILD_DIR)/Organisationssatzung.pdf
-QSMO_SOURCE  = $(ROOT)/qsmo.typ
-QSMO_PDF     = $(BUILD_DIR)/QSM-Ordnung.pdf
-FO_SOURCE    = $(ROOT)/fo.typ
-FO_PDF       = $(BUILD_DIR)/Finanzordnung.pdf
-BS_SOURCE    = $(ROOT)/bs.typ
-BS_PDF       = $(BUILD_DIR)/Beitragssatzung.pdf
 TYPST_FLAGS  = --root $(ROOT) --font-path $(FONTS)
+
+# <source file under src/>:<name of the PDF>
+DOCUMENTS    = main:Organisationssatzung fo:Finanzordnung bs:Beitragssatzung qsmo:QSM-Ordnung
 
 .DEFAULT_GOAL := compile
 
@@ -23,15 +22,28 @@ $(FONTS):
 .PHONY: compile
 compile: $(FONTS)
 	@mkdir -p $(BUILD_DIR)
-	$(TYPST) compile $(TYPST_FLAGS) $(SOURCE) $(PDF)
-	$(TYPST) compile $(TYPST_FLAGS) $(QSMO_SOURCE) $(QSMO_PDF)
-	$(TYPST) compile $(TYPST_FLAGS) $(FO_SOURCE) $(FO_PDF)
-	$(TYPST) compile $(TYPST_FLAGS) $(BS_SOURCE) $(BS_PDF)
+	@set -e; for document in $(DOCUMENTS); do \
+		source=$(ROOT)/$${document%%:*}.typ; pdf=$(BUILD_DIR)/$${document##*:}; \
+		echo "$$source -> $$pdf.pdf, $${pdf}_Aenderungen.pdf"; \
+		$(TYPST) compile $(TYPST_FLAGS) $$source $$pdf.pdf; \
+		$(TYPST) compile $(TYPST_FLAGS) --input changes=true $$source $${pdf}_Aenderungen.pdf; \
+	done
 
+# Live preview of the Organisationssatzung with the changes shown.
 .PHONY: watch
 watch: $(FONTS)
 	@mkdir -p $(BUILD_DIR)
-	$(TYPST) watch $(TYPST_FLAGS) $(SOURCE) $(PDF)
+	$(TYPST) watch $(TYPST_FLAGS) --input changes=true $(ROOT)/main.typ $(BUILD_DIR)/Organisationssatzung_Aenderungen.pdf
+
+# Set the change marks again from the previous versions in baseline/.
+.PHONY: marks
+marks:
+	$(PYTHON) tools/aenderungen.py
+
+# Fail if the change marks do not match the previous versions.
+.PHONY: check
+check:
+	$(PYTHON) tools/aenderungen.py --check
 
 .PHONY: clean
 clean:

@@ -22,3 +22,4 @@
 )
 
 #include "bs/satzung-text.typ"
+#include "bs/unterschriften.typ"

@@ -13,7 +13,7 @@
 + Der Haushaltsbeauftragte kann bei der Beratung im Studierendenparlament anwesend sein.
 
 === Genehmigung und Inkrafttreten des Haushaltsplans <fo-genehmigung>
-+ Der vom Studierendenparlament festgestellte Haushaltsplan ist gem. § #removed[29] #hl[30] Abs. 3 der Organisationssatzung spätestens einen Monat vor Beginn des Haushaltsjahres dem Präsidium der Hochschule zur Genehmigung vorzulegen. Die Vorlage und die damit zusammenhängende Kommunikation übernimmt der Haushaltsbeauftragte.
++ Der vom Studierendenparlament festgestellte Haushaltsplan ist gem. #removed[§ 29] #hl[§ 30] Abs. 3 der Organisationssatzung spätestens einen Monat vor Beginn des Haushaltsjahres dem Präsidium der Hochschule zur Genehmigung vorzulegen. Die Vorlage und die damit zusammenhängende Kommunikation übernimmt der Haushaltsbeauftragte.
 + Der Haushaltsplan tritt mit Genehmigung durch das Präsidium zum Beginn des jeweiligen Haushaltsjahres in Kraft.
 
 === Nachtragshaushalt <fo-nachtrag>

@@ -8,17 +8,18 @@
 
 #import "hsrtreport/src/lib.typ": *
 
-// Highlights the text that changed from the previous version. Set the flag
-// to false for the final version.
-#let show-changes = true
+// Highlights the text that changed from the previous version. The clean
+// version is the default, `typst compile --input changes=true` shows the
+// changes. `tools/aenderungen.py` sets the marks in the chapters.
+#let show-changes = sys.inputs.at("changes", default: "false") == "true"
 #let hl(body) = if show-changes {
   highlight(fill: hsrt-yellow.lighten(40%), body)
 } else {
   body
 }
 
-// Marks text that this version deletes. The draft shows it struck through,
-// the final version leaves it out.
+// Marks text that this version deletes. The version with changes shows it
+// struck through, the clean version leaves it out.
 #let removed(body) = if show-changes {
   highlight(fill: hsrt-yellow.lighten(40%), strike(body))
 }
@@ -126,7 +127,7 @@
   set page(
     header: _header(title),
     footer: page-footer(
-      author: footer-text,
+      author: if show-changes [#footer-text · Änderungsfassung] else { footer-text },
       numbering: "1",
       logos: footer-logo-names("stupa"),
     ),

@@ -23,8 +23,10 @@ You need Typst 0.15 or later and GNU make.
 
 ```sh
 git clone --recurse-submodules <repository>
-make            # write one PDF for each statute into build/
-make watch      # compile again after each change
+make            # write two PDFs for each statute into build/
+make watch      # compile the Organisationssatzung again after each change
+make marks      # set the change marks again (needs Python 3)
+make check      # fail if the change marks are out of date
 make clean      # remove build/
 ```
 
@@ -46,6 +48,8 @@ The fonts come with the template, so you do not install fonts.
 | `src/bs.typ` | Main file of the Beitragssatzung |
 | `src/bs/` | Metadata and the text of the Beitragssatzung |
 | `src/hsrtreport/` | The template (git submodule) |
+| `baseline/` | The previous version of each statute as plain text |
+| `tools/aenderungen.py` | Sets the change marks from the baseline |
 
 ## Write the statute
 
@@ -56,8 +60,31 @@ The fonts come with the template, so you do not install fonts.
 - `+` makes an Absatz (1), (2), ... Inside an Absatz, `+` makes the items a),
   b), ...
 - Write `@label` to refer to a paragraph. The reference shows "§ 10".
-- `#hl[...]` marks text that changed since the previous version. Set
-  `show-changes` in `src/satzung.typ` to `false` for the final version.
+
+## Changes from the previous version
+
+`make` writes each statute twice:
+
+- `build/<Name>.pdf` is the clean version.
+- `build/<Name>_Aenderungen.pdf` shows the changes from the previous version.
+  New text is highlighted, deleted text is highlighted and struck through.
+  The footer says "Änderungsfassung".
+
+In the source, `#hl[...]` marks new text and `#removed[...]` holds deleted
+text. Do not write these marks in the chapters by hand. `make marks` runs
+`tools/aenderungen.py`, which compares the chapters word by word with the
+previous version in `baseline/<Name>.txt` and sets the marks. Edit the text,
+run `make marks`, and commit the result. The workflows run `make check`.
+
+A statute without a file in `baseline/` is new and has no marks (the
+QSM-Ordnung). The marks on a title page and a signature page are set by hand.
+
+When a version is in force, make it the new baseline:
+
+```sh
+python3 tools/aenderungen.py --baseline Organisationssatzung > baseline/Organisationssatzung.txt
+make marks
+```
 
 Before the Präsidium approves the version, the title page shows `XX.XX.20XX`.
 After the approval, write the date into `accepted-university` in

@@ -9,13 +9,13 @@ Die Studierendenschaft verwendet ihre Beiträge zur Erfüllung ihrer gesetzliche
 === Zuwendungen <fo-zuwendungen>
 + Auf Antrag können studentische Initiativen, Arbeitskreise, Vereine, sonstige Einrichtungen und Funktionsträger des Studierendenparlaments zur Erfüllung der Aufgaben der Studierendenschaft gem. § 65 Abs. 2 LHG durch Zuwendungen gefördert werden. Der AStA entscheidet stellvertretend für das Studierendenparlament über die Bewilligung und die Höhe der Zuwendung.
 + Nicht zulässig sind pauschale Förderungen von Vorhaben ohne Zweckbindung, die Unterstützung von Wahlgemeinschaften sowie die Finanzierung von Aktivitäten, deren Dauer über 12 Monate hinausgeht.
-+ Für Anträge, welche die Höhe der finanziellen Unterstützung im laufenden Haushaltsjahr von #removed[5.000,- € (Fünftausend Euro)] #hl[5.000 €] übersteigen, ist die Zustimmung der absoluten Mehrheit der anwesenden Mitglieder des Studierendenparlaments erforderlich. Das Studierendenparlament muss dazu nach #removed[§ 8 Abs. 1 der Satzungsordnung] #hl[§ 8 der Organisationssatzung] beschlussfähig sein.
++ Für Anträge, welche die Höhe der finanziellen Unterstützung im laufenden Haushaltsjahr von #removed[5.000,-] #hl[5.000] € #removed[(Fünftausend Euro)] übersteigen, ist die Zustimmung der absoluten Mehrheit der anwesenden Mitglieder des Studierendenparlaments erforderlich. Das Studierendenparlament muss dazu nach § 8 #removed[Abs. 1] der #removed[Satzungsordnung] #hl[Organisationssatzung] beschlussfähig sein.
 + Der Finanzreferent informiert die Antragsteller sowie den Haushaltsbeauftragten über die Bewilligung oder Ablehnung des Antrags.
 + Die Bewirtschaftung der bereitgestellten Mittel erfolgt durch den Haushaltsbeauftragten.
 + Restmittel werden am Ende des Haushaltsjahres den Rücklagen zugeführt.
 
 === Fachschaften <fo-fachschaften>
-+ Das #removed[StuPa] #hl[Studierendenparlament] kann nach eigenem, freien Ermessen den einzelnen Fachschaften einen Etat für das Haushaltsjahr zuweisen. Über die konkrete Verwendung entscheiden die Fachschaftsvertretungen #removed[im Einvernehmen mit ihren jeweiligen studentischen Fakultätsräten] #hl[gem. § 23 der Organisationssatzung in Absprache mit den studentischen Mitgliedern des jeweiligen Fakultätsrates, soweit diese nicht selbst die Fachschaftsvertretung bilden]. Die letztendliche Verfügung erfolgt mit Genehmigung des Finanzreferenten, welcher insbesondere die Einhaltung der haushaltsrechtlichen Grundsätze überwacht.
++ Das #removed[StuPa] #hl[Studierendenparlament] kann nach eigenem, freien Ermessen den einzelnen Fachschaften einen Etat für das Haushaltsjahr zuweisen. Über die konkrete Verwendung entscheiden die Fachschaftsvertretungen #removed[im Einvernehmen] #hl[gem. § 23 der Organisationssatzung in Absprache] mit #removed[ihren] #hl[den studentischen Mitgliedern des] jeweiligen #removed[studentischen Fakultätsräten.] #hl[Fakultätsrates, soweit diese nicht selbst die Fachschaftsvertretung bilden.] Die letztendliche Verfügung erfolgt mit Genehmigung des Finanzreferenten, welcher insbesondere die Einhaltung der haushaltsrechtlichen Grundsätze überwacht.
 + Die Bewirtschaftung der bereitgestellten Mittel erfolgt durch den Haushaltsbeauftragten.
 + Restmittel werden am Ende des Haushaltsjahres den Rücklagen zugeführt.
 
@@ -27,7 +27,7 @@ Die Studierendenschaft verwendet ihre Beiträge zur Erfüllung ihrer gesetzliche
 + #hl[Restmittel werden am Ende des Haushaltsjahres den Rücklagen zugeführt.]
 
 === Aufwandsentschädigungen <fo-aufwandsentschaedigungen>
-+ Das Studierendenparlament kann gem. § 65a Abs. 7 LHG i.V.m. § #removed[33] #hl[34] Abs. 2 der Organisationssatzung der Studierendenschaft eine angemessene Aufwandsentschädigung festsetzen.
++ Das Studierendenparlament kann gem. § 65a Abs. 7 LHG i.V.m. #removed[§ 33] #hl[§ 34] Abs. 2 der Organisationssatzung der Studierendenschaft eine angemessene Aufwandsentschädigung festsetzen.
 + Die Höhe der Aufwandsentschädigung errechnet sich aus der Anzahl der teilgenommenen Sitzungen im Studierendenparlament mit einem dafür festgelegten Betrag pro Sitzung und wird semesterweise ausbezahlt.
 + Über die Höhe des Satzes der pro teilgenommener Sitzung ausbezahlt wird, entscheidet das Studierendenparlament und die Summe der möglichen Aufwandsentschädigungen wird im Haushaltsplan berücksichtigt.
 + Für das Haushaltsjahr wird #removed[eine] #hl[ein] Ausgabetitel für Aufwandsentschädigungen im Haushaltsplan veranschlagt. Der AStA verwaltet diesen Ausgabentitel vertretend für das Studierendenparlament und darf Aufwandsentschädigungen für außerordentliches Engagement vergeben. Diese werden zum Ende des Semesters ausgezahlt und werden zuvor im Studierendenparlament vorgestellt und beschlossen.

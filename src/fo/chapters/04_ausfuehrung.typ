@@ -11,9 +11,9 @@
 + Der Haushaltsbeauftragte sowie der Finanzreferent sind befugt finanzielle Angelegenheiten oder Verpflichtungen zur Aufrechterhaltung des laufenden Geschäftsbetriebes zu regeln.
 
 === Bevollmächtigung von Vertreterinnen und Vertretern <fo-bevollmaechtigung>
-+ Der Finanzreferent kann im Rahmen einer geordneten und jederzeit übersichtlichen Wirtschaftsführung weitere Mitglieder des AStA mit der Wahrnehmung einzelner Befugnisse oder mit seiner Urlaubs- oder Krankheitsvertretung beauftragen. Hierunter fällt auch das Unterzeichnen von Anordnungen der sachlichen und rechnerischen Richtigkeit gem. #removed[§ 16 Abs. 2] #hl[@fo-bewirtschaftung Abs. 4] dieser Ordnung.
++ Der Finanzreferent kann im Rahmen einer geordneten und jederzeit übersichtlichen Wirtschaftsführung weitere Mitglieder des AStA mit der Wahrnehmung einzelner Befugnisse oder mit seiner Urlaubs- oder Krankheitsvertretung beauftragen. Hierunter fällt auch das Unterzeichnen von Anordnungen der sachlichen und rechnerischen Richtigkeit gem. #removed[§ 16] #hl[@fo-bewirtschaftung] Abs. #removed[2] #hl[4] dieser Ordnung.
 + Die Bevollmächtigung hat schriftlich zu erfolgen und ist von der bevollmächtigten Person und von dem Vorsitzenden des AStA gegengezeichnet zu den Akten zu nehmen.
-+ Die Bevollmächtigung endet unmittelbar durch schriftlichen Widerruf des Finanzreferenten, durch Ablauf einer gesetzlichen Frist, mit Ausscheiden aus dem #removed[Studierendenparlament] #hl[AStA], mit dem Ende der Amtszeit des Finanzreferenten oder durch Verlust der Geschäftsfähigkeit.
++ Die Bevollmächtigung endet unmittelbar durch schriftlichen Widerruf des Finanzreferenten, durch Ablauf einer gesetzlichen Frist, mit Ausscheiden aus dem #removed[Studierendenparlament,] #hl[AStA,] mit dem Ende der Amtszeit des Finanzreferenten oder durch Verlust der Geschäftsfähigkeit.
 + Der Finanzreferent hat die Handlungen der bevollmächtigten Person/en unter Berücksichtigung seiner Aufsichtspflichten angemessen zu überwachen.
 
 === Über- und außerplanmäßige Ausgaben <fo-ueberplanmaessig>
