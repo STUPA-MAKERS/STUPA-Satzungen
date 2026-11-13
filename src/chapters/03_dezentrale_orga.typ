@@ -17,7 +17,7 @@ Die Studierenden einer Fakultät bilden eine Fachschaft. In der Fachschaft wird 
 === #hl[Zusammensetzung der Fachschaftsvertretung] <fachschaft-zusammensetzung>
 + #hl[Hat die Fachschaftsvertretung keine Fachschaftsordnung beschlossen, die eine Fachschaftsvertretung nach Absatz 2 bildet, sind die studentischen Mitglieder des jeweiligen Fakultätsrates die Fachschaftsvertretung.]
 + #hl[Die Fachschaftsordnung kann eine von den studentischen Mitgliedern des Fakultätsrates getrennte Fachschaftsvertretung bilden. Diese besteht aus mindestens drei Vorstandsmitgliedern, die nach @fachschaft-wahlen gewählt werden. Die genaue Anzahl regelt die Fachschaftsordnung.]
-+ #hl[Die Amtszeit der Vorstandsmitglieder nach Absatz 2 beträgt ein Semester. Sie endet mit dem Amtsantritt der Vorstandsmitglieder, die zu Beginn des folgenden Semesters gewählt werden. Eine Wiederwahl ist möglich.]
++ #hl[Die Amtszeit der Vorstandsmitglieder nach Absatz 2 beträgt ein Semester. Sie beginnt mit der Feststellung des Wahlergebnisses und endet mit dem Amtsantritt der Vorstandsmitglieder, die zu Beginn des folgenden Semesters gewählt werden. Eine Wiederwahl ist möglich.]
 + #hl[Die Mitglieder der Fachschaftsvertretung bilden gemeinsam ihren Vorstand. Die Fachschaftsvertretung] führt die laufenden Geschäfte der #removed[Fachschaft, bereitet die Beschlüsse] #hl[Fachschaft. Die Verteilung der Aufgaben innerhalb des Vorstandes regelt die Fachschaftsordnung oder die Geschäftsordnung der Fachschaftsvertretung.]
 
 === #hl[Fachschaftssitzung und Wahl des Vorstandes] <fachschaft-wahlen>
