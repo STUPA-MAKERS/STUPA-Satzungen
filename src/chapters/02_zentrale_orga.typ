@@ -22,7 +22,7 @@ Das #removed[StuPa] #hl[STUPA] entscheidet über die grundsätzlichen Angelegenh
 === Zusammensetzung des #removed[Studierendenparlaments] #hl[Studierendenparlamentes] <stupa-zusammensetzung>
 Das Studierendenparlament setzt sich aus insgesamt #removed[19] #hl[bis zu 21] stimmberechtigten Mitgliedern der Studierendenschaft im Sinne von @allg-rechtsstellung zusammen. Fünf Mitglieder werden direkt gewählt. Die studentischen Fakultätsräte jeder Fakultät wählen #hl[und entsenden] aus ihrer Mitte zwei weitere #removed[Mitglieder] #hl[Mitglieder, sowie zwei benannte Vertretungen] nach Maßgabe von @allg-wahlen Abs. #removed[2, also insgesamt zehn.] #hl[2.] Hinzu treten die vier studentischen Senatsmitglieder als Mitglieder kraft #removed[Amtes.Doppelfunktionen sind nicht zulässig.] #hl[ihres Amtes. Darüber hinaus gilt:]
 
-+ #hl[Wird ein Mitglied doppelt in das Studierendenparlament gewählt, so rückt die Person mit der nächsthöheren Stimmenzahl in der jeweiligen Wahl nach. Bei gleicher Stimmenzahl entscheidet das Los. Ist dies nicht möglich, so bleibt der Sitz unbelegt.]
++ #hl[Erhält eine Person mehr als einen Sitz im Studierendenparlament, so behält sie den Sitz kraft Amtes vor dem von den studentischen Fakultätsräten entsandten Sitz und diesen vor dem direkt gewählten Sitz. Für den anderen Sitz rückt die Person mit der nächsthöheren Stimmenzahl in der jeweiligen Wahl nach. Bei gleicher Stimmenzahl entscheidet das Los. Ist dies nicht möglich, so bleibt der Sitz unbelegt.]
 + Jedes Mitglied hat eine Stimme. #removed[Vorsitzender] #hl[@allg-beschlussfassung Absatz 1 bleibt davon unberührt.]
 + #hl[Ist ein entsandtes Mitglied eines Fakultätsrates verhindert, kann es sich durch eine der benannten Vertretungen desselben Fakultätsrates vertreten lassen. Die Vertretung übt das Stimmrecht des Mitglieds aus und zählt für die Beschlussfähigkeit als anwesend. Die Vertretung bedarf keiner Mitteilung an die:den Vorsitzende:n.]
 
@@ -54,7 +54,7 @@ Das Studierendenparlament setzt sich aus insgesamt #removed[19] #hl[bis zu 21] s
   + durch Tod.
 
 === Sitzungen des #removed[Studierendenparlaments] #hl[Studierendenparlamentes] <stupa-sitzungen>
-+ Zu der ersten Sitzung des #removed[Studierendenparlaments] #hl[Studierendenparlamentes] lädt das lebensälteste Mitglied des #removed[Studierendenparlaments] #hl[Studierendenparlamentes] ein. Es leitet die Sitzung bis die Wahl #removed[zum] #hl[der:des] Vorsitzenden der Studierendenschaft abgeschlossen ist.
++ Zu der ersten Sitzung des #removed[Studierendenparlaments] #hl[Studierendenparlamentes] lädt das lebensälteste Mitglied des #removed[Studierendenparlaments] #hl[Studierendenparlamentes] ein. #hl[Die Einladung erfolgt bis zum 15. Oktober.] Es leitet die Sitzung bis die Wahl #removed[zum] #hl[der:des] Vorsitzenden der Studierendenschaft abgeschlossen ist.
 + Ordentliche Sitzungen des #removed[Studierendenparlaments] #hl[Studierendenparlamentes] sollen in der Vorlesungszeit mindestens einmal monatlich abgehalten werden.
 + Auf Verlangen des Allgemeinen Studierendenausschusses oder auf Verlangen von mindestens 20 % der Mitglieder des #removed[Studierendenparlaments] #hl[Studierendenparlamentes] oder auf Antrag von mindestens 5 % der gesamten Studierendenschaft finden außerordentliche Sitzungen des #removed[Studierendenparlaments] #hl[Studierendenparlamentes] statt.
 + #removed[Dem Schriftführer] #hl[Der:Dem Schriftführer:in] obliegt die Anfertigung und Veröffentlichung des Protokolls. Bei #removed[seiner] #hl[ihrer:seiner] Verhinderung bestimmt zu Sitzungsbeginn #removed[der] #hl[die:der] Vorsitzende #removed[einen Protokollführer.] #hl[eine Protokollführung.] Die Niederschrift ist #removed[vom Schriftführer] #hl[von der:dem Schriftführer:in] zu unterzeichnen und in der nächsten Sitzung des #removed[StuPas] #hl[STUPAs] zu genehmigen.
@@ -66,11 +66,11 @@ Das Studierendenparlament setzt sich aus insgesamt #removed[19] #hl[bis zu 21] s
 
 + #hl[Das STUPA wählt mindestens einmal im Jahr, auf Forderung von mindestens 20 % der anwesenden Mitglieder des STUPAs oder auf Forderung der:des Vorsitzenden, für jeden Arbeitskreis eine Arbeitskreisleitung entsprechend @allg-wahlen. Abweichend davon ist der Vorsitz der ständigen Arbeitskreise nach Absatz 5 kraft Amtes besetzt. Eine Arbeitskreisleitung besteht aus einer:einem Vorsitzenden und höchstens zwei weiteren Mitgliedern. Alle Mitglieder haben eine Stimme im jeweiligen Arbeitskreis.]
 
-+ #hl[Der Arbeitskreisleitung] können #removed[auch] #hl[Mitglieder und] Nichtmitglieder des #removed[StuPa] #hl[STUPA] mit Sitz und Stimme angehören. #removed[Die] #hl[Für die] Mitgliedschaft #removed[muss schriftlich dem AStA mitgeteilt werden.] #hl[gilt entsprechend] @allg-mitgliedschaft-mitwirkung Absatz #removed[4 gilt entsprechend. Die Mehrheit] #hl[1, 3 und 4. Die:Der Vorsitzende] der #removed[Ausschussmitglieder] #hl[Arbeitskreisleitung] soll dem Studierendenparlament angehören.
++ #hl[Der Arbeitskreisleitung] können #removed[auch] #hl[Mitglieder und] Nichtmitglieder des #removed[StuPa] #hl[STUPA] mit Sitz und Stimme angehören. #removed[Die] #hl[Für die] Mitgliedschaft #removed[muss schriftlich dem AStA mitgeteilt werden.] #hl[gilt entsprechend] @allg-mitgliedschaft-mitwirkung Absatz #removed[4 gilt entsprechend. Die Mehrheit] #hl[1, 3 und 4. Die:Der Vorsitzende] der #removed[Ausschussmitglieder] #hl[Arbeitskreisleitung] soll dem Studierendenparlament angehören. #removed[Als ständiger Ausschuss wird der Haushaltsausschuss eingerichtet.]
 
-+ #hl[Mitglieder der Arbeitskreisleitung müssen Mitglieder der Studierendenschaft im Sinne von @allg-rechtsstellung sein.]
++ #hl[Mitglieder der Arbeitskreisleitung müssen Mitglieder der Studierendenschaft im Sinne von @allg-rechtsstellung sein. Jede:r Studierende kann in einem Arbeitskreis mitwirken; über die Aufnahme als Mitglied entscheidet die Arbeitskreisleitung. Ein Arbeitskreis beschließt mit der einfachen Mehrheit seiner anwesenden Mitglieder.]
 
-+ Als #removed[ständiger Ausschuss wird der Haushaltsausschuss eingerichtet.] #hl[ständige Arbeitskreise werden eingerichtet]
++ #hl[Als ständige Arbeitskreise werden eingerichtet]
   #[
     #set enum(numbering: "1.", full: false)
     + #hl[der Arbeitskreis Finanzen, dessen Vorsitz kraft ihres:seines Amtes die:der Finanzreferent:in übernimmt. Aufgabe ist die Beratung des Studierendenparlamentes und der:des Finanzreferent:in in Haushalts- und Finanzfragen, die Vorberatung des Haushaltsplans und der Anträge auf Qualitätssicherungsmittel sowie die Betreuung der technischen Grundlagen der Finanzverwaltung.]
