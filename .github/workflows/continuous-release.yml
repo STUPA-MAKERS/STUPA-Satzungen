@@ -54,7 +54,7 @@ jobs:
 
       - name: PDFs für das Release benennen
         run: |
-          for name in Organisationssatzung QSM-Ordnung Finanzordnung Beitragssatzung; do
+          for name in Organisationssatzung QSM-Ordnung Finanzordnung Beitragssatzung Arbeitskreisordnung; do
             cp "build/$name.pdf" "${name}_Latest.pdf"
             cp "build/${name}_Aenderungen.pdf" "${name}_Aenderungen_Latest.pdf"
           done
@@ -70,6 +70,7 @@ jobs:
           | `Finanzordnung_Latest.pdf` | Finanzordnung |
           | `Beitragssatzung_Latest.pdf` | Beitragssatzung |
           | `QSM-Ordnung_Latest.pdf` | QSM-Ordnung |
+          | `Arbeitskreisordnung_Latest.pdf` | Arbeitskreisordnung |
 
           Die Dateien `<Name>_Aenderungen_Latest.pdf` zeigen die Änderungen
           zur Vorfassung. Neuer Text ist gelb. Gestrichener Text ist gelb und
@@ -89,6 +90,8 @@ jobs:
             QSM-Ordnung_Aenderungen_Latest.pdf
             Finanzordnung_Aenderungen_Latest.pdf
             Beitragssatzung_Aenderungen_Latest.pdf
+            Arbeitskreisordnung_Latest.pdf
+            Arbeitskreisordnung_Aenderungen_Latest.pdf
           retention-days: 30
           if-no-files-found: error
 
@@ -118,6 +121,8 @@ jobs:
             QSM-Ordnung_Aenderungen_Latest.pdf
             Finanzordnung_Aenderungen_Latest.pdf
             Beitragssatzung_Aenderungen_Latest.pdf
+            Arbeitskreisordnung_Latest.pdf
+            Arbeitskreisordnung_Aenderungen_Latest.pdf
           make_latest: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

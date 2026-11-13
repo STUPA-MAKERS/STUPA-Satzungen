@@ -73,9 +73,10 @@ Das Studierendenparlament setzt sich aus insgesamt #removed[19] #hl[bis zu 21] s
 + #hl[Als ständige Arbeitskreise werden eingerichtet]
   #[
     #set enum(numbering: "1.", full: false)
-    + #hl[der Arbeitskreis Finanzen, dessen Vorsitz kraft ihres:seines Amtes die:der Finanzreferent:in übernimmt. Aufgabe ist die Beratung des Studierendenparlamentes und der:des Finanzreferent:in in Haushalts- und Finanzfragen, die Vorberatung des Haushaltsplans und der Anträge auf Qualitätssicherungsmittel sowie die Betreuung der technischen Grundlagen der Finanzverwaltung.]
-    + #hl[der Arbeitskreis Landesweite Zusammenarbeit, dessen Vorsitz kraft ihres:seines Amtes die:der Vorsitzende der Studierendenschaft übernimmt. Aufgabe ist die Zusammenarbeit mit anderen Studierendenschaften nach § 65 Abs. 2 Nr. 7 LHG und die Mitwirkung in der landesweiten Vertretung der Studierendenschaften nach § 65a Abs. 8 LHG.]
+    + #hl[der Arbeitskreis Finanzen, dessen Vorsitz kraft ihres:seines Amtes die:der Finanzreferent:in übernimmt,]
+    + #hl[der Arbeitskreis Landesweite Zusammenarbeit, dessen Vorsitz kraft ihres:seines Amtes die:der Vorsitzende der Studierendenschaft übernimmt.]
   ]
+  #hl[Die Arbeitskreisordnung bestimmt weitere ständige Arbeitskreise und die Aufgaben aller ständigen Arbeitskreise. Sie wird als Satzung beschlossen.]
 
 + #hl[Arbeitskreise können selbstständig über die ihnen vom STUPA zugewiesenen Mittel verfügen. Ausgaben bedürfen einer sachlichen Prüfung durch die:den Haushaltsbeauftragte:n und die:den Finanzreferent:in. Näheres regelt die Finanzordnung entsprechend @vermoegen-haushaltsplan-finanzordnung.]
 

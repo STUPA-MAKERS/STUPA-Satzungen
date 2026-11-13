@@ -60,7 +60,7 @@ jobs:
 
       - name: PDFs nach dem Tag benennen
         run: |
-          for name in Organisationssatzung QSM-Ordnung Finanzordnung Beitragssatzung; do
+          for name in Organisationssatzung QSM-Ordnung Finanzordnung Beitragssatzung Arbeitskreisordnung; do
             cp "build/$name.pdf" "${name}_${{ steps.version.outputs.TAG }}.pdf"
             cp "build/${name}_Aenderungen.pdf" "${name}_Aenderungen_${{ steps.version.outputs.TAG }}.pdf"
           done
@@ -79,6 +79,8 @@ jobs:
             QSM-Ordnung_Aenderungen_${{ steps.version.outputs.TAG }}.pdf
             Finanzordnung_Aenderungen_${{ steps.version.outputs.TAG }}.pdf
             Beitragssatzung_Aenderungen_${{ steps.version.outputs.TAG }}.pdf
+            Arbeitskreisordnung_${{ steps.version.outputs.TAG }}.pdf
+            Arbeitskreisordnung_Aenderungen_${{ steps.version.outputs.TAG }}.pdf
           prerelease: ${{ github.event.inputs.is_prerelease == 'true' }}
           generate_release_notes: true
         env:

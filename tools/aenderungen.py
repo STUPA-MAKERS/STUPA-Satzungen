@@ -59,6 +59,11 @@ DOCUMENTS = {
         "src/qsmo/chapters/03_verfahren.typ",
         "src/qsmo/chapters/04_schlussbest.typ",
     ],
+    "Arbeitskreisordnung": [
+        "src/ako/chapters/01_allgemeines.typ",
+        "src/ako/chapters/02_arbeitskreise.typ",
+        "src/ako/chapters/03_schlussbest.typ",
+    ],
 }
 
 MARKS = ("#hl[", "#removed[")

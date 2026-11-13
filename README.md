@@ -8,6 +8,7 @@ Die Satzungen der Studierendenschaft der Hochschule Reutlingen in Typst:
 - Finanzordnung
 - Beitragssatzung
 - QSM-Ordnung
+- Arbeitskreisordnung
 
 Die aktuellen PDFs stehen im Release
 [Aktueller Stand](../../releases/tag/latest).
@@ -38,6 +39,7 @@ Wenn das Submodul fehlt, lädt `make` es.
 | `src/fo.typ`, `src/fo/` | Finanzordnung |
 | `src/bs.typ`, `src/bs/` | Beitragssatzung |
 | `src/qsmo.typ`, `src/qsmo/` | QSM-Ordnung |
+| `src/ako.typ`, `src/ako/` | Arbeitskreisordnung |
 | `src/satzung.typ` | Layout für alle Satzungen |
 | `src/hsrtreport/` | Vorlage (Submodul) |
 | `baseline/` | Vorfassung jeder Satzung als Text |
