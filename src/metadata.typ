@@ -4,8 +4,8 @@
 #import "satzung.typ": hl, datum
 
 // Datum des STUPA-Beschlusses zu dieser Fassung.
-#let last-changed = datum("beschluss", "5. November 2026")
-#let last-changed-short = datum("beschluss", "5.11.2026", kurz: true)
+#let last-changed = datum("beschluss", "XX.XX.20XX")
+#let last-changed-short = datum("beschluss", "XX.XX.20XX", kurz: true)
 
 // Datum der Genehmigung durch das Präsidium. Lass den Platzhalter stehen,
 // bis das Präsidium diese Fassung genehmigt.
@@ -41,13 +41,13 @@
 
   [
     Auf Grund von § 65a Abs. 1 S. 1 des Gesetzes über die Hochschulen in
-    Baden-Württemberg (Landeshochschulgesetz – LHG) #hl[in der Fassung vom
-    1.~April 2014 (GBl. S. 99), zuletzt geändert durch Artikel 5 des Gesetzes
-    vom 11. Dezember 2025 (GBl. 2025 Nr. 139),] hat die
+    Baden-Württemberg (Landeshochschulgesetz – LHG) hat die
     Studierendenschaft der Hochschule Reutlingen in der Urabstimmung vom
-    16.~April 2013, zuletzt geändert am #last-changed durch Beschluss des
-    Studierendenparlamentes, die nachfolgende Organisationssatzung
-    beschlossen.
+    16.~April 2013 die nachfolgende Organisationssatzung beschlossen.
+    #hl[Das Studierendenparlament hat sie zuletzt am #last-changed auf Grund
+    von § 65a Abs. 1 S. 3 LHG in der Fassung vom 1.~April 2014 (GBl. S. 99),
+    zuletzt geändert durch Artikel 5 des Gesetzes vom 11. Dezember 2025
+    (GBl. 2025 Nr. 139), geändert.]
 
     Die Hochschule Reutlingen hat die Organisationssatzung durch Beschluss des
     Präsidiums am #accepted-university genehmigt.
@@ -62,7 +62,8 @@
     geschaffen, Arbeitskreisleitungen für ihr Engagement zu belohnen. Die Rolle
     der Fachschaften wurde genauer definiert. Den Arbeitskreisen und
     Fachschaften wird eine umfangreichere finanzielle Selbstbestimmung
-    ermöglicht. Es wird eine Stimmrechtsübertragung ermöglicht.
+    ermöglicht. Es wird eine Stimmrechtsübertragung ermöglicht. Die Satzung
+    wurde außerdem an die geltende Fassung der §§ 65 bis 65b LHG angepasst.
   ]
 
   place(bottom + left, data)

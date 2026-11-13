@@ -8,19 +8,20 @@
 Die immatrikulierten Studierenden (Studierende) der Hochschule Reutlingen bilden die Verfasste Studierendenschaft (Studierendenschaft). Sie ist eine rechtsfähige Körperschaft des öffentlichen Rechts und als solche eine Gliedkörperschaft der Hochschule. Sie nimmt ihre Angelegenheiten im Rahmen der gesetzlichen Bestimmungen selbstständig wahr und untersteht der Rechtsaufsicht des Präsidiums der Hochschule. Sie führt den Namen „Verfasste Studierendenschaft der Hochschule Reutlingen“. Ihr Sitz ist Reutlingen. Nachfolgend wird sie nur Studierendenschaft genannt.
 
 === Aufgaben <allg-aufgaben>
-+ Die Studierendenschaft hat die Aufgabe, die Interessen der Studierenden wahrzunehmen. Sie hat unbeschadet der Zuständigkeit der Hochschule und des Studentenwerks die folgenden Aufgaben:
++ Die Studierendenschaft hat die Aufgabe, die Interessen der Studierenden wahrzunehmen. Sie hat unbeschadet der Zuständigkeit der Hochschule und des #removed[Studentenwerks] #hl[Studierendenwerks] die folgenden Aufgaben:
   + die Wahrnehmung der hochschulpolitischen, fachlichen und fachübergreifenden sowie der sozialen, wirtschaftlichen und kulturellen Belange der Studierenden,
   + die Mitwirkung an den Aufgaben der Hochschulen nach den §§ 2 bis 7 LHG,
   + die Förderung der politischen Bildung und des staatsbürgerlichen Verantwortungsbewusstseins der Studierenden,
-  + die Förderung der Gleichstellung und den Abbau von Benachteiligungen innerhalb der Studierendenschaft,
+  + die Förderung der #removed[Gleichstellung] #hl[Chancengleichheit] und den Abbau von Benachteiligungen innerhalb der Studierendenschaft,
+  + #hl[die Förderung der Integration ausländischer Studierender, die einen Studienabschluss in Baden-Württemberg anstreben,]
   + die Förderung der sportlichen Aktivitäten der Studierenden,
   + die Pflege der überregionalen und internationalen Studierendenbeziehungen.
 
 + Zur Erfüllung ihrer Aufgaben ermöglicht die Studierendenschaft den Meinungsaustausch in der Gruppe der Studierenden und kann insbesondere auch zu solchen Fragen Stellung beziehen, die sich mit der gesellschaftlichen Aufgabenstellung der Hochschule, ihrem Beitrag zur nachhaltigen Entwicklung sowie mit der Anwendung der wissenschaftlichen Erkenntnisse und der Abschätzung ihrer Folgen für die Gesellschaft und die Natur beschäftigen.
 
-+ Im Rahmen der Erfüllung ihrer Aufgaben nach Absatz 1 nimmt die Studierendenschaft ein politisches Mandat wahr. Sie wahrt nach den verfassungsrechtlichen Grundsätzen die weltanschauliche, religiöse und parteipolitische Neutralität.
++ #removed[Im Rahmen der Erfüllung ihrer Aufgaben nach Absatz 1 nimmt die] #hl[Die] Studierendenschaft #removed[ein politisches Mandat wahr. Sie] wahrt nach den verfassungsrechtlichen Grundsätzen die weltanschauliche, religiöse und parteipolitische Neutralität.
 
-+ Beabsichtigt die Studierendenschaft, nicht nur vorübergehend konkrete Aufgaben oder Angebote innerhalb ihrer Zuständigkeit wahrzunehmen, die bereits von dem für die Hochschule zuständigen Studentenwerk wahrgenommen werden, so gelten die Bestimmungen §65 Abs. 5 LHG.
++ Beabsichtigt die Studierendenschaft, nicht nur vorübergehend konkrete Aufgaben oder Angebote innerhalb ihrer Zuständigkeit wahrzunehmen, die bereits von dem für die Hochschule zuständigen #removed[Studentenwerk] #hl[Studierendenwerk] wahrgenommen werden, so gelten die Bestimmungen #removed[§65] #hl[des § 65] Abs. 5 LHG.
 
 === Zentrale Organe der Studierendenschaft <allg-zentrale-organe>
 Zentrale Organe der Studierendenschaft sind das Studierendenparlament #removed[(StuPa)] #hl[(STUPA)] und der Allgemeine Studierendenausschuss (AStA). Das #removed[StuPa] #hl[STUPA] entscheidet über die grundsätzlichen Angelegenheiten der Studierendenschaft einschließlich der Satzungen (legislatives Organ). Die laufenden Geschäfte werden vom AStA geführt (exekutives Organ); #hl[die:der Vorsitzende] der #removed[Vorsitzende des AStA] #hl[Studierendenschaft] vertritt die Studierendenschaft nach innen und nach außen; #removed[seine Stellvertreter] #hl[die Stellvertretenden] vertreten #removed[ihn.] #hl[sie:ihn.]
@@ -55,11 +56,16 @@ Die Sitzungen des #removed[Studierendenparlaments,] #hl[Studierendenparlamentes,
 + #hl[Abweichend von den Absätzen 1 und 2 ist der Allgemeine Studierendenausschuss nur beschlussfähig, wenn mindestens drei seiner Mitglieder anwesend sind.]
 
 === Beschlussfassung und Bekanntgabe von Beschlüssen <allg-beschlussfassung>
-+ Soweit in dieser Satzung keine anderweitige Regelung getroffen worden ist, kommen Beschlüsse mit der #hl[einfachen] Mehrheit der abgegebenen Stimmen der anwesenden stimmberechtigten Mitglieder zustande; Stimmenthaltungen und ungültige Stimmen gelten als nicht abgegebene Stimmen. Eine Stimmrechtsübertragung ist #removed[unzulässig.] #hl[der:dem Vorsitzenden des Gremiums spätestens 2 Stunden vor Beginn der Sitzung schriftlich oder in Textform mitzuteilen und nur auf ein anderes Mitglied des Gremiums möglich, soweit diese Satzung nichts anderes bestimmt. Ein Mitglied kann nicht mehr als zwei Stimmrechtsübertragungen auf sich vereinigen. Eine Weiterübertragung ist ausgeschlossen. In offenen Abstimmungen können das eigene und die übertragenen Stimmrechte nur einheitlich ausgeübt werden. Sofern noch kein:e Vorsitzende:r bestimmt ist, ist keine Stimmrechtsübertragung möglich.]
++ Soweit in dieser Satzung keine anderweitige Regelung getroffen worden ist, kommen Beschlüsse mit der #hl[einfachen] Mehrheit der abgegebenen Stimmen der anwesenden stimmberechtigten Mitglieder zustande; Stimmenthaltungen und ungültige Stimmen gelten als nicht abgegebene Stimmen. Eine Stimmrechtsübertragung ist #removed[unzulässig.] #hl[der:dem Vorsitzenden des Gremiums spätestens 2 Stunden vor Beginn der Sitzung schriftlich oder in Textform mitzuteilen und nur auf ein anderes Mitglied des Gremiums möglich, soweit diese Satzung nichts anderes bestimmt. Ein Mitglied kann nicht mehr als zwei Stimmrechtsübertragungen auf sich vereinigen. Eine Weiterübertragung ist ausgeschlossen. In offenen Abstimmungen können das eigene und die übertragenen Stimmrechte nur einheitlich ausgeübt werden. Sofern noch kein:e Vorsitzende:r bestimmt ist, ist keine Stimmrechtsübertragung möglich. Übertragene Stimmen zählen nicht für die Beschlussfähigkeit nach @allg-beschlussfaehigkeit. Bei Wahlen und bei geheimen Abstimmungen ist eine Stimmrechtsübertragung ausgeschlossen.]
 
 + Sofern diese Satzung keine besonderen Bestimmungen enthält, werden Beschlüsse der zentralen Gremien der Studierendenschaft durch Aushang an der Anschlagtafel „Amtliche Mitteilungen der Studierendenschaft an der Hochschule Reutlingen“ bekanntgemacht. Die Aushangfrist beträgt zehn Werktage. Der Samstag ist kein Werktag im Sinne dieser Satzung. Der Tag des Beginns und der Beendigung des Aushangs ist auf dem Beschluss zu vermerken. Außerdem werden die Studierenden per Mail über den Beschluss informiert.
 
 + Satzungen der Studierendenschaft werden vom Präsidium der Hochschule in der für Hochschulsatzungen vorgesehenen Weise als Satzungen der Gliedkörperschaft bekanntgemacht.
+
++ #hl[In den Satzungen und Ordnungen der Studierendenschaft bedeutet]
+  + #hl[einfache Mehrheit: mehr Ja-Stimmen als Nein-Stimmen unter den abgegebenen Stimmen,]
+  + #hl[Mehrheit der Mitglieder: mehr als die Hälfte der stimmberechtigten Mitglieder des Gremiums,]
+  + #hl[Zweidrittelmehrheit der Mitglieder: mindestens zwei Drittel der stimmberechtigten Mitglieder des Gremiums.]
 
 === Wahlen zu den Gremien und Wahlen in Gremien <allg-wahlen>
 + Die direkt gewählten Mitglieder des #removed[Studierendenparlaments sowie die studentischen Fakultätsräte] #hl[Studierendenparlamentes] werden nach Maßgabe des Hochschulgesetzes in allgemeiner, freier, gleicher, unmittelbarer und geheimer Wahl nach den Grundsätzen der Mehrheitswahl mit Bindung an den Listenvorschlag gewählt. Die #hl[studentischen Fakultätsräte werden nach der Wahlordnung der Hochschule gewählt. Die] Studierenden der Hochschule haben das aktive und passive Wahlrecht.
