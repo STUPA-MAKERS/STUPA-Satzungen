@@ -11,7 +11,7 @@
 + Die Mitglieder des STUPA sind verpflichtet, an den Sitzungen teilzunehmen und an den Aufgaben des STUPA mitzuwirken.
 + Jedes Mitglied hat in den Sitzungen Rede-, Antrags- und Stimmrecht. Es kann vom AStA und von den Arbeitskreisleitungen Auskunft über deren Tätigkeit verlangen.
 + Einladungen, Unterlagen und Mitteilungen gehen den Mitgliedern in Textform zu. Maßgeblich ist die E-Mail-Adresse der Hochschule, solange das Mitglied der:dem Vorsitzenden keine andere Adresse mitteilt.
-+ Das STUPA kann für Anträge, Unterlagen, Abstimmungen und Protokolle ein elektronisches System der Studierendenschaft nutzen (STUPA-Workflow).
++ Das STUPA kann für Anträge, Unterlagen, Abstimmungen und Protokolle ein elektronisches System der Studierendenschaft nutzen („STUPA-Workflow“).
 + Die Pflicht zur Verschwiegenheit nach § 5 Abs. 3 OrgS bleibt unberührt.
 
 === Vorsitz und Sitzungsleitung <go-vorsitz>
