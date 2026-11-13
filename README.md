@@ -1,6 +1,6 @@
 # Organisationssatzung STUPA
 
-[![Build](https://github.com/frederikbeimgraben/OSatzungSTUPA/actions/workflows/continuous-release.yml/badge.svg)](https://github.com/frederikbeimgraben/OSatzungSTUPA/actions/workflows/continuous-release.yml)
+[![Build](https://github.com/STUPA-MAKERS/OSatzungSTUPA/actions/workflows/continuous-release.yml/badge.svg)](https://github.com/STUPA-MAKERS/OSatzungSTUPA/actions/workflows/continuous-release.yml)
 
 The statutes of the student body of Reutlingen University, written in Typst:
 
