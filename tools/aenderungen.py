@@ -250,6 +250,42 @@ def escape(text):
     return text.replace("//", "/\\/")
 
 
+def merge_strays(opcodes):
+    """Verbindet einen kurzen gleichen Lauf zwischen zwei großen Änderungen
+    mit diesen Änderungen.
+
+    Wenige gleiche Wörter in einem ganz neuen Absatz sind Zufall. Ohne diese
+    Regel zerreißen sie den alten und den neuen Absatz in Stücke.
+    """
+    opcodes = [list(op) for op in opcodes]
+    out = []
+
+    def size(op):
+        return (op[2] - op[1]) + (op[4] - op[3])
+
+    for index, op in enumerate(opcodes):
+        tag, i1, i2, j1, j2 = op
+        before = out[-1] if out else None
+        after = opcodes[index + 1] if index + 1 < len(opcodes) else None
+        stray = (
+            tag == "equal"
+            and i2 - i1 <= 4
+            and before is not None
+            and after is not None
+            and before[0] != "equal"
+            and after[0] != "equal"
+            and size(before) >= 4
+            and size(after) >= 4
+            and size(before) + size(after) >= 24
+        )
+        if stray or (tag != "equal" and before is not None and before[0] != "equal"):
+            before[0] = "replace"
+            before[2], before[4] = i2, j2
+        else:
+            out.append(op)
+    return out
+
+
 def mark(texts, baseline):
     """Gibt die Texte mit den Markierungen aus dem Vergleich mit der
     Vorfassung zurück."""
@@ -271,7 +307,7 @@ def mark(texts, baseline):
 
     old = [word[0] for word in baseline]
     matcher = difflib.SequenceMatcher(None, old, keys, autojunk=False)
-    for tag, i1, i2, j1, j2 in matcher.get_opcodes():
+    for tag, i1, i2, j1, j2 in merge_strays(matcher.get_opcodes()):
         if tag == "equal":
             continue
         for j in range(j1, j2):
