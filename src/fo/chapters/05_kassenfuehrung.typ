@@ -20,6 +20,6 @@
 
 === Rechnungslegung und Rechnungsprüfung <fo-rechnungslegung>
 + Innerhalb eines Monats nach Ende des Haushaltsjahres stellt der #removed[Finanzreferent] #hl[AStA unter Leitung der:des Finanzreferent:in] in Abstimmung mit #removed[dem] #hl[der:dem] Haushaltsbeauftragten auf Grundlage der abgeschlossenen Bücher gem. §§ #removed[81 u.] #hl[80 bis] 82 LHO das Rechnungsergebnis auf, welches unverzüglich dem Studierendenparlament sowie der gem. § 65b Abs. 3 Satz 2 LHG mit der Rechnungsprüfung beauftragten Stelle/Person vorzulegen ist.
-+ Die Studierendenschaft beauftragt mit deren Einvernehmen die Verwaltung der Hochschule Reutlingen mit der Rechnungsprüfung.
++ Die Studierendenschaft beauftragt mit deren Einvernehmen die Verwaltung der Hochschule Reutlingen mit der Rechnungsprüfung. #hl[Erteilt die Hochschule ihr Einvernehmen nicht, beauftragt der AStA eine fachkundige Person nach § 65b Abs. 3 Satz 2 LHG.]
 + Die Mitglieder des Studierendenparlaments können jederzeit Einsicht in die Bücher verlangen.
 + #hl[Der AStA macht die Einnahmen, Ausgaben und Verpflichtungsermächtigungen nach Abschluss der Rechnungslegung hochschulöffentlich bekannt (§ 65b Abs. 3 Satz 4 LHG).]

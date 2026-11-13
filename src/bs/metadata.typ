@@ -40,7 +40,7 @@
   )
 
   [
-    Auf Grund von §§ 65a Abs. 1 Satz 1 und Abs. 5 des Landeshochschulgesetzes
+    Auf Grund von § 65a Abs. 1 Satz 1 und Abs. 5 des Landeshochschulgesetzes
     (LHG) in der Fassung vom 1.~April 2014 (GBl. S. 99), zuletzt geändert
     durch Artikel 5 des Gesetzes vom 11. Dezember 2025 (GBl. 2025 Nr. 139),
     sowie des § 31 Abs. 2 der Organisationssatzung der Studierendenschaft der

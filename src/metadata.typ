@@ -59,7 +59,8 @@
     Organisationssatzung an die infolge der neuen Fakultät „NXT“ geänderten
     Vertreter:innen-Anzahl anzupassen. Darüber hinaus wurden mehrere Fehler
     behoben und die Formulierung vereinfacht. Es wurde die Möglichkeit
-    geschaffen, Arbeitskreisleitungen für ihr Engagement zu belohnen. Die Rolle
+    geschaffen, Arbeitskreisleitungen eine angemessene Aufwandsentschädigung zu
+    gewähren. Die Rolle
     der Fachschaften wurde genauer definiert. Den Arbeitskreisen und
     Fachschaften wird eine umfangreichere finanzielle Selbstbestimmung
     ermöglicht. Es wird eine Stimmrechtsübertragung ermöglicht. Die Satzung
