@@ -13,8 +13,8 @@
 + Die Sitzungsleitung stellt vor der Abstimmung den Wortlaut des Antrags fest. Sie stellt die Frage so, dass sie sich mit Ja oder Nein beantworten lässt.
 + Liegen mehrere Anträge zum selben Gegenstand vor, stimmt das STUPA zuerst über den weitestgehenden ab. Über Änderungsanträge stimmt es vor dem Hauptantrag ab. Im Zweifel bestimmt die Sitzungsleitung die Reihenfolge.
 + Die Mehrheiten richten sich nach § 9 OrgS. Bei Stimmengleichheit ist ein Antrag abgelehnt. Verlangt diese Geschäftsordnung eine Zweidrittelmehrheit, sind mindestens doppelt so viele Ja-Stimmen wie Nein-Stimmen erforderlich.
-+ Wer ein übertragenes Stimmrecht ausübt, zeigt das bei der Stimmabgabe an.
-+ Jede Abstimmung kann nach § 9 Abs. 1 OrgS auch geheim stattfinden. Die Sitzungsleitung bestimmt die Art der Abstimmung. Verlangt ein Mitglied die geheime Abstimmung, stimmt das STUPA geheim ab. Übertragene Stimmrechte werden auch in einer geheimen Abstimmung ausgeübt.
++ Wer ein übertragenes Stimmrecht ausübt, zeigt das bei der Stimmabgabe an. Sie:Er stimmt mit dem eigenen und den übertragenen Stimmrechten einheitlich ab (§ 9 Abs. 1 OrgS). Weichen diese Stimmen voneinander ab, sind sie alle ungültig.
++ Jede Abstimmung kann nach § 9 Abs. 1 OrgS auch geheim stattfinden. Die Sitzungsleitung bestimmt die Art der Abstimmung. Verlangt ein Mitglied die geheime Abstimmung, stimmt das STUPA geheim ab. Übertragene Stimmrechte werden auch in einer geheimen Abstimmung ausgeübt. Wer übertragene Stimmrechte ausübt, gibt dabei nur eine Stimme ab; sie zählt für das eigene und für jedes übertragene Stimmrecht.
 + Das STUPA stimmt namentlich ab, wenn es das beschließt. Das Protokoll hält dann fest, wie jedes Mitglied gestimmt hat. Das Verlangen nach geheimer Abstimmung geht vor. Über Anträge zur Geschäftsordnung stimmt das STUPA nicht namentlich ab.
 + Die Sitzungsleitung stellt das Ergebnis fest und gibt es bekannt. Bestehen begründete Zweifel am Ergebnis, wiederholt das STUPA die Abstimmung sofort.
 
