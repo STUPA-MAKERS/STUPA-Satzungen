@@ -25,11 +25,14 @@
 + Er informiert über freie Ämter in der Studierendenschaft und über die studentischen Sitze in den Gremien der Hochschule.
 + Er wahrt bei seiner Tätigkeit die Chancengleichheit aller Kandidierenden und Listen.
 
-=== Arbeitskreis Digitales <ako-digitales>
+=== Arbeitskreis Technik & Digitales <ako-technik>
++ Der Arbeitskreis tritt auch unter dem Namen „STUPA MAKERS“ auf.
 + Der Arbeitskreis betreut die digitale Infrastruktur der Studierendenschaft, insbesondere die Website, die Funktionsadressen und Verteiler, die Software und die Online-Dienste der Studierendenschaft.
-+ Er entwickelt mit interessierten Studierenden Software und technische Projekte für die Studierendenschaft und die Studierenden und betreut deren Betrieb.
++ Er betreibt den Makerspace der Studierendenschaft als offene Werkstatt für die Studierenden. Er erarbeitet Regeln für die Nutzung und legt sie dem AStA zum Beschluss vor. Er weist die Nutzer:innen vor der ersten Nutzung in die Geräte ein und achtet auf die Vorschriften der Hochschule zur Arbeitssicherheit. Die Aufgabe des Arbeitskreises Campus nach @ako-campus Abs. 3 bleibt unberührt.
++ Er erhält die technischen Geräte und Anlagen der Studierendenschaft, wartet sie und repariert sie, soweit kein anderer Arbeitskreis zuständig ist. Er unterstützt den Arbeitskreis Events (@ako-events) bei der Veranstaltungstechnik. Er meldet der:dem Haushaltsbeauftragten die Anschaffung und den Abgang von Geräten für die Inventarverwaltung nach der Finanzordnung.
++ Er entwickelt und baut mit interessierten Studierenden Software, Geräte und andere technische Projekte für die Studierendenschaft und die Studierenden und betreut deren Betrieb.
 + Er unterstützt den AStA in Fragen des Datenschutzes und der Informationssicherheit bei der Verarbeitung personenbezogener Daten in der Studierendenschaft.
-+ Er berät die Fachschaften und die Arbeitskreise bei der Planung und dem Betrieb digitaler Angebote.
++ Er berät die Fachschaften und die Arbeitskreise bei der Planung und dem Betrieb digitaler und technischer Angebote.
 + Er begleitet die Einführung neuer digitaler Angebote der Hochschule und bringt die Belange der Studierenden ein.
 
 === Arbeitskreis Marketing <ako-marketing>
@@ -64,7 +67,7 @@
 === Arbeitskreis Campus <ako-campus>
 + Der Arbeitskreis befasst sich mit dem Studium und dem Leben auf dem Campus, insbesondere mit Lern- und Aufenthaltsflächen, ihrer Ausstattung und ihren Öffnungszeiten.
 + Er sammelt Anregungen der Studierenden und bringt sie bei den zuständigen Stellen der Hochschule ein.
-+ Er unterstützt den AStA bei der Verwaltung der Räume, die die Hochschule der Studierendenschaft nach § 65a Abs. 5 S. 1 LHG zur Verfügung stellt.
++ Er unterstützt den AStA bei der Verwaltung der Räume, die die Hochschule der Studierendenschaft nach § 65a Abs. 5 S. 1 LHG zur Verfügung stellt. Den Makerspace betreibt der Arbeitskreis Technik & Digitales nach @ako-technik.
 
 === Arbeitskreis Studierendenwerk <ako-studierendenwerk>
 + Der Arbeitskreis befasst sich mit den Angelegenheiten des für die Hochschule zuständigen Studierendenwerks, insbesondere mit Wohnheimen, Mensen und Cafeterien, Beratungsangeboten und Kinderbetreuung.
