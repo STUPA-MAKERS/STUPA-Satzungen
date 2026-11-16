@@ -26,7 +26,7 @@
 + Er wahrt bei seiner Tätigkeit die Chancengleichheit aller Kandidierenden und Listen.
 
 === Arbeitskreis Technik & Digitales <ako-technik>
-+ Der Arbeitskreis tritt auch unter dem Namen „MAKERS“ auf.
++ Der Arbeitskreis tritt auch unter dem Namen „STUPA MAKERS“ auf.
 + Der Arbeitskreis betreut die digitale Infrastruktur der Studierendenschaft, insbesondere die Website, die Funktionsadressen und Verteiler, die Software und die Online-Dienste der Studierendenschaft.
 + Er betreibt den Makerspace der Studierendenschaft als offene Werkstatt für die Studierenden. Er erarbeitet Regeln für die Nutzung und legt sie dem AStA zum Beschluss vor. Er weist die Nutzer:innen vor der ersten Nutzung in die Geräte ein und achtet auf die Vorschriften der Hochschule zur Arbeitssicherheit. Die Aufgabe des Arbeitskreises Campus nach @ako-campus Abs. 3 bleibt unberührt.
 + Er erhält die technischen Geräte und Anlagen der Studierendenschaft, wartet sie und repariert sie, soweit kein anderer Arbeitskreis zuständig ist. Er unterstützt den Arbeitskreis Events (@ako-events) bei der Veranstaltungstechnik. Er meldet der:dem Haushaltsbeauftragten die Anschaffung und den Abgang von Geräten für die Inventarverwaltung nach der Finanzordnung.
