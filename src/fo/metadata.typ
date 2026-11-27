@@ -3,15 +3,15 @@
 #import "common.typ": hl, removed, datum, show-changes
 
 // Datum des STUPA-Beschlusses zu dieser Fassung.
-#let last-changed = datum("beschluss", "XX. Monat 20XX")
-#let last-changed-short = datum("beschluss", "XX. Monat 20XX", kurz: true)
+#let last-changed = datum("beschluss", "26. November 2026")
+#let last-changed-short = datum("beschluss", "26.11.2026", kurz: true)
 
 // Datum der Genehmigung durch das Präsidium. Lass den Platzhalter stehen,
 // bis das Präsidium diese Fassung genehmigt.
 #let accepted-university = datum("genehmigung", "XX. Monat 20XX")
 
 // Datum der Fassung der Organisationssatzung, die diese Ordnung zitiert.
-#let orgs-date = "XX. Monat 20XX"
+#let orgs-date = "26. November 2026"
 
 #let title = [Finanzordnung der \ Studierendenschaft der Hochschule Reutlingen]
 #let short-title = [Finanzordnung der Studierendenschaft]

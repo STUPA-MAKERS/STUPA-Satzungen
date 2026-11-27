@@ -4,15 +4,15 @@
 
 // Datum des STUPA-Beschlusses zu dieser Fassung. Das Präsidium genehmigt sie
 // zusammen mit den anderen Satzungen.
-#let last-changed = datum("beschluss", "XX.XX.20XX")
-#let last-changed-short = datum("beschluss", "XX.XX.20XX", kurz: true)
+#let last-changed = datum("beschluss", "26. November 2026")
+#let last-changed-short = datum("beschluss", "26.11.2026", kurz: true)
 
 // Datum der Genehmigung durch das Präsidium. Lass den Platzhalter stehen,
 // bis das Präsidium diese Fassung genehmigt.
 #let accepted-university = datum("genehmigung", "XX.XX.20XX")
 
 // Datum der Fassung der Organisationssatzung, die diese Satzung zitiert.
-#let orgs-date = "XX.XX.20XX"
+#let orgs-date = "26. November 2026"
 
 #let title = [Beitragssatzung der \ Studierendenschaft der Hochschule Reutlingen]
 #let short-title = [Beitragssatzung der Studierendenschaft]

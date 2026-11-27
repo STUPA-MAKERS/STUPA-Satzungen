@@ -4,8 +4,8 @@
 
 // Datum des STUPA-Beschlusses zu dieser Fassung. Die Geschäftsordnung ist
 // keine Satzung. Sie hat deshalb kein Datum für eine Genehmigung.
-#let last-changed = datum("beschluss", "XX.XX.20XX")
-#let last-changed-short = "Entwurf vom 13.11.2026"
+#let last-changed = datum("beschluss", "26. November 2026")
+#let last-changed-short = "Fassung vom 26.11.2026"
 
 #let title = [Geschäftsordnung des \ Studierendenparlamentes der Hochschule Reutlingen (GO)]
 #let short-title = [Geschäftsordnung des Studierendenparlamentes]
