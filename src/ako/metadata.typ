@@ -3,8 +3,8 @@
 #import "../satzung.typ": datum
 
 // Datum des STUPA-Beschlusses zu dieser Fassung.
-#let last-changed = datum("beschluss", "XX.XX.20XX")
-#let last-changed-short = "Entwurf vom 13.11.2026"
+#let last-changed = datum("beschluss", "26. November 2026")
+#let last-changed-short = "Fassung vom 26.11.2026"
 
 // Die Ordnung ist keine Satzung. Das Präsidium genehmigt sie nicht.
 

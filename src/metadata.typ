@@ -4,8 +4,8 @@
 #import "satzung.typ": hl, datum
 
 // Datum des STUPA-Beschlusses zu dieser Fassung.
-#let last-changed = datum("beschluss", "XX.XX.20XX")
-#let last-changed-short = datum("beschluss", "XX.XX.20XX", kurz: true)
+#let last-changed = datum("beschluss", "26. November 2026")
+#let last-changed-short = datum("beschluss", "26.11.2026", kurz: true)
 
 // Datum der Genehmigung durch das Präsidium. Lass den Platzhalter stehen,
 // bis das Präsidium diese Fassung genehmigt.
